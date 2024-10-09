@@ -1,1 +1,21 @@
 /*-----styles go here-----*/
+@import url("include/main.css");
+@import url("include/normalize.css");
+@import url("include/header.css");
+@import url("include/megamenu.css");
+@import url("include/inputs.css");
+@import url("include/buttons.css");
+@import url("include/hero-section.css");
+@import url("include/search-dropdown.css");
+@import url("include/expand-radius.css");
+@import url("include/map-section.css");
+@import url("include/search-listing.css");
+@import url("include/search-map.css");
+@import url("include/services.css");
+@import url("include/trending-topics.css");
+@import url("include/my-pharmacy.css");
+@import url("include/news.css");
+@import url("include/footer.css");
+@import url("include/modals.css");
+
+@import url("include/mediaqueries.css");
