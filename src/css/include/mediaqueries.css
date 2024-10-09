@@ -1,0 +1,363 @@
+@media only screen and (max-width: 1199px) {
+    .header__menu-item {
+        padding: 25px 7px;
+    }
+
+    .hero-banner-ad {
+        max-width: 350px;
+    }
+
+    .hero-banner-ad__ad-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-banner-ad__ad-thumb,
+    .hero-banner-ad__ad-content {
+        width: 100%;
+    }
+
+    .hero-banner-ad__ad-thumb {
+        height: 100px;
+    }
+    
+    .trending-topics__column .trending-topics__trending-icon-items {
+        color: rgb(var(--clr--white));
+        text-align: center;
+        width: calc(calc(100% / 3) - 15px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .collapse.navbar-collapse:not(.show) {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header__container {
+        flex-wrap: wrap;
+        padding-block: 1rem;
+    }
+
+    .header__logo,
+    .header__logo-link {
+        max-width: 210px;
+    }
+
+    nav.header__nav {
+        width: 100%;
+    }
+
+    .header__collapse-menu,
+    ul.header__menu {
+        flex-direction: column;
+    }
+
+    .header__menu-item {
+        text-align: right;
+        padding: 7px 15px;
+    }
+
+    .header__menu-link {
+        justify-content: flex-end;
+    }
+
+    .header__actions {
+        width: 100%;
+    }
+
+    .header__action-button {
+        flex-grow: 1;
+    }
+
+    .header__mega-menu {
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .header__mega-menu.active {
+        display: block !important;
+    }
+
+    .header__mega-menu__grid {
+        row-gap: 12px;
+    }
+
+    .header__modal-row {
+        row-gap: 15px;
+    }
+
+    .header__modal-title {
+        width: calc(100% - 60px);
+    }
+
+    .header__nav .header__menu-item__has-megamenu:hover .header__mega-menu,
+    .header__nav .header__menu-item__has-megamenu .header__menu-link:after {
+        display: none;
+    }
+
+    .footer__container {
+        gap: 25px;
+    }
+
+    .footer__logo-image {
+        max-width: 210px;
+    }
+
+    .hero-banner-search__wrapper {
+        margin-top: 350px;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .fap-search-panel {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-seperator:after {
+        display: none;
+    }
+
+    form#fap-main-search .fap-search-panel input.fap-input {
+        width: 100%;
+        border: 2px solid rgb(var(--clr--blue));
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+    .hero-banner-ad {
+        position: unset;
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+    .search-dropdown {
+        width: 100%;
+        left: 0;
+    }
+
+    .pharmacy-map__result-single-item {
+        flex-wrap: wrap;
+    }
+
+    .pharmacy-map__pharmacy-details {
+        width: calc(100% - 65px);
+    }
+
+    .pharmacy-map__search-actions {
+        width: 100%;
+    }
+
+    .pharmacy-map__filter-dragger {
+        flex-direction: column;
+    }
+
+    .pharmacy-map__filter-details,
+    .pharmacy-map__filter-dragging-bar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pharmacy-map__filter-details {
+        border-right: 0;
+        border-bottom: 2px solid rgb(var(--clr--white));
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    label.pharmacy-map__slider-container-label {
+        text-align: center;
+    }
+    
+    .pharmacy-map__search-wrapper {
+        background: rgb(var(--clr--white));
+        padding: 25px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+
+    .pharmacy-map__search-wrapper {
+        width: 100%;
+        margin: 0 0 10px;
+        position: relative;
+    }
+
+    .pharmacy-map__search-wrapper.filter-opened {
+        position: relative;
+        margin-bottom: -203px;
+    }
+
+    .pharmacy-map__search-wrapper.filter-closed {
+        padding: 12px 0;
+        background-color: transparent;
+    }
+
+    .pharmacy-map__search-wrapper .pharmacy-map__search-wrapper-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .pharmacy-map__search-wrapper.filter-closed form#fap-second-search {
+        display: none;
+    }
+
+    .pharmacy-map__search-panel .search-dropdown {
+        width: 100%;
+        left: 0;
+        top: calc(calc(100% / 3) * 2);
+    }
+
+    .fap-map-container {
+        flex-direction: column-reverse;
+    }
+
+    .pharmacy-map__scroller-in-map,
+    #fap-map {
+        width: 100%;
+    }
+
+    .trending-topics__column .trending-topics__wrapper {
+        text-align: center;
+        width: 100%;
+        padding-inline: 10px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .trending-topics__column .trending-topics__wrapper .trending-topics__title-wrapper {
+        width: 100%;
+    }
+
+    .trending-topics__column .trending-topics__seperator {
+        width: 96%;
+        height: 2px;
+    }
+
+    .latest-updates__title-wrapper .latest-updates__title,
+    .our-services__title-wrapper .our-services__title {
+        width: 270px;
+    }
+
+    .latest-updates__title-wrapper .latest-updates__description,
+    form#fap-service-search {
+        width: calc(100% - 320px);
+    }
+
+    .hero-banner-ad__ad-wrapper {
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .hero-banner-ad__ad-wrapper.fade-out {
+        max-height: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    button.header__modal-action {
+        min-width: auto;
+        width: 100%;
+    }
+
+    button.header__modal-back-action {
+        width: 200px;
+    }
+
+    .hero-banner-ad__ad-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-banner-ad__ad-thumb,
+    .hero-banner-ad__ad-thumb img,
+    .hero-banner-ad__ad-content {
+        width: 100%;
+    }
+
+    .hero-banner-ad__ad-thumb,
+    .hero-banner-ad__ad-thumb img {
+        height: 100px;
+    }
+
+    .hero-banner {
+        background-position: -100px 0;
+    }
+
+    .fap-map-popup {
+        width: 100%;
+    }
+
+    .search-actions-two-buttons {
+        flex-direction: column;
+    }
+
+    .fap-map-popup__actions button.btn {
+        width: 100%;
+    }
+
+    section.my-pharmacy img.my-pharmacy__background-image {
+        height: 400px;
+    }
+
+    section.my-pharmacy .my-pharmacy__content-wrapper {
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    section.my-pharmacy .my-pharmacy__content-wrapper .my-pharmacy__content,
+    section.my-pharmacy .my-pharmacy__content-wrapper .my-pharmacy__action {
+        width: 100%;
+    }
+
+    .latest-updates__column-wrapper {
+        padding: 25px 15px;
+    }
+
+    .latest-updates__title-wrapper,
+    .our-services__title-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .latest-updates__title-wrapper .latest-updates__title,
+    .latest-updates__title-wrapper .latest-updates__description,
+    .our-services__title-wrapper .our-services__title,
+    form#fap-service-search {
+        width: 100%;
+    }
+    
+    .open-status__schedule {
+        left: 0;
+        right: inherit;
+    }
+    
+    button.button-yellow {
+        min-width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pharmacy-map__pharmacy-details,
+    button.our-services__actions,
+    button.my-pharmacy__pharmacy-btn,
+    button.latest-updates__actions {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .pharmacy-map__slider-scale {
+        left: -50px;
+        width: calc(100% + 105px);
+    }
+}

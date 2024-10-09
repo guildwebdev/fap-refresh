@@ -1,0 +1,116 @@
+.fap-input {
+    font-size: 18px;
+    background: rgb(var(--clr--white));
+    border: 2px solid rgb(var(--clr--blue));
+}
+
+.fap-input:focus {
+    border: 2px solid rgb(var(--clr--lightblue));
+}
+
+input.fap-input,
+select.fap-input {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+textarea.fap-input {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#fap-dropdown-list .search-filter-input,
+#search-dropdown-list .search-filter-input {
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+.search-filter-input {
+    font-size: 16px;
+    position: sticky;
+    top: 0px;
+}
+
+.search-seperator {
+    position: relative;
+    width: 2px;
+}
+
+.search-seperator:after {
+    content: "";
+    width: 2px;
+    height: 21px;
+    background-color: rgb(var(--clr--blue));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.fap-search-panel input.fap-input:nth-of-type(1) {
+    border-right: 0;
+}
+
+.fap-search-panel input.fap-input:nth-of-type(1):focus {
+    border-right: 2px solid rgb(var(--clr--lightblue));
+}
+
+.fap-search-panel input.fap-input:nth-of-type(2) {
+    border-left: 0;
+}
+
+.fap-search-panel input.fap-input:nth-of-type(2):focus {
+    border-left: 2px solid rgb(var(--clr--lightblue));
+}
+
+.search-service {
+    background: rgb(var(--clr--white)) url("../../img/icon-chevron-down.svg") no-repeat calc(100% - 13px) calc(100% - 13px);
+    background-size: 15px;
+}
+
+.pharmacy-map__search-service {
+    background-position: calc(100% - 30px) calc(100% - 16px);
+}
+
+.search-filter-input {
+    background: rgb(var(--clr--lightyellow)) url("../../img/icon-magnifying-glass.svg") no-repeat calc(100% - 13px) calc(100% - 13px);
+    background-size: 15px;
+}
+
+.pharmacy-map__search-wrapper {
+    width: 80%;
+    margin: 0 10% 40px;
+}
+
+.pharmacy-map__search-service {
+    margin-right: -20px;
+}
+
+select.pharmacy-map__filter-results {
+    padding-inline: 40px;
+    background: url(../../img/icon-sliders.svg), url(../../img/icon-chevron-down.svg);
+    background-position: 14px 14px, calc(100% - 14px) calc(100% - 14px);
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.search-input {
+    background: rgb(var(--clr--white)) url("../../img/icon-magnifying-glass.svg") no-repeat 13px 13px;
+    background-size: 20px;
+    padding: 11px 45px;
+}
+
+.search-modal__input-group input.search-modal__search-input {
+    padding-block: 9px;
+}

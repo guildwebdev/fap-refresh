@@ -1,0 +1,229 @@
+button.btn {
+    font-weight: 700;
+}
+
+button.btn.button-yellow {
+    color: rgb(var(--clr--white));
+    background-color: rgb(var(--clr--lightblue));
+    text-align: center;
+    min-width: 330px;
+}
+
+button.btn.button-blue {
+    color: rgb(var(--clr--yellow));
+    background-color: rgb(var(--clr--blue));
+    min-width: fit-content;
+}
+
+button.btn.button-lightblue {
+    color: rgb(var(--clr--blue));
+    background-color: rgb(var(--clr--yellow));
+    min-width: fit-content;
+}
+
+button.button-yellow,
+button.button-blue,
+button.button-lightblue {
+    text-align: left;
+    border: 0;
+    appearance: none;
+    isolation: isolate;
+    line-height: 1.5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 300ms ease-out;
+    -webkit-transition: 300ms ease-out;
+    -moz-transition: 300ms ease-out;
+    -ms-transition: 300ms ease-out;
+    -o-transition: 300ms ease-out;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    box-shadow: 0px 10px 30px rgba(var(--clr--blue), 0.15);
+    box-sizing: border-box;
+    padding: 0;
+}
+
+button.button-yellow > .backdrop,
+button.button-blue > .backdrop,
+button.button-lightblue > .backdrop {
+    z-index: 1;
+    transition: 300ms ease-out;
+    -webkit-transition: 300ms ease-out;
+    -moz-transition: 300ms ease-out;
+    -ms-transition: 300ms ease-out;
+    -o-transition: 300ms ease-out;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+}
+
+button.btn-with-backdrop > .overlay {
+    color: rgb(var(--clr--blue));
+    height: 100%;
+    background-color: rgb(var(--clr--yellow));
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+button.button-yellow > .overlay,
+button.button-blue > .overlay,
+button.button-lightblue > .overlay {
+    padding: 12px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transition: 300ms ease-out;
+    -webkit-transition: 300ms ease-out;
+    -moz-transition: 300ms ease-out;
+    -ms-transition: 300ms ease-out;
+    -o-transition: 300ms ease-out;
+}
+
+button.btn-with-backdrop:is(:hover, :focus),
+button.button-blue:is(:hover, :focus),
+button.button-lightblue:is(:hover, :focus) {
+    transition: 250ms ease-out;
+    -webkit-transition: 250ms ease-out;
+    -moz-transition: 250ms ease-out;
+    -ms-transition: 250ms ease-out;
+    -o-transition: 250ms ease-out;
+}
+
+button.btn-with-backdrop:is(:hover, :focus) > .overlay,
+button.button-blue:is(:hover, :focus) > .overlay,
+button.button-lightblue:is(:hover, :focus) > .overlay {
+    transform: translateY(calc(100% + 1px));
+    -webkit-transform: translateY(calc(100% + 1px));
+    -moz-transform: translateY(calc(100% + 1px));
+    -ms-transform: translateY(calc(100% + 1px));
+    -o-transform: translateY(calc(100% + 1px));
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+button.btn.header__modal-back-action {
+    color: rgb(var(--clr--blue));
+    background-color: rgb(var(--clr--lightblue));
+    width: 200px;
+    min-width: fit-content;
+}
+
+button.header__modal-back-action > .overlay {
+    color: rgb(var(--clr--blue));
+    background-color: rgb(var(--clr--yellow));
+}
+
+button.button-blue > .overlay {
+    color: rgb(var(--clr--white));
+    height: 100%;
+    background-color: rgb(var(--clr--blue));
+}
+
+button.button-lightblue > .overlay {
+    color: rgb(var(--clr--blue));
+    height: 100%;
+    background-color: rgb(var(--clr--lightblue));
+}
+
+button.button-lightblue img {
+    width: 20px;
+}
+
+.button-group {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+button.btn.header__action-button {
+    min-width: fit-content;
+    font-weight: 700;
+    border: 0;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    box-shadow: 0px 10px 30px rgba(var(--clr--blue), 0.15);
+}
+
+.hero-banner-search-btn > .backdrop,
+.hero-banner-search-btn > .overlay,
+.hero-banner-search__pharmacy-btn > .backdrop,
+.hero-banner-search__pharmacy-btn > .overlay,
+.button-lightblue > .backdrop,
+.button-lightblue > .overlay {
+    text-align: left;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-banner-search-btn img,
+.button-yellow img {
+    width: 30px;
+}
+
+button.btn.pharmacy-map-search-btn {
+    z-index: 9;
+}
+
+form#fap-second-search button.btn.pharmacy-map-search-btn {
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+.fap-map-popup__actions button.btn {
+    min-width: fit-content;
+    width: 50%;
+}
+
+button.btn.our-services_for-more-info {
+    min-width: fit-content;
+    margin-left: auto;
+}
+
+button.our-services__actions {
+    min-width: fit-content;
+}
+
+button.hero-banner-search-btn > .overlay {
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}

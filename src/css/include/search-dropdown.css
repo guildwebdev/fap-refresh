@@ -1,0 +1,64 @@
+.fap-search-panel {
+    position: relative;
+}
+
+.search-dropdown {
+    width: 50%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 99;
+}
+
+.pharmacy-map__search-panel .search-dropdown {
+    width: 35%;
+    left: 38%;
+}
+
+.search-dropdown-content {
+    font-size: 16px;
+    text-align: left;
+    display: none;
+    background-color: rgb(var(--clr--lightyellow));
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(var(--clr--black), 0.2);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 15px solid rgba(var(--clr--black), 0);
+    border-left: 8px solid rgba(var(--clr--black), 0);
+}
+
+.search-dropdown-content.show {
+    display: block;
+}
+
+#fap-filter-input,
+#search-filter-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(var(--clr--blue));
+    box-sizing: border-box;
+    background-color: rgb(var(--clr--lightyellow));
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.service-category-title {
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.search-dropdown-content p {
+    padding: 0 25px;
+    margin: 0;
+    cursor: pointer;
+}

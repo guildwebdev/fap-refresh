@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --clr--blue: 25, 40, 87;
+    --clr--lightblue: 96, 181, 213;
+    --clr--yellow: 255, 197, 47;
+    --clr--lightyellow: 255, 249, 233;
+    --clr--white: 255, 255, 255;
+    --clr--black: 0, 0, 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(var(--clr--black), 0.15);
+    box-shadow: inset 2px 2px 3px rgba(rgb(var(--clr--blue)), 0.4);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    background: rgb(var(--clr--lightblue));
+}
+
+.scrollbar-yellow::-webkit-scrollbar-thumb {
+    background: rgb(var(--clr--yellow));
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(var(--clr--white));
+    color: rgb(var(--clr--blue));
+    font-size: clamp(16px, 1vw, 25px);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* overflow-x: hidden; */
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: clamp(36px, 3.1vw, 72px);
+}
+
+h2 {
+    font-size: clamp(28px, 2.5vw, 60px);
+}
+
+h3 {
+    font-size: clamp(23px, 1.5vw, 38px);
+}
+
+h4 {
+    font-size: clamp(18px, 1.1vw, 27px);
+}
+
+h5 {
+    font-size: clamp(16px, 0.9vw, 23px);
+}
+
+h6 {
+    line-height: 1.3;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+    box-shadow: none !important;
+}
+
+.small,
+small {
+    font-size: 15px;
+}
+
+.small a,
+small a {
+    color: currentColor;
+    text-decoration: underline;
+}
+
+a {
+    color: rgb(var(--clr--lightblue));
+    text-decoration: none;
+}
+
+.small a:hover,
+small a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(var(--clr--blue));
+}
+
+.text-yellow {
+    color: rgb(var(--clr--yellow));
+}
