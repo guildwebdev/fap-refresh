@@ -1,26 +1,36 @@
 .pharmacy-map {
     background-color: rgba(215, 216, 216, 0.22);
-    border-radius: 0 0 30px 30px;
-    -webkit-border-radius: 0 0 30px 30px;
-    -moz-border-radius: 0 0 30px 30px;
-    -ms-border-radius: 0 0 30px 30px;
-    -o-border-radius: 0 0 30px 30px;
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
+}
+
+.single-service-map {
+    background-color: rgb(255, 249, 233);
+    border-radius: calc(var(--bdr--radius) * 0);
+    -webkit-border-radius: calc(var(--bdr--radius) * 0);
+    -moz-border-radius: calc(var(--bdr--radius) * 0);
+    -ms-border-radius: calc(var(--bdr--radius) * 0);
+    -o-border-radius: calc(var(--bdr--radius) * 0);
 }
 
 span.map-to-list-toggle {
     cursor: pointer;
     background: rgb(var(--clr--lightblue));
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0px 10px 20px rgba(var(--clr--black), 0.15);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: calc(var(--bdr--radius) * 2);
+    -webkit-border-radius: calc(var(--bdr--radius) * 2);
+    -moz-border-radius: calc(var(--bdr--radius) * 2);
+    -ms-border-radius: calc(var(--bdr--radius) * 2);
+    -o-border-radius: calc(var(--bdr--radius) * 2);
     display: inline-block;
     position: absolute;
     top: 10px;
     left: 10px;
+    z-index: 9;
 }
 
 span.map-to-list-toggle img {

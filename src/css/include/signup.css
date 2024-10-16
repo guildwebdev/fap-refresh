@@ -1,0 +1,32 @@
+.signup__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.signup__title-wrapper {
+    width: 40%;
+}
+
+.fap-form-wrapper {
+    width: calc(var(--width--full) * .5);
+    text-align: center;
+    background: rgb(255, 238, 192);
+    padding: 30px;
+    box-shadow: var(--box--shadow) rgba(var(--clr--black), 0.15);
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
+}
+
+.fap-form-description {
+    font-size: clamp(16px, 0.9vw, 23px);
+}
+
+.fap-form-footer {
+    width: calc(var(--width--full) * .8);
+    margin: 20px 10%;
+}

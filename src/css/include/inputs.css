@@ -1,5 +1,20 @@
+::-webkit-input-placeholder {
+    color: rgb(var(--clr--blue)) !important;
+}
+
+::-moz-placeholder {
+    color: rgb(var(--clr--blue)) !important;
+}
+
+:-ms-input-placeholder {
+    color: rgb(var(--clr--blue)) !important;
+}
+
 .fap-input {
-    font-size: 18px;
+    color: rgb(var(--clr--blue)) !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 30px;
     background: rgb(var(--clr--white));
     border: 2px solid rgb(var(--clr--blue));
 }
@@ -10,19 +25,19 @@
 
 input.fap-input,
 select.fap-input {
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
 }
 
 textarea.fap-input {
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: calc(var(--bdr--radius) * 2);
+    -webkit-border-radius: calc(var(--bdr--radius) * 2);
+    -moz-border-radius: calc(var(--bdr--radius) * 2);
+    -ms-border-radius: calc(var(--bdr--radius) * 2);
+    -o-border-radius: calc(var(--bdr--radius) * 2);
 }
 
 #fap-dropdown-list .search-filter-input,
@@ -45,11 +60,11 @@ textarea.fap-input {
 .search-seperator:after {
     content: "";
     width: 2px;
-    height: 21px;
+    height: 40px;
     background-color: rgb(var(--clr--blue));
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: calc(var(--width--full) * .5);
+    left: calc(var(--width--full) * .5);
     z-index: 9;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -75,42 +90,66 @@ textarea.fap-input {
 }
 
 .search-service {
-    background: rgb(var(--clr--white)) url("../../img/icon-chevron-down.svg") no-repeat calc(100% - 13px) calc(100% - 13px);
+    background: rgb(var(--clr--white)) url("../../img/icon-chevron-down.svg") no-repeat calc(var(--width--full) - 20px) calc(var(--width--full) - 15px);
     background-size: 15px;
 }
 
 .pharmacy-map__search-service {
-    background-position: calc(100% - 30px) calc(100% - 16px);
+    background-position: calc(var(--width--full) - 40px) calc(var(--width--full) - 15px);
 }
 
 .search-filter-input {
-    background: rgb(var(--clr--lightyellow)) url("../../img/icon-magnifying-glass.svg") no-repeat calc(100% - 13px) calc(100% - 13px);
+    background: rgb(var(--clr--lightyellow)) url("../../img/icon-magnifying-glass.svg") no-repeat calc(var(--width--full) - 13px) calc(var(--width--full) - 13px);
     background-size: 15px;
 }
 
 .pharmacy-map__search-wrapper {
-    width: 80%;
+    width: calc(var(--width--full) * .8);
     margin: 0 10% 40px;
 }
 
 .pharmacy-map__search-service {
-    margin-right: -20px;
+    margin-right: -30px;
+}
+
+select.fap-input {
+    padding-right: 40px;
+    background-image: url("../../img/icon-chevron-down.svg");
+    background-position: calc(var(--width--full) - 20px) calc(var(--width--full) - 15px);
+    background-repeat: no-repeat;
+    background-size: 15px;
 }
 
 select.pharmacy-map__filter-results {
+    width: calc(var(--width--full) - 70px);
     padding-inline: 40px;
-    background: url(../../img/icon-sliders.svg), url(../../img/icon-chevron-down.svg);
-    background-position: 14px 14px, calc(100% - 14px) calc(100% - 14px);
+    background-image: url("../../img/icon-sliders.svg"), url("../../img/icon-chevron-down.svg");
+    background-position: 16px 19px, calc(var(--width--full) - 16px) calc(var(--width--full) - 20px);
     background-repeat: no-repeat;
     background-size: 15px;
 }
 
 .search-input {
-    background: rgb(var(--clr--white)) url("../../img/icon-magnifying-glass.svg") no-repeat 13px 13px;
+    background: rgb(var(--clr--white)) url("../../img/icon-magnifying-glass.svg") no-repeat 20px 13px;
     background-size: 20px;
-    padding: 11px 45px;
+    padding: 11px 50px !important;
+}
+
+form#service-search .search-input {
+    background: rgb(var(--clr--white));
+    padding: 11px 45px 11px 15px;
 }
 
 .search-modal__input-group input.search-modal__search-input {
-    padding-block: 9px;
+    padding-block: 12.5px !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
 }

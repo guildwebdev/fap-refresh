@@ -2,25 +2,28 @@
     background: rgb(var(--clr--blue));
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
     display: flex;
     align-items: center;
 }
 
 .pharmacy-map__filter-details,
 .pharmacy-map__filter-dragging-bar {
-    width: 50%;
-    padding: 5px 20px;
+    width: calc(var(--width--full) * .5);
 }
 
 .pharmacy-map__filter-details {
+    padding: 5px 20px 5px 35px;
     border-right: 2px solid rgb(var(--clr--white));
 }
 
+.pharmacy-map__filter-dragging-bar {
+    padding: 5px 35px 5px 20px;
+}
 
 .pharmacy-map__available-pharmacies,
 .pharmacy-map__pharmacy-radius {
@@ -38,6 +41,7 @@
 
 label.pharmacy-map__slider-container-label {
     font-size: 16px;
+    letter-spacing: 2px;
     text-align: left;
     display: block;
 }
@@ -45,18 +49,22 @@ label.pharmacy-map__slider-container-label {
 .pharmacy-map__slider-wrapper {
     position: relative;
     margin: 50px auto 0;
-    width: 75%;
+    width: calc(var(--width--full) * .75);
 }
 
 .pharmacy-map__slider-label {
     position: absolute;
     top: -40px;
-    left: calc(((100% / 60) * 5) + 7px);
+    left: calc(((100% / 60) * 15) + 5px);
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     background-color: rgb(var(--clr--yellow));
     color: rgb(var(--clr--black));
     font-weight: bold;
-    border-radius: 50%;
+    border-radius: var(--bdr--radius--round);
     width: 30px;
     height: 30px;
     text-align: center;
@@ -80,13 +88,17 @@ label.pharmacy-map__slider-container-label {
 .pharmacy-map__slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 100%;
+    width: var(--width--full);
     height: 4px;
-    background: linear-gradient(to right, rgb(var(--clr--yellow)) 0%, rgb(var(--clr--yellow)) 8.33%, rgba(var(--clr--lightblue), .4) 8.33%, rgba(var(--clr--lightblue), .4) 100%);
+    background: linear-gradient(to right, rgb(var(--clr--yellow)) 0%, rgb(var(--clr--yellow)) 25%, rgba(var(--clr--lightblue), .4) 25%, rgba(var(--clr--lightblue), .4) 100%);
     outline: none;
-    border-radius: 10px;
     position: relative;
     z-index: 9;
+    border-radius: var(--bdr--radius);
+    -webkit-border-radius: var(--bdr--radius);
+    -moz-border-radius: var(--bdr--radius);
+    -ms-border-radius: var(--bdr--radius);
+    -o-border-radius: var(--bdr--radius);
 }
 
 .pharmacy-map__slider::-webkit-slider-thumb {
@@ -96,7 +108,7 @@ label.pharmacy-map__slider-container-label {
     height: 20px;
     background: rgb(var(--clr--yellow));
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: var(--bdr--radius--round);
 }
 
 .pharmacy-map__slider::-moz-range-thumb {
@@ -104,7 +116,7 @@ label.pharmacy-map__slider-container-label {
     height: 20px;
     background: rgb(var(--clr--yellow));
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: var(--bdr--radius--round);
 }
 
 .pharmacy-map__slider-scale {
@@ -113,9 +125,9 @@ label.pharmacy-map__slider-container-label {
     color: rgb(var(--clr--white));
     position: absolute;
     top: 4px;
-    left: -14%;
+    left: -65px;
     z-index: 0;
-    width: 130%;
+    width: calc(var(--width--full) + 140px);
 }
 
 .min-value, .max-value {

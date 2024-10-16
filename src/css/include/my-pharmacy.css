@@ -3,30 +3,46 @@
 }
 
 section.my-pharmacy img.my-pharmacy__background-image {
-    width: 100%;
-    height: 600px;
+    width: var(--width--full);
+    height: 700px;
     object-fit: cover;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    object-position: 0 0;
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
+}
+
+section.my-pharmacy .my-pharmacy__wrapper {
+    position: relative;
+}
+
+.my-pharmacy__image-wrapper {
+    position: relative;
+}
+
+section.my-pharmacy .my-pharmacy__container-wrapper {
+    width: var(--width--full);
+    height: 400px;
+    padding: 50px;
+    background: transparent linear-gradient(180deg, rgba(var(--clr--lightblue), 0) 0%, rgb(var(--clr--blue)) 100%);
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 section.my-pharmacy .my-pharmacy__content-wrapper {
     color: rgb(var(--clr--white));
-    width: calc(100% - 24px);
-    height: 400px;
-    padding: 50px;
-    background: transparent linear-gradient(180deg, rgba(var(--clr--lightblue), 0) 0%, rgb(var(--clr--blue)) 100%) 0% 0% no-repeat padding-box;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    position: absolute;
-    bottom: 0;
-    left: 12px;
+    width: var(--width--full);
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -38,13 +54,18 @@ section.my-pharmacy .my-pharmacy__content-wrapper p {
 }
 
 section.my-pharmacy .my-pharmacy__content-wrapper .my-pharmacy__content {
-    width: calc(100% - 325px);
-}
-
-section.my-pharmacy .my-pharmacy__content-wrapper .my-pharmacy__action {
-    width: 300px;
+    width: calc(var(--width--full) - 325px);
 }
 
 section.my-pharmacy .my-pharmacy__content-wrapper .my-pharmacy__action .my-pharmacy__pharmacy-btn {
     min-width: auto;
+}
+
+/* ----- My Pharmacy Page ----- */
+.my-pharmacy-page {
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
 }

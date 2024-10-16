@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Curious Minds Media">
+    <title>Search Results | The Pharmacy Guild of Australia</title>
+    <link rel="icon" href="src/img/find-a-pharmacy-icon.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="src/css/find-a-pharmacy-2024.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="src/js/find-a-pharmacy-2024.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Common Header -->
+    <header class="header">
+        <div class="header__container container d-flex justify-content-between align-items-center gap-3">
+          
+            <div class="header__logo py-0 py-lg-4">
+                <a href="/" class="header__logo-link">
+                    <img src="src/img/find-a-pharmacy-logo.png" class="header__logo-image w-100" alt="The Pharmacy Guild of Australia Logo">
+                </a>
+            </div>
+
+            <button class="header__nav-toggler navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#fap-header-menu" aria-controls="fap-header-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="header__nav-toggler__icon"></span>
+                <span class="header__nav-toggler__icon"></span>
+                <span class="header__nav-toggler__icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="fap-header-menu">
+                <div class="header__collapse-menu d-flex justify-content-end gap-3">
+                    <nav class="header__nav">
+                        <ul class="header__menu list-unstyled d-flex justify-content-end mb-0">
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link header__menu-link__menu-active">Home</a>
+                            </li>
+                            <li class="header__menu-item header__menu-item__has-megamenu">
+                                <a href="#" class="header__menu-link d-flex align-items-center">
+                                    Our Services
+                                    <i class="fa fa-chevron-down ms-2"></i>
+                                </a>
+                                
+                                <div class="header__mega-menu p-3">
+                                    <div class="row header__mega-menu__grid">
+                                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                            <p class="header__menu-category-title">VACCINATION</p>
+                                            <ul class="list-unstyled header__submenu-list">
+                                                <li><a href="#">Influenza</a></li>
+                                                
+                                                <li>
+                                                    <a href="#">
+                                                        COVID-19
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Moderna</a></li>
+                                                        <li><a href="#">Pfizer</a></li>
+                                                        <li><a href="#">Novavax</a></li>
+                                                    </ul>
+                                                </li>
+                                                
+                                                <li>
+                                                    <a href="#">
+                                                        Travel vaccination
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Sub-sub-item 1</a></li>
+                                                        <li><a href="#">Sub-sub-item 2</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                            <p class="header__menu-category-title">WOMEN'S HEALTH</p>
+                                            <ul class="list-unstyled header__submenu-list">
+                                                <li><a href="#">Urinary tract infection consult</a></li>
+                                                <li><a href="#">Oral contraception consult</a></li>
+                                                <li><a href="#">Emergency contraception</a></li>
+                                                <li><a href="#">Maternal health</a></li>
+                                                <li><a href="#">Bone density testing</a></li>
+                                                <li><a href="#">Low iron & anemia screening</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                            <p class="header__menu-category-title">EVERYDAY HEALTH</p>
+                                            <ul class="list-unstyled header__submenu-list">
+                                                <li><a href="#">Cholesterol testing</a></li>
+                                                <li><a href="#">Blood pressure monitoring</a></li>
+                                                <li><a href="#">Blood sugar testing</a></li>
+                                                <li><a href="#">Sleep apnoea help</a></li>
+                                                <li><a href="#">Weight management</a></li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        Asthma assistance
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Sub-sub-item 1</a></li>
+                                                        <li><a href="#">Sub-sub-item 2</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                            <p class="header__menu-category-title">SKIN & SPRAINS</p>
+                                            <ul class="list-unstyled header__submenu-list">
+                                                <li>
+                                                    <a href="#">
+                                                        Skin
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Sub-sub-item 1</a></li>
+                                                        <li><a href="#">Sub-sub-item 2</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li><a href="#">Wound care</a></li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        Aches and sprains
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Sub-sub-item 1</a></li>
+                                                        <li><a href="#">Sub-sub-item 2</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                            <p class="header__menu-category-title">ADDICTION</p>
+                                            <ul class="list-unstyled header__submenu-list">
+                                                <li>
+                                                    <a href="#">
+                                                        Needle and syringe
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Sub-sub-item 1</a></li>
+                                                        <li><a href="#">Sub-sub-item 2</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        Opioid dependency treatment
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Sub-sub-item 1</a></li>
+                                                        <li><a href="#">Sub-sub-item 2</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li><a href="#">Quit smoking</a></li>
+                                                <li><a href="#">Take home naloxone</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                            <p class="header__menu-category-title">MEDICINES MANAGEMENT</p>
+                                            <ul class="list-unstyled header__submenu-list">
+                                                <li>
+                                                    <a href="#">
+                                                        Compounding
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Sub-sub-item 1</a></li>
+                                                        <li><a href="#">Sub-sub-item 2</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li><a href="#">Dose administration aids</a></li>
+                                                <li><a href="#">Home meds review</a></li>
+                                                <li><a href="#">Staged supply</a></li>
+                                            </ul>
+                                        </div>
+                        
+                                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                            <p class="header__menu-category-title">DIABETES</p>
+                                            <ul class="list-unstyled header__submenu-list">
+                                                <li><a href="#">Needle and syringe</a></li>
+                                                <li><a href="#">Blood sugar testing</a></li>
+                                                <li><a href="#">MedsCheck service</a></li>
+                                                <li><a href="#">Diabetes management</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                            <p class="header__menu-category-title">OLDER AUSTRALIANS</p>
+                                            <ul class="list-unstyled header__submenu-list">
+                                                <li><a href="#">Bone density testing</a></li>
+                                                <li><a href="#">Dementia care</a></li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        Mobility
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Sub-sub-item 1</a></li>
+                                                        <li><a href="#">Sub-sub-item 2</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        Palliative
+                                                        <i class="fa-solid fa-circle-chevron-down"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="list-unstyled header__menu-third-level ms-2">
+                                                        <li><a href="#">Sub-sub-item 1</a></li>
+                                                        <li><a href="#">Sub-sub-item 2</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-xl-8 col-lg-12 col-md-4 col-sm-12">
+                                            <p class="header__menu-category-title">&hairsp;</p>
+                                            <div class="header__mega-menu__branding">
+                                                <img src="src/img/find-a-pharmacy-icon.png" alt="The Pharmacy Guild of Australia Icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">My Pharmacy</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">Latest Updates</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">About Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                
+                    <div class="header__actions d-flex align-items-center flex-row gap-3 mt-3 mt-lg-0">
+
+                        <button class="header__action-button button-yellow btn-with-backdrop btn btn-primary" data-bs-toggle="modal" data-bs-target="#fap-subscribe-modal">
+                            <i class="fa-solid fa-bell"></i>
+                                Subscribe
+                        </button>
+
+                        <button type="button" class="search btn btn-link" data-bs-toggle="modal" data-bs-target="#fap-search-modal">
+                            <i class="search-icon fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+    </header>
+
+    <!-- Breadscrumb Section -->
+    <section class="breadscrumb">
+
+        <div class="breadscrumb-hero">
+
+            <img src="src/img/breadscrumb-services.jpg" class="breadscrumb-hero__image" alt="Services of The Pharmacy Guild of Australia">
+
+            <div class="breadscrumb__container container">
+                <div class="row">
+                    
+                    <div class="breadscrumb__title-wrapper col-lg-12">
+
+                        <h1 class="breadscrumb__page-title">
+                            <span class="breadscrumb__sub-title">SEARCH RESULTS FOR</span>
+                            Title
+                        </h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="breadscrumb-nav">
+
+            <div class="breadscrumb-nav__container container">
+                <div class="row">
+                    <div class="breadscrumb-nav__wrapper col-lg-12">
+
+                        <a href="#" class="breadscrumb-nav__parents">
+                            <i class="fa-solid fa-house-medical"></i>
+                        </a>
+                        
+                        <span class="seperator">/</span>
+                        
+                        <a href="#" class="breadscrumb-nav__current-page">
+                            Search Results
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Search Results Section -->
+     <section class="search-results">
+        <div class="search-results-container container">
+            <div class="row">
+                <div class="search-results-column col-md-12 pt-5">
+                    <div class="search-results-wrapper">
+
+                        <div class="search-results__item">
+                            <img src="src/img/single-services-travel-vaccinations.jpg" alt="Search Results Thumbnail">
+
+                                <div class="search-results__content">
+
+                                    <h2 class="search-results__item-title">Title</h2>
+                                    
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+
+                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-primary">
+                                        More infor
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                        </div>
+
+                        <div class="search-results__item">
+                            <img src="src/img/my-pharmacy-services.jpg" alt="Search Results Thumbnail">
+
+                                <div class="search-results__content">
+
+                                    <h2 class="search-results__item-title">Title</h2>
+                                    
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+
+                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-primary">
+                                        More infor
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                        </div>
+
+                        <div class="search-results__item">
+                            <img src="src/img/services-older-australians.jpg" alt="Search Results Thumbnail">
+
+                                <div class="search-results__content">
+
+                                    <h2 class="search-results__item-title">Title</h2>
+                                    
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+
+                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-primary">
+                                        More infor
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                        </div>
+
+                        <div class="search-results__item">
+                            <img src="src/img/services-addiction.jpg" alt="Search Results Thumbnail">
+
+                                <div class="search-results__content">
+
+                                    <h2 class="search-results__item-title">Title</h2>
+                                    
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+
+                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-primary">
+                                        More infor
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                        </div>
+
+                        <div class="search-results__item">
+                            <img src="src/img/services-vaccination.jpg" alt="Search Results Thumbnail">
+
+                                <div class="search-results__content">
+
+                                    <h2 class="search-results__item-title">Title</h2>
+                                    
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+
+                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-primary">
+                                        More infor
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                        </div>
+
+                    </div>
+
+                    <div class="fap-pagination-wrapper">
+
+                        <nav aria-label="fap-pagination-nav">
+
+                            <ul class="fap-pagination pagination">
+                                <li class="fap-pagination__item page-item disabled">
+                                    <a class="fap-pagination__link fap-pagination__prev page-link">Previous</a>
+                                </li>
+
+                                <li class="fap-pagination__item page-item">
+                                    <a class="fap-pagination__link page-link" href="#">1</a>
+                                </li>
+
+                                <li class="fap-pagination__item page-item active" aria-current="page">
+                                    <a class="fap-pagination__link page-link" href="#">2</a>
+                                </li>
+
+                                <li class="fap-pagination__item page-item">
+                                    <a class="fap-pagination__link page-link" href="#">3</a>
+                                </li>
+
+                                <li class="fap-pagination__item page-item">
+                                    <a class="fap-pagination__link fap-pagination__next page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Common Footer -->
+    <footer class="footer">
+        <div class="footer__container container-fluid my-5 pt-4">
+
+            <div class="footer__logo-image text-center">
+                <a href="/" class="footer__logo-link">
+                    <img src="src/img/pga-logo.png" class="footer__logo-image" alt="The Pharmacy Guild of Australia Logo">
+                </a>
+            </div>
+
+            <div class="footer_copyright text-center p-4 p-md-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <h2 class="mb-3">For emergencies, please call: <a href="tel:000">000</a></h2>
+
+                            <p>The Pharmacy Guild of Australia acknowledges the Traditional Custodians of this nation's lands, waters, and skies. The Guild pays its respect to the Aboriginal and Torres Strait Islander people, their diverse languages, their cultural practices and recognise their continuing connection and contribution to the lands on which we work and live.</p>
+
+                            <p>All rights reserved | The Pharmacy Guild of Australia 2024 | <a href="#" target="_blank" rel="noopener noreferrer">About the Pharmacy Guild</a> | <a href="#" target="_blank" rel="noopener noreferrer">Privacy policy</a> | v.24april(0.3.4)</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal modal fade" id="fap-search-modal" tabindex="-1" aria-hidden="true">
+        <div class="search-modal__modal-dialog modal-dialog modal-fullscreen">
+            <div class="search-modal__modal-content header__modal-content modal-content">
+                <div class="search-modal__modal-body modal-body">
+                    <div class="search-modal__modal-form header__modal-form">
+                        <div class="container">
+                            <div class="row search-modal__modal-row header__modal-row align-items-center">
+                                <div class="col-lg-6">
+                                    <h2 class="search-modal__modal-title header__modal-title">What are you looking for?</h2>
+                                </div>
+                                
+                                <div class="col-lg-6">
+                                    <form action="/" id="fap-search-form">
+                                        <div class="search-modal__input-group modal-form__wrapper">
+                                        
+                                            <input type="search" class="search-modal__search-input search-input fap-input form-control" id="fap-service-input" placeholder="What are you looking for?">
+        
+                                            <button class="search-modal__search-btn button-blue btn-with-backdrop btn btn-primary">
+                                                Search
+                                            </button>
+
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="search-modal__btn-close header__btn-close btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe Modal -->
+    <div class="subscribe-modal modal fade" id="fap-subscribe-modal" tabindex="-1" aria-hidden="true">
+        <div class="subscribe-modal__modal-dialog modal-dialog modal-fullscreen">
+            <div class="subscribe-modal__modal-content header__modal-content modal-content">
+                <div class="subscribe-modal__modal-body modal-body">
+                    <div class="subscribe-modal__modal-form header__modal-form">
+                        <div class="container">
+                            <div class="row subscribe-modal__modal-row header__modal-row align-items-center">
+                                <div class="col-md-6">
+                                    <h2 class="header__modal-title">Looks like that service isn't available in your state.</h2>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="subscribe-modal__subscribe-actions header__modal-text">
+                                        <p>Subscribe for updates to be notified when this service becomes available in your state.</p>
+
+                                        <button class="notify-action header__modal-action button-yellow btn-with-backdrop btn btn-primary" data-bs-target="#fap-notify-modal" data-bs-toggle="modal">
+                                            <i class="fa-solid fa-bell"></i>
+                                                Notify me
+                                        </button>
+
+                                        <span class="subscribe-modal__action-seperator action-seperator">or</span>
+
+                                        <p>Send a Letter to your Member of Parliament to request that this service be made available in your area.</p>
+                    
+                                        <button class="letter-action header__modal-action button-yellow btn-with-backdrop btn btn-primary" data-bs-target="#fap-letter-send-modal" data-bs-toggle="modal">
+                                            <i class="fa-solid fa-envelope-open-text"></i>
+                                                Send a Letter to your MP
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="subscribe-modal__btn-close header__btn-close btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notify Me Modal -->
+    <div class="notify-modal modal fade" id="fap-notify-modal" tabindex="-1" aria-hidden="true">
+        <div class="notify-modal__modal-dialog modal-dialog modal-fullscreen">
+            <div class="notify-modal__modal-content header__modal-content modal-content">
+                <div class="notify-modal__modal-body header__modal-form modal-body">
+                    
+                    <div class="container">
+                        <div class="row notify-modal__modal-row header__modal-row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="header__modal-title">Looks like that service isn't available in your state.</h2>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="notify-modal__subscribe-actions header__modal-text">
+
+                                    <button class="notify-action__action-back header__modal-action button-yellow header__modal-back-action btn-with-backdrop btn btn-primary" data-bs-target="#fap-subscribe-modal" data-bs-toggle="modal">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                            Go Back
+                                    </button>
+
+                                    <form action="/" id="fap-notify-me-form">
+                                        <div class="notify-modal__input-group modal-form__wrapper">
+                                            <h3 class="modal-form__modal-title">Subscribe for updates</h3>
+                                        
+                                        
+                                            <input type="text" class="notify-modal__notify-name fap-input form-control" id="fap-notify-name" placeholder="Name">
+                                            
+                                            <input type="email" class="notify-modal__notify-email fap-input form-control" id="fap-notify-email" placeholder="Email">
+                                            
+                                            <input type="text" class="notify-modal__notify-postcode fap-input form-control" id="fap-notify-postcode" placeholder="Postcode">
+
+                                            <button type="button" class="notify-modal__btn-primary header__modal-action button-yellow btn-with-backdrop btn btn-primary">
+                                                <i class="fa-solid fa-bell"></i>
+                                                    Notify me
+                                            </button>
+                                        </div>
+                                    </form>
+                                    
+                                    <p>Subscribe for updates to be notified when this service becomes available in your state.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="notify-modal__btn-close header__btn-close btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Send A Letter Modal -->
+    <div class="letter-send-modal modal fade" id="fap-letter-send-modal" tabindex="-1" aria-hidden="true">
+        <div class="letter-send-modal__modal-dialog modal-dialog modal-fullscreen">
+            <div class="letter-send-modal__modal-content header__modal-content modal-content">
+                <div class="letter-send-modal__modal-body header__modal-form modal-body">
+                    
+                    <div class="container">
+                        <div class="row letter-send-modal__modal-row header__modal-row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="header__modal-title">Looks like that service isn't available in your state.</h2>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="letter-send-modal__letter-actions header__modal-text">
+
+                                    <button class="letter-send-action__action-back header__modal-action button-yellow header__modal-back-action btn-with-backdrop btn btn-primary" data-bs-target="#fap-subscribe-modal" data-bs-toggle="modal">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                            Go Back
+                                    </button>
+
+                                    <img src="src/img/icon-letter.svg" alt="Send a Letter">
+
+                                    <h3 class="header__modal-sub-title">Send a Letter to your Member of Parliament to request that this service be made available in your area.</h3>
+
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="letter-send-modal__letter-actions">
+                                    <form action="/" id="fap-notify-me-form">
+                                        <div class="letter-send-modal__input-group modal-form__wrapper">
+                                            <h3 class="modal-form__modal-title">Send a Letter</h3>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+                                        
+                                            <div class="row g-2 header__modal-form-row">
+                                                <div class="col-lg-12 fap-textara-wrapper">
+<textarea class="letter-send-modal__letter-title fap-input form-control" id="fap-letter-title" rows="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</textarea>
+                                                </div>
+                                                
+                                                <div class="col-lg-12 fap-textara-wrapper">
+<textarea class="letter-send-modal__letter-body fap-input form-control" id="fap-letter-body" rows="9">Dear Premier Minns,
+
+I am writing as a concerned construction industry participant in New South Wales to express my deep concerns regarding the new CFMEU Enterprise Bargaining Agreement (EBA) and its implications for the construction industry in our State.
+
+This Agreement, in its current form, poses significant challenges that warrant your immediate attention and action.
+
+As you are no doubt aware, we have seen in the media the level of union control on some building sites and this EBA will just make things worse.
+
+The new CFMEU EBA places builders and subcontractors under increased union control, significantly limiting their autonomy and decision-making power on projects.
+
+The union will gain greater influence over who can work on projects, freezing out non-union subcontractors and imposing penalties for the use of legitimate independent contractors.
+
+Businesses and workers in NSW must have their freedom of association principles protected.
+
+The cost of this EBA on construction projects is severe with independent modelling showing at least a 20 per cent increase.
+
+In the middle of a cost of living and housing crisis, these costs have no productivity offsets and will drive some businesses to the wall.
+
+Builders and subcontractors continue to face pressure to sign this pattern EBA with some feeling they have no other option. Enough is enough.
+
+We respectfully request your intervention to address these critical issues and to ensure that the construction industry in New South Wales remains fair, competitive, and sustainable.
+
+Your leadership on this matter is crucial to protect the viability of the building and construction industry to deliver safe and cost-effective infrastructure and housing in NSW.
+
+Thank you for your attention to this urgent matter. We look forward to your prompt action and support.
+
+Yours sincerely,
+[YOUR_NAME]
+[POST_CODE]</textarea>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <input type="text" class="letter-modal__letter-first-name fap-input form-control" id="fap-letter-first-name" placeholder="First Name">
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <input type="text" class="letter-modal__letter-last-name fap-input form-control" id="fap-letter-last-name" placeholder="Last Name">
+                                                </div>
+
+                                                <div class="col-lg-12">
+                                                    <input type="email" class="letter-send-modal__letter-email fap-input form-control" id="fap-letter-email" placeholder="Email">
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <input type="text" class="letter-modal__letter-phone fap-input form-control" id="fap-letter-phone" placeholder="Phone">
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <input type="text" class="letter-modal__letter-postcode fap-input form-control" id="fap-letter-postcode" placeholder="Postcode">
+                                                </div>
+                                            </div>
+
+                                            <button type="button" class="letter-send-modal__btn-primary header__modal-action button-yellow btn-with-backdrop btn btn-primary my-3">
+                                                <i class="fa-solid fa-envelope"></i>
+                                                    Send this Letter to your MP
+                                            </button>
+
+                                            <p class="small text-center">By registering, I agree to The Pharmacy Guild of Australia's <a href="#">Privacy Policy</a> & <a href="#">Data Collection Statement</a>.</p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="letter-send-modal__btn-close header__btn-close btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

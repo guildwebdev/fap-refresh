@@ -1,17 +1,17 @@
 .trending-topics__column .trending-topics__wrapper {
     color: rgb(var(--clr--white));
-    width: 80%;
-    padding: 25px;
+    width: calc(var(--width--full) * .9);
+    padding: 25px 40px;
     margin: 0 auto -80px;
     background: rgba(var(--clr--blue),.85);
     box-shadow: 0px 20px 30px rgba(var(--clr--black), 0.15);
-    backdrop-filter: blur(37px);
-    -webkit-backdrop-filter: blur(37px);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
     display: flex;
     align-items: center;
     gap: 40px;
@@ -28,7 +28,7 @@
 }
 
 .trending-topics__column .trending-topics__title-wrapper .trending-topics__description {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -48,7 +48,7 @@
 .trending-topics__column .trending-topics__trending-icon-items {
     color: rgb(var(--clr--white));
     text-align: center;
-    width: calc(calc(100% / 5) - 15px);
+    width: calc((var(--width--full) / 5) - 15px);
 }
 
 .trending-topics__column .trending-topics__trending-icon-items .trending-topics__trending-icons {
@@ -57,16 +57,16 @@
     padding: 10px;
     margin-bottom: 10px;
     background-color: rgb(var(--clr--white));
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    box-shadow: rgba(var(--clr--blue), 0.15);
+    border-radius: calc(var(--bdr--radius) * 1.5);
+    -webkit-border-radius: calc(var(--bdr--radius) * 1.5);
+    -moz-border-radius: calc(var(--bdr--radius) * 1.5);
+    -ms-border-radius: calc(var(--bdr--radius) * 1.5);
+    -o-border-radius: calc(var(--bdr--radius) * 1.5);
+    box-shadow: var(--box--shadow) rgba(var(--clr--blue), 0.15);
 }
 
 .trending-topics__column .trending-topics__trending-icon-items:hover .trending-topics__trending-icons {
-    background-color: rgb(var(--clr--lightblue));
+    background-color: rgb(var(--clr--yellow));
 }
 
 .trending-topics__column .trending-topics__trending-icon-items .trending-topics__trending-icon-text {
@@ -75,5 +75,5 @@
 }
 
 .trending-topics__column .trending-topics__trending-icon-items:hover .trending-topics__trending-icon-text {
-    color: rgb(var(--clr--lightblue));
+    color: rgb(var(--clr--yellow));
 }

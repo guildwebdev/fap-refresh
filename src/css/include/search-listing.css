@@ -7,26 +7,31 @@
     padding-inline: 8%;
     padding-bottom: 45px;
     max-height: 700px;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
 .pharmacy-map__result-single-item {
     background: rgb(var(--clr--white));
-    padding: 20px;
+    padding: 35px;
     margin-bottom: 25px;
     cursor: pointer;
-    box-shadow: 0px 10px 30px rgba(var(--clr--blue), 0.1);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    box-shadow: var(--box--shadow) rgba(var(--clr--blue), 0.1);
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
     display: flex;
     gap: 15px;
 }
 
 .pharmacy-map__result-single-item:hover {
     background-color: rgb(var(--clr--lightyellow));
+}
+
+.single-service-map .pharmacy-map__result-single-item:hover {
+    background-color: rgba(var(--clr--lightblue), .2);
 }
 
 .pharmacy-map__pharmacy-icon img {
@@ -78,11 +83,11 @@ span.open-status__schedule-time {
     z-index: 99;
     background-color: rgb(var(--clr--lightyellow));
     box-shadow: 0px 8px 16px 0px rgba(var(--clr--black), 0.2);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: var(--bdr--radius);
+    -webkit-border-radius: var(--bdr--radius);
+    -moz-border-radius: var(--bdr--radius);
+    -ms-border-radius: var(--bdr--radius);
+    -o-border-radius: var(--bdr--radius);
 }
 
 .open-status__schedule.active {
@@ -103,7 +108,7 @@ span.open-status__schedule-time {
 
 .pharmacy-map__search-actions button.btn {
     min-width: unset;
-    width: 100%;
+    width: var(--width--full);
 }
 
 .search-actions-two-buttons {
@@ -133,9 +138,9 @@ span.open-status__schedule-time {
     text-align: center;
     line-height: 50px;
     box-shadow: 0px 10px 20px rgba(var(--clr--black), 0.149);
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    border-radius: calc(var(--bdr--radius) * 1.5);
+    -webkit-border-radius: calc(var(--bdr--radius) * 1.5);
+    -moz-border-radius: calc(var(--bdr--radius) * 1.5);
+    -ms-border-radius: calc(var(--bdr--radius) * 1.5);
+    -o-border-radius: calc(var(--bdr--radius) * 1.5);
 }

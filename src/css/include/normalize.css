@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+.owl-stage .owl-item {
+    padding: 15px;
+}
+
 [class*="owl-"] .disabled {
     display: none;
 }
@@ -30,11 +34,11 @@
     padding: 0;
     background-color: rgb(var(--clr--yellow));
     border: 0;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    border-radius: var(--bdr--radius--round);
+    -webkit-border-radius: var(--bdr--radius--round);
+    -moz-border-radius: var(--bdr--radius--round);
+    -ms-border-radius: var(--bdr--radius--round);
+    -o-border-radius: var(--bdr--radius--round);
 }
 
 .our-services-wrapper .owl-nav button.owl-prev,

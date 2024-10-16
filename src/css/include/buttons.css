@@ -6,7 +6,7 @@ button.btn.button-yellow {
     color: rgb(var(--clr--white));
     background-color: rgb(var(--clr--lightblue));
     text-align: center;
-    min-width: 330px;
+    min-width: 430px;
 }
 
 button.btn.button-blue {
@@ -24,6 +24,7 @@ button.btn.button-lightblue {
 button.button-yellow,
 button.button-blue,
 button.button-lightblue {
+    font-weight: 500;
     text-align: left;
     border: 0;
     appearance: none;
@@ -39,12 +40,12 @@ button.button-lightblue {
     -moz-transition: 300ms ease-out;
     -ms-transition: 300ms ease-out;
     -o-transition: 300ms ease-out;
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    box-shadow: 0px 10px 30px rgba(var(--clr--blue), 0.15);
+    border-radius: calc(var(--bdr--radius) * 6);
+    -webkit-border-radius: calc(var(--bdr--radius) * 6);
+    -moz-border-radius: calc(var(--bdr--radius) * 6);
+    -ms-border-radius: calc(var(--bdr--radius) * 6);
+    -o-border-radius: calc(var(--bdr--radius) * 6);
+    box-shadow: var(--box--shadow) rgba(var(--clr--blue), 0.15);
     box-sizing: border-box;
     padding: 0;
 }
@@ -58,32 +59,36 @@ button.button-lightblue > .backdrop {
     -moz-transition: 300ms ease-out;
     -ms-transition: 300ms ease-out;
     -o-transition: 300ms ease-out;
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
+    border-radius: calc(var(--bdr--radius) * 6);
+    -webkit-border-radius: calc(var(--bdr--radius) * 6);
+    -moz-border-radius: calc(var(--bdr--radius) * 6);
+    -ms-border-radius: calc(var(--bdr--radius) * 6);
+    -o-border-radius: calc(var(--bdr--radius) * 6);
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 12px 30px;
+    padding: 12px 20px;
+}
+
+button.button-lightblue > .backdrop {
+    font-weight: 600;
 }
 
 button.btn-with-backdrop > .overlay {
     color: rgb(var(--clr--blue));
     height: 100%;
     background-color: rgb(var(--clr--yellow));
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
+    border-radius: calc(var(--bdr--radius) * 6);
+    -webkit-border-radius: calc(var(--bdr--radius) * 6);
+    -moz-border-radius: calc(var(--bdr--radius) * 6);
+    -ms-border-radius: calc(var(--bdr--radius) * 6);
+    -o-border-radius: calc(var(--bdr--radius) * 6);
 }
 
 button.button-yellow > .overlay,
 button.button-blue > .overlay,
 button.button-lightblue > .overlay {
-    padding: 12px 30px;
+    padding: 12px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,6 +108,10 @@ button.button-lightblue > .overlay {
     -o-transition: 300ms ease-out;
 }
 
+button.button-yellow > .overlay {
+    font-weight: 700;
+}
+
 button.btn-with-backdrop:is(:hover, :focus),
 button.button-blue:is(:hover, :focus),
 button.button-lightblue:is(:hover, :focus) {
@@ -116,16 +125,16 @@ button.button-lightblue:is(:hover, :focus) {
 button.btn-with-backdrop:is(:hover, :focus) > .overlay,
 button.button-blue:is(:hover, :focus) > .overlay,
 button.button-lightblue:is(:hover, :focus) > .overlay {
-    transform: translateY(calc(100% + 1px));
-    -webkit-transform: translateY(calc(100% + 1px));
-    -moz-transform: translateY(calc(100% + 1px));
-    -ms-transform: translateY(calc(100% + 1px));
-    -o-transform: translateY(calc(100% + 1px));
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
+    transform: translateY(calc(var(--width--full) + 1px));
+    -webkit-transform: translateY(calc(var(--width--full) + 1px));
+    -moz-transform: translateY(calc(var(--width--full) + 1px));
+    -ms-transform: translateY(calc(var(--width--full) + 1px));
+    -o-transform: translateY(calc(var(--width--full) + 1px));
+    border-radius: calc(var(--bdr--radius) * 6);
+    -webkit-border-radius: calc(var(--bdr--radius) * 6);
+    -moz-border-radius: calc(var(--bdr--radius) * 6);
+    -ms-border-radius: calc(var(--bdr--radius) * 6);
+    -o-border-radius: calc(var(--bdr--radius) * 6);
 }
 
 button.btn.header__modal-back-action {
@@ -166,14 +175,13 @@ button.button-lightblue img {
 
 button.btn.header__action-button {
     min-width: fit-content;
-    font-weight: 700;
     border: 0;
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    box-shadow: 0px 10px 30px rgba(var(--clr--blue), 0.15);
+    border-radius: calc(var(--bdr--radius) * 6);
+    -webkit-border-radius: calc(var(--bdr--radius) * 6);
+    -moz-border-radius: calc(var(--bdr--radius) * 6);
+    -ms-border-radius: calc(var(--bdr--radius) * 6);
+    -o-border-radius: calc(var(--bdr--radius) * 6);
+    box-shadow: var(--box--shadow) rgba(var(--clr--blue), 0.15);
 }
 
 .hero-banner-search-btn > .backdrop,
@@ -199,31 +207,108 @@ button.btn.pharmacy-map-search-btn {
 }
 
 form#fap-second-search button.btn.pharmacy-map-search-btn {
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
+    border-radius: calc(var(--bdr--radius) * 6);
+    -webkit-border-radius: calc(var(--bdr--radius) * 6);
+    -moz-border-radius: calc(var(--bdr--radius) * 6);
+    -ms-border-radius: calc(var(--bdr--radius) * 6);
+    -o-border-radius: calc(var(--bdr--radius) * 6);
+}
+
+form#fap-second-search button.btn.pharmacy-map-search-btn i.fa-arrow-right {
+    font-size: 30px;
 }
 
 .fap-map-popup__actions button.btn {
     min-width: fit-content;
-    width: 50%;
+    width: calc(var(--width--full) * .5);
 }
 
 button.btn.our-services_for-more-info {
-    min-width: fit-content;
+    min-width: 170px;
     margin-left: auto;
 }
 
-button.our-services__actions {
-    min-width: fit-content;
+button.our-services__actions > .backdrop,
+button.btn.our-services_for-more-info > .backdrop {
+    width: var(--width--full);
+    justify-content: space-between;
+}
+
+button.our-services__actions > .overlay,
+button.btn.our-services_for-more-info > .overlay {
+    justify-content: space-between;
 }
 
 button.hero-banner-search-btn > .overlay {
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
+    border-radius: calc(var(--bdr--radius) * 6);
+    -webkit-border-radius: calc(var(--bdr--radius) * 6);
+    -moz-border-radius: calc(var(--bdr--radius) * 6);
+    -ms-border-radius: calc(var(--bdr--radius) * 6);
+    -o-border-radius: calc(var(--bdr--radius) * 6);
+}
+
+button.btn.signup-services-btn,
+button.btn.subscribe-services-btn {
+    min-width: 200px;
+    margin-inline: auto;
+}
+
+button.btn.find-a-pharmacy-btn {
+    font-size: 21px;
+    min-width: 310px !important;
+}
+
+button.btn.find-a-pharmacy-btn > .backdrop {
+    padding: 12px 20px !important;
+    gap: 20px !important;
+}
+
+button.btn.find-a-pharmacy-btn > .overlay {
+    min-width: var(--width--full) !important;
+    padding: 12px 20px !important;
+    gap: 20px !important;
+}
+
+button.btn.find-a-pharmacy-btn i.fa-arrow-right {
+    font-size: 30px;
+}
+
+button.btn.latest-updates__actions {
+    width: 300px;
+}
+
+button.btn.latest-updates__actions i.fa-arrow-right {
+    font-size: 30px;
+}
+
+button.btn.hero-banner-ad__ad-actions {
+    width: 100%;
+}
+
+button.btn.my-pharmacy-services-btn {
+    width: 200px;
+    margin-left: auto;
+}
+
+button.btn.search-results-btn {
+    width: 210px;
+}
+
+button.btn.services__actions {
+    width: 180px;
+}
+
+button.btn.search-results-btn > .backdrop,
+button.btn.services__actions > .backdrop,
+button.btn.my-pharmacy-services-btn > .backdrop,
+button.btn.latest-updates__actions > .backdrop {
+    width: var(--width--full);
+    justify-content: space-between;
+}
+
+button.btn.search-results-btn > .overlay,
+button.btn.services__actions > .overlay,
+button.btn.my-pharmacy-services-btn > .overlay,
+button.btn.latest-updates__actions > .overlay {
+    justify-content: space-between;
 }

@@ -1,0 +1,14 @@
+.subscribe__wrapper {
+    background: rgb(var(--clr--lightyellow)) url(../../img/pattern-news-background.svg) 0 0;
+    background-size: 400px;
+    padding: 50px;
+    border-radius: calc(var(--bdr--radius)* 3);
+    -webkit-border-radius: calc(var(--bdr--radius)* 3);
+    -moz-border-radius: calc(var(--bdr--radius)* 3);
+    -ms-border-radius: calc(var(--bdr--radius)* 3);
+    -o-border-radius: calc(var(--bdr--radius)* 3);
+}
+
+.subscribe__form-wrapper {
+    margin: 0 auto;
+}

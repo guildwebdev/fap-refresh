@@ -1,0 +1,113 @@
+.breadscrumb.colored-breadcrumb {
+    background-color: rgb(255, 249, 233);
+}
+
+.breadscrumb {
+    margin-top: -30px;
+}
+
+.breadscrumb-hero {
+    height: 550px;
+    width: var(--width--full);
+    padding-top: 30px;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: end;
+}
+
+.colored-breadcrumb .breadscrumb-hero {
+    height: 450px;
+    background-color: rgb(255, 238, 192);
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
+}
+
+.breadscrumb-hero:after {
+    content: "";
+    width: var(--width--full);
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: transparent linear-gradient(180deg, rgba(var(--clr--lightblue), 0) 0%, rgb(var(--clr--blue)) 100%);
+    opacity: 0.6;
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
+}
+
+.colored-breadcrumb .breadscrumb-hero:after {
+    display: none;
+}
+
+.breadscrumb-hero .breadscrumb-hero__image {
+    width: var(--width--full);
+    height: 100%;
+    object-position: 0 0;
+    object-fit: cover;
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.breadscrumb .breadscrumb__container {
+    padding: 35px 10px;
+    position: relative;
+    z-index: 99;
+}
+
+.breadscrumb .breadscrumb__container .breadscrumb__title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.breadscrumb .breadscrumb__container .breadscrumb__title-wrapper .breadscrumb__page-title,
+.breadscrumb .breadscrumb__container .breadscrumb__title-wrapper .breadscrumb__description {
+    width: calc(var(--width--full) * .5);
+}
+
+.breadscrumb .breadscrumb__container .breadscrumb__page-title {
+    color: rgb(var(--clr--white));
+}
+
+.breadscrumb .breadscrumb__container .breadscrumb__page-title span.breadscrumb__sub-title {
+    display: block;
+    font-size: 18px;
+}
+
+.colored-breadcrumb  .breadscrumb__container .breadscrumb__page-title {
+    color: rgb(var(--clr--blue));
+}
+
+.breadscrumb .breadscrumb__container .breadscrumb__title-wrapper .breadscrumb__description {
+    font-weight: 600;
+}
+
+.breadscrumb-nav .breadscrumb-nav__wrapper {
+    font-size: 18px;
+    padding-block: 15px;
+}
+
+.breadscrumb-nav .breadscrumb-nav__parents {
+    color: rgb(var(--clr--blue));
+}
+
+.breadscrumb-nav .breadscrumb-nav__current-page {
+    pointer-events: none;
+}
+
+.breadscrumb-nav .breadscrumb-nav__parents:hover {
+    color: rgb(var(--clr--yellow));
+}

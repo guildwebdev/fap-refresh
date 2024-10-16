@@ -65,12 +65,9 @@ function toggleMegaMenu() {
     }
 }
 
-// Call the function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', toggleMegaMenu);
 
-// Re-run the function if the window is resized
 window.addEventListener('resize', toggleMegaMenu);
-
 
 // ----- Mobile Menu ----- //
 $(document).ready(function() {
@@ -164,68 +161,71 @@ function selectOption(element) {
     document.getElementById('fap-dropdown-list').classList.remove('show');
 }
 
-document.addEventListener('click', function(e) {
+document.addEventListener('DOMContentLoaded', function() {
     const dropdown = document.getElementById('fap-dropdown-list');
     const searchInput = document.getElementById('fap-search-service');
-    
-    if (!searchInput.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.classList.remove('show');
+
+    if (dropdown && searchInput) {
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
     }
 });
 
 // ----- Hero Section Ad ----- //
-var targetElement = document.querySelector('.hero-banner-ad__ad-toggle');
-if (targetElement) {
-    targetElement.addEventListener('click', function() {
+var heroAdElement = document.querySelector('.hero-banner-ad__ad-toggle');
 
-        document.querySelector('.hero-banner-ad__ad-toggle').addEventListener('click', function() {
-            const parentElement = this.parentElement;
+if (heroAdElement) {
+    heroAdElement.addEventListener('click', function() {
 
-            const targetElement = parentElement.nextElementSibling;
+        const parentElement = this.parentElement;
 
-            if (targetElement && targetElement.classList.contains('hero-banner-ad__ad-wrapper')) {
-                const isMobile = window.matchMedia("(max-width: 991px)").matches;
+        const heroAdElement = parentElement.nextElementSibling;
 
-                if (isMobile) {
-                    if (targetElement.style.maxHeight === '0px' || targetElement.style.maxHeight === '') {
-                        targetElement.classList.remove('fade-out');
-                        targetElement.style.maxHeight = '400px';
-                        setTimeout(() => {
-                            targetElement.style.opacity = '1';
-                        }, 10);
-                        parentElement.classList.add('ad-active');
-                    } else {
-                        targetElement.style.maxHeight = '400px';
-                        setTimeout(() => {
-                            targetElement.style.maxHeight = '0';
-                            targetElement.classList.add('fade-out');
-                        }, 10);
-                        parentElement.classList.remove('ad-active');
-                    }
+        if (heroAdElement && heroAdElement.classList.contains('hero-banner-ad__ad-wrapper')) {
+            const isMobile = window.matchMedia("(max-width: 991px)").matches;
+
+            if (isMobile) {
+                if (heroAdElement.style.maxHeight === '0px' || heroAdElement.style.maxHeight === '') {
+                    heroAdElement.classList.remove('fade-out');
+                    heroAdElement.style.maxHeight = '400px';
+                    setTimeout(() => {
+                        heroAdElement.style.opacity = '1';
+                    }, 10);
+                    parentElement.classList.add('ad-active');
                 } else {
-                    if (!targetElement.classList.contains('fade-out')) {
-                        targetElement.style.maxHeight = targetElement.scrollHeight + 'px';
-                        setTimeout(() => {
-                            targetElement.style.maxHeight = '0';
-                            targetElement.classList.add('fade-out');
-                        }, 10);
-                        parentElement.classList.remove('ad-active');
-                    } else {
-                        targetElement.classList.remove('fade-out');
-                        targetElement.style.maxHeight = '0';
-                        setTimeout(() => {
-                            targetElement.style.maxHeight = targetElement.scrollHeight + 'px';
-                        }, 10);
-                        parentElement.classList.add('ad-active');
+                    heroAdElement.style.maxHeight = '400px';
+                    setTimeout(() => {
+                        heroAdElement.style.maxHeight = '0';
+                        heroAdElement.classList.add('fade-out');
+                    }, 10);
+                    parentElement.classList.remove('ad-active');
+                }
+            } else {
+                if (!heroAdElement.classList.contains('fade-out')) {
+                    heroAdElement.style.maxHeight = heroAdElement.scrollHeight + 'px';
+                    setTimeout(() => {
+                        heroAdElement.style.maxHeight = '0';
+                        heroAdElement.classList.add('fade-out');
+                    }, 10);
+                    parentElement.classList.remove('ad-active');
+                } else {
+                    heroAdElement.classList.remove('fade-out');
+                    heroAdElement.style.maxHeight = '0';
+                    setTimeout(() => {
+                        heroAdElement.style.maxHeight = heroAdElement.scrollHeight + 'px';
+                    }, 10);
+                    parentElement.classList.add('ad-active');
 
-                        targetElement.addEventListener('transitionend', function handleTransition() {
-                            targetElement.style.maxHeight = null;
-                            targetElement.removeEventListener('transitionend', handleTransition);
-                        });
-                    }
+                    heroAdElement.addEventListener('transitionend', function handleTransition() {
+                        heroAdElement.style.maxHeight = null;
+                        heroAdElement.removeEventListener('transitionend', handleTransition);
+                    });
                 }
             }
-        });
+        }
 
     });
 }
@@ -277,12 +277,16 @@ function searchselectOption(element) {
     document.getElementById('search-dropdown-list').classList.remove('show');
 }
 
-document.addEventListener('click', function(e) {
+document.addEventListener('DOMContentLoaded', function() {
     const dropdown = document.getElementById('search-dropdown-list');
     const searchInput = document.getElementById('search-service-2');
-    
-    if (!searchInput.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.classList.remove('show');
+
+    if (dropdown && searchInput) {
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
     }
 });
 
@@ -323,23 +327,21 @@ document.querySelectorAll('.map-to-list-toggle').forEach(function(toggle) {
 });
 
 // ----- Map Search Toggle - Mobile ----- //
-document.querySelector('.pharmacy-map__search-wrapper-toggle').addEventListener('click', function() {
-    const targetElement = this.closest('.pharmacy-map__search-panel');
+var mapSearchWrapperToggle = document.querySelector('.pharmacy-map__search-wrapper-toggle');
 
-    if (targetElement) {
-        targetElement.classList.toggle('display-none');
-    }
-});
+if (mapSearchWrapperToggle) {
+    mapSearchWrapperToggle.addEventListener('click', function() {
 
-// ----- Search List Filter ----- //
-document.querySelector('.pharmacy-map__search-wrapper-toggle').addEventListener('click', function() {
-    const targetElement = this.closest('.pharmacy-map__search-wrapper');
+        const mapSearchPanel = this.closest('.pharmacy-map__search-wrapper');
 
-    if (targetElement) {
-        targetElement.classList.toggle('filter-closed');
-        targetElement.classList.toggle('filter-opened');
-    }
-});
+        if (mapSearchPanel) {
+            mapSearchPanel.classList.toggle('display-none');
+            mapSearchPanel.classList.toggle('filter-closed');
+            mapSearchPanel.classList.toggle('filter-opened');
+        }
+
+    });
+}
 
 // ----- Search list Schedule ----- //
 const parentElements = document.querySelectorAll('.open-status');
@@ -364,7 +366,6 @@ parentElements.forEach(function(parent) {
 $(".our-services-wrapper").owlCarousel({
     loop: true,
     autoplay: false,
-    margin: 20,
     items: 4,
     nav: true,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
@@ -376,13 +377,13 @@ $(".our-services-wrapper").owlCarousel({
             nav: true,
             dots: false,
         },
-        600: {
+        768: {
             loop: true,
             items: 2,
             nav: true,
             dots: false,
         },
-        900: {
+        1024: {
             loop: true,
             items: 4,
             nav: true,
@@ -395,7 +396,6 @@ $(".our-services-wrapper").owlCarousel({
 $(".latest-updates__news-wrapper").owlCarousel({
     loop: false,
     autoplay: false,
-    margin: 20,
     items: 3,
     nav: false,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
@@ -407,17 +407,26 @@ $(".latest-updates__news-wrapper").owlCarousel({
             nav: true,
             dots: false,
         },
-        600: {
+        768: {
             loop: true,
             items: 2,
             nav: true,
             dots: false,
         },
-        900: {
+        1024: {
             loop: false,
             items: 3,
             nav: false,
             dots: false,
         },
     }
+});
+
+// ----- Disable Up and Down Arrow Keys for input[type="number"] ----- //
+document.querySelectorAll('input[type="number"]').forEach(input => {
+    input.addEventListener('keydown', function(e) {
+        if (e.keyCode === 38 || e.keyCode === 40) {
+            e.preventDefault();
+        }
+    });
 });

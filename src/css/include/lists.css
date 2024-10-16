@@ -1,0 +1,35 @@
+ul.list-icon-hospital {
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list-icon-hospital li {
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ul.list-icon-hospital li:before {
+    content: "\e3b2";
+    font-family: var(--font--fontawesome);
+    font-size: 14px;
+    font-weight: 900;
+    color: rgb(var(--clr--lightblue));
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+
+ul.list-icon-hospital.blue-icons li:before {
+    color: rgb(var(--clr--blue));
+}
+
+ul.list-icon-hospital.yellow-icons li:before {
+    color: rgb(var(--clr--yellow));
+}
+
+ul.list-icon-hospital.lightyellow-icons li:before {
+    color: rgb(var(--clr--lightyellow));
+}

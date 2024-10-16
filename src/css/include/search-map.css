@@ -4,12 +4,12 @@
 }
 
 .pharmacy-map__scroller-in-map {
-    width: 500px;
-    padding: 0 10px;
+    width: 550px;
+    padding: 0 20px;
 }
 
 .pharmacy-map__scroller-in-map .pharmacy-map__pharmacy-details {
-    width: calc(100% - 65px);
+    width: calc(var(--width--full) - 65px);
 }
 
 .pharmacy-map__scroller-in-map .pharmacy-map__pharmacy-details .pharmacy-map__rating {
@@ -34,7 +34,7 @@ span.pharmacy-map__details-direction-icon {
 }
 
 .pharmacy-map__scroller-in-map .pharmacy-map__search-actions {
-    width: 100%;
+    width: var(--width--full);
 }
 
 .pharmacy-map__scroller-in-map .pharmacy-map__search-actions button {
@@ -48,7 +48,7 @@ span.pharmacy-map__details-direction-icon {
 .pharmacy-map__search-result-filter {
     background-color: rgb(var(--clr--white));
     padding: 10px;
-    width: 100% + 20px;
+    width: calc(var(--width--full) + 20px);
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
@@ -57,23 +57,30 @@ span.pharmacy-map__details-direction-icon {
     z-index: 99;
 }
 
+.single-service-map .pharmacy-map__search-result-filter {
+    background-color: rgb(255, 249, 233);
+}
+
 .pharmacy-map__search-result-filter span.map-to-list-toggle {
+    font-size: 21px;
+    line-height: 1;
     position: unset;
-    width: 55px;
+    padding: 17px;
+    width: 60px;
     text-align: center;
     background: rgb(var(--clr--blue));
     color: rgb(var(--clr--white));
 }
 
 #fap-map {
-    width: calc(100% - 300px);
+    width: calc(var(--width--full) - 300px);
     height: 700px;
-    background-color: rgb(var(--clr--blue), 0.05);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    background-color: rgb(240, 240, 240);
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
 }
 
 /* Map Popup */
@@ -84,11 +91,11 @@ span.pharmacy-map__details-direction-icon {
     border: 1px solid rgba(var(--clr--white));
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
     position: relative;
 }
 
@@ -109,11 +116,11 @@ span.pharmacy-map__details-direction-icon {
 }
 
 .fap-map-popup .fap-map-popup__single-pharmacy {
-    width: calc(100% - 65px);
+    width: calc(var(--width--full) - 65px);
 }
 
 .fap-map-popup .fap-map-popup__more-actions {
-    width: 100%;
+    width: var(--width--full);
 }
 
 .fap-map-popup .fap-map-popup__specialities {

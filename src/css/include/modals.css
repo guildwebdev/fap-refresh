@@ -17,12 +17,16 @@ button.header__btn-close {
     width: 50px;
     height: 50px;
     background: rgba(var(--clr--white), .15);
-    box-shadow: 0px 10px 30px rgba(var(--clr--blue), .15);
-    border-radius: 15px;
+    box-shadow: var(--box--shadow) rgba(var(--clr--blue), .15);
     position: absolute;
     top: 30px;
     right: 30px;
     opacity: 1;
+    border-radius: calc(var(--bdr--radius) * 1.5);
+    -webkit-border-radius: calc(var(--bdr--radius) * 1.5);
+    -moz-border-radius: calc(var(--bdr--radius) * 1.5);
+    -ms-border-radius: calc(var(--bdr--radius) * 1.5);
+    -o-border-radius: calc(var(--bdr--radius) * 1.5);
 }
 
 .header__modal-row {
@@ -52,16 +56,16 @@ button.header__btn-close {
 }
 
 .modal-form__wrapper {
-    width: 100%;
+    width: var(--width--full);
     padding: 25px;
     background: rgba(var(--clr--white), .85);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: calc(var(--bdr--radius) * 2);
+    -webkit-border-radius: calc(var(--bdr--radius) * 2);
+    -moz-border-radius: calc(var(--bdr--radius) * 2);
+    -ms-border-radius: calc(var(--bdr--radius) * 2);
+    -o-border-radius: calc(var(--bdr--radius) * 2);
     display: flex;
     align-items: center;
     gap: 15px;
@@ -72,6 +76,7 @@ button.header__btn-close {
 }
 
 .search-modal__input-group button.btn {
+    font-size: 20px;
     margin-left: -45px;
 }
 
@@ -92,7 +97,7 @@ button.search {
     display: block;
     margin: 35px 0;
     position: relative;
-    max-width: 100%;
+    max-width: var(--width--full);
 }
 
 .hero-banner-search__action-seperator {
@@ -104,16 +109,16 @@ button.search {
 .action-seperator:before,
 .action-seperator:after {
     content: "";
-    width: calc(calc(100% / 2) - 30px);
+    width: calc((var(--width--full) / 2) - 30px);
     height: 1px;
     background-color: rgb(var(--clr--white));
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -o-transform: translate(0, -50%);
+    top: calc(var(--width--full) * .5);
+    transform: translate(0, calc(var(--width--full) * .5));
+    -webkit-transform: translate(0, calc(var(--width--full) * .5));
+    -moz-transform: translate(0, calc(var(--width--full) * .5));
+    -ms-transform: translate(0, calc(var(--width--full) * .5));
+    -o-transform: translate(0, calc(var(--width--full) * .5));
 }
 
 .hero-banner-search__action-seperator:before,
@@ -162,5 +167,5 @@ button.notify-modal__btn-primary {
 }
 
 .header__modal-form-row {
-    width: 100%;
+    width: var(--width--full);
 }

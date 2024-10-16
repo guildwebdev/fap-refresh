@@ -3,16 +3,16 @@
 }
 
 .search-dropdown {
-    width: 50%;
+    width: calc(var(--width--full) * .5);
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: calc(var(--width--full) * .5);
     z-index: 99;
 }
 
 .pharmacy-map__search-panel .search-dropdown {
-    width: 35%;
-    left: 38%;
+    width: 40%;
+    left: calc((var(--width--full) / 3) + 9%);
 }
 
 .search-dropdown-content {
@@ -23,11 +23,11 @@
     max-height: 400px;
     overflow-y: auto;
     box-shadow: 0px 8px 16px 0px rgba(var(--clr--black), 0.2);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
     border: 15px solid rgba(var(--clr--black), 0);
     border-left: 8px solid rgba(var(--clr--black), 0);
 }
@@ -38,18 +38,18 @@
 
 #fap-filter-input,
 #search-filter-input {
-    width: 100%;
+    width: var(--width--full);
     padding: 15px;
     margin-bottom: 15px;
     border: none;
     border-bottom: 2px solid rgb(var(--clr--blue));
     box-sizing: border-box;
     background-color: rgb(var(--clr--lightyellow));
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    border-radius: calc(var(--bdr--radius) * 0);
+    -webkit-border-radius: calc(var(--bdr--radius) * 0);
+    -moz-border-radius: calc(var(--bdr--radius) * 0);
+    -ms-border-radius: calc(var(--bdr--radius) * 0);
+    -o-border-radius: calc(var(--bdr--radius) * 0);
 }
 
 .service-category-title {

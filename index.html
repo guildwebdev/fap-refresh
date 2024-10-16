@@ -30,7 +30,7 @@
     <header class="header">
         <div class="header__container container d-flex justify-content-between align-items-center gap-3">
           
-            <div class="header__logo py-0 py-lg-3">
+            <div class="header__logo py-0 py-lg-4">
                 <a href="/" class="header__logo-link">
                     <img src="src/img/find-a-pharmacy-logo.png" class="header__logo-image w-100" alt="The Pharmacy Guild of Australia Logo">
                 </a>
@@ -303,10 +303,10 @@
                         <div class="hero-banner-search__title-wrapper">
                             <h1 class="hero-banner-search__title">Find a Pharmacy</h1>
 
-                            <p>Enter your location to find your nearest pharmacy and discover the range of services on offer. If you know which service you’re looking for, you can enter it below.</p>
+                            <p class="fw600">Enter your location to find your nearest pharmacy and discover the range of services on offer. If you know which service you’re looking for, you can enter it below.</p>
                         </div>
 
-                        <form action="#" id="fap-main-search">
+                        <form action="/" id="fap-main-search">
                             <div class="hero-banner-search__search-panel fap-search-panel input-group">
                                 
                                 <input type="text" class="hero-banner-search__search-postcode hero-banner-search__search-input fap-input form-control" id="fap-search-postcode" placeholder="Your Postcode or Location *" required>
@@ -375,7 +375,7 @@
 
                             <div class="button-group">
 
-                                <button class="hero-banner-search-btn button-yellow btn-with-backdrop btn btn-primary">
+                                <button class="hero-banner-search-btn button-yellow find-a-pharmacy-btn btn-with-backdrop btn btn-primary">
                                     <img src="src/img/find-a-pharmacy-icon.png" alt="">
                                         Find a Pharmacy
                                         <i class="fa-solid fa-arrow-right"></i>
@@ -437,21 +437,21 @@
 
     <!-- Pharmacy Map Section -->
     <section class="pharmacy-map">
-        <div class="pharmacy-map__container container py-5">
+        <div class="pharmacy-map__container container-fluid py-5">
             <div class="row">
                 <div class="col-lg-12">
 
                     <div class="pharmacy-map__search-wrapper filter-closed">
 
                         <div class="pharmacy-map__search-wrapper-title">
-                            <h2 class="pharmacy-map__search-title">Change your mind?</h2>
+                            <h2 class="pharmacy-map__search-title fw500">Change your mind?</h2>
 
                             <span class="pharmacy-map__search-wrapper-toggle d-block d-lg-none">
                                 <i class="fa-solid fa-sliders"></i>
                             </span>
                         </div>
                             
-                        <form action="#" id="fap-second-search">
+                        <form action="/" id="fap-second-search">
                             <div class="pharmacy-map__search-panel fap-search-panel input-group">
                                     
                                 <input type="text" class="pharmacy-map__search-postcode pharmacy-map__search-input fap-input form-control" id="pharmacy-map-postcode" placeholder="Your Postcode or Location *" required="">
@@ -542,8 +542,8 @@
                             <div class="pharmacy-map__slider-container">
                                 <label class="pharmacy-map__slider-container-label">EXPAND YOUR SEARCH</label>
                                 <div class="pharmacy-map__slider-wrapper">
-                                    <span id="fap-slider-label" class="pharmacy-map__slider-label">5</span>
-                                    <input type="range" min="0" max="60" value="5" class="pharmacy-map__slider" id="fap-range-slider" oninput="updateSliderValue()">
+                                    <span id="fap-slider-label" class="pharmacy-map__slider-label">15</span>
+                                    <input type="range" min="0" max="60" value="15" class="pharmacy-map__slider" id="fap-range-slider" oninput="updateSliderValue()">
                                     <div class="pharmacy-map__slider-scale">
                                         <span class="min-value">0 KM</span>
                                         <span class="max-value">60 KM</span>
@@ -1309,7 +1309,7 @@
                                     What We Offer</h2>
                             </div>
 
-                            <form action="#" id="fap-service-search">
+                            <form action="/" id="fap-service-search">
                                 <div class="our-services__search search-wrapper">
                                     
                                     <input type="search" class="our-services__search-input search-input fap-input form-control" id="fap-service-input" placeholder="What are you looking for?">
@@ -1578,27 +1578,47 @@
     <!-- My Pharmacy Section -->
     <section class="my-pharmacy">
 
-        <div class="my-pharmacy__container container pb-3">
+        <div class="my-pharmacy__container container-fluid pb-3">
 
             <div class="row">
                 <div class="my-pharmacy__column col-lg-12">
+
+                    <div class="my-pharmacy__image-wrapper">
                     
-                    <img src="src/img/find-a-pharmacy-my-pharmacy-image.jpg" class="my-pharmacy__background-image" alt="My Pharmacy">
+                        <img src="src/img/find-a-pharmacy-my-pharmacy-image.jpg" class="my-pharmacy__background-image" alt="My Pharmacy">
 
-                    <div class="my-pharmacy__content-wrapper">
+                        <div class="my-pharmacy__container-wrapper">
 
-                        <div class="my-pharmacy__content">
-                            <h2>My Pharmacy</h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
+                                        <div class="my-pharmacy__wrapper">
 
-                        <div class="my-pharmacy__action">
-                            <button class="my-pharmacy__pharmacy-btn button-yellow btn-with-backdrop btn btn-primary">
-                                <img src="src/img/find-a-pharmacy-icon.png" alt="">
-                                    Find a Pharmacy
-                                    <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                                            <div class="my-pharmacy__content-wrapper">
+
+                                                <div class="my-pharmacy__content">
+                                                    <h2>My Pharmacy</h2>
+
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+
+                                                <div class="my-pharmacy__action">
+                                                    <button class="my-pharmacy__pharmacy-btn button-yellow find-a-pharmacy-btn btn-with-backdrop btn btn-primary">
+                                                        <img src="src/img/find-a-pharmacy-icon.png" alt="">
+                                                            To My Pharmacy
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -1611,62 +1631,70 @@
     <!-- News Section -->
     <section class="latest-updates">
 
-        <div class="latest-updates__container container">
+        <div class="latest-updates__container container-fluid">
 
             <div class="row">
                 <div class="latest-updates__column col-lg-12">
 
-                    <div class="latest-updates__column-wrapper  scrollbar-yellow">
+                    <div class="latest-updates__column-wrapper scrollbar-yellow">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
 
-                        <div class="latest-updates__title-wrapper">
-                            <div class="latest-updates__title">
-                                <h2 class="title-with-pretitle"><span class="latest-updates__sub-title section-subtitle">News</span>
-                                    Latest Updates</h2>
-                            </div>
+                                    <div class="latest-updates__title-wrapper">
+                                        <div class="latest-updates__title">
+                                            <h2 class="title-with-pretitle"><span class="latest-updates__sub-title section-subtitle">News</span>
+                                                Latest Updates</h2>
+                                        </div>
 
-                            <div class="latest-updates__description">
-                                <p>Stay informed with the latest news, health tips, and updates from community pharmacies.</p>
+                                        <div class="latest-updates__description">
+                                            <h3 class="latest-updates__text-description fw600">Stay informed with the latest news, health tips, and updates from community pharmacies.</h3>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="latest-updates__news-wrapper">
+
+                                        <div class="latest-updates__news-item">
+                                            <img src="src/img/latest-news-one.jpg" class="latest-updates__news-image" alt="Latest Updates">
+
+                                            <h3 class="latest-updates__news-title">Title</h3>
+
+                                            <p class="latest-updates__news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                            <a href="#" class="latest-updates__news-link">Read more <i class="news-link-icon fa-solid fa-arrow-right"></i></a>
+                                        </div>
+
+                                        <div class="latest-updates__news-item">
+                                            <img src="src/img/latest-news-two.jpg" class="latest-updates__news-image" alt="Latest Updates">
+
+                                            <h3 class="latest-updates__news-title">Title</h3>
+
+                                            <p class="latest-updates__news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                            <a href="#" class="latest-updates__news-link">Read more <i class="news-link-icon fa-solid fa-arrow-right"></i></a>
+                                        </div>
+
+                                        <div class="latest-updates__news-item">
+                                            <img src="src/img/latest-news-three.jpg" class="latest-updates__news-image" alt="Latest Updates">
+
+                                            <h3 class="latest-updates__news-title">Title</h3>
+
+                                            <p class="latest-updates__news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                            <a href="#" class="latest-updates__news-link">Read more <i class="news-link-icon fa-solid fa-arrow-right"></i></a>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <button class="latest-updates__actions button-blue btn-with-backdrop btn btn-primary">
+                                        View all articles
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+
+                                    
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="latest-updates__news-wrapper">
-
-                            <div class="latest-updates__news-item">
-                                <img src="src/img/latest-news-one.jpg" class="latest-updates__news-image" alt="Latest Updates">
-
-                                <h3 class="latest-updates__news-title">Title</h3>
-
-                                <p class="latest-updates__news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                                <a href="#" class="latest-updates__news-link">Read more <i class="news-link-icon fa-solid fa-arrow-right"></i></a>
-                            </div>
-
-                            <div class="latest-updates__news-item">
-                                <img src="src/img/latest-news-two.jpg" class="latest-updates__news-image" alt="Latest Updates">
-
-                                <h3 class="latest-updates__news-title">Title</h3>
-
-                                <p class="latest-updates__news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                                <a href="#" class="latest-updates__news-link">Read more <i class="news-link-icon fa-solid fa-arrow-right"></i></a>
-                            </div>
-
-                            <div class="latest-updates__news-item">
-                                <img src="src/img/latest-news-three.jpg" class="latest-updates__news-image" alt="Latest Updates">
-
-                                <h3 class="latest-updates__news-title">Title</h3>
-
-                                <p class="latest-updates__news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                                <a href="#" class="latest-updates__news-link">Read more <i class="news-link-icon fa-solid fa-arrow-right"></i></a>
-                            </div>
-
-                        </div>
-                        
-                        <button class="latest-updates__actions button-blue btn-with-backdrop btn btn-primary">
-                            View all articles
-                                <i class="fa-solid fa-arrow-right"></i>
-                        </button>
 
                     </div>
 
@@ -1679,7 +1707,7 @@
 
     <!-- Common Footer -->
     <footer class="footer">
-        <div class="footer__container container my-5 pt-4">
+        <div class="footer__container container-fluid my-5 pt-4">
 
             <div class="footer__logo-image text-center">
                 <a href="/" class="footer__logo-link">
@@ -1687,12 +1715,20 @@
                 </a>
             </div>
 
-            <div class="footer_copyright text-center p-3">
-                <h2 class="mb-3">For emergencies, please call: <a href="tel:000">000</a></h2>
+            <div class="footer_copyright text-center p-4 p-md-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
 
-                <p>The Pharmacy Guild of Australia acknowledges the Traditional Custodians of this nation's lands, waters, and skies. The Guild pays its respect to the Aboriginal and Torres Strait Islander people, their diverse languages, their cultural practices and recognise their continuing connection and contribution to the lands on which we work and live.</p>
+                            <h2 class="mb-3">For emergencies, please call: <a href="tel:000">000</a></h2>
 
-                <p>All rights reserved | The Pharmacy Guild of Australia 2024 | <a href="#" target="_blank" rel="noopener noreferrer">About the Pharmacy Guild</a> | <a href="#" target="_blank" rel="noopener noreferrer">Privacy policy</a> | v.24april(0.3.4)</p>
+                            <p>The Pharmacy Guild of Australia acknowledges the Traditional Custodians of this nation's lands, waters, and skies. The Guild pays its respect to the Aboriginal and Torres Strait Islander people, their diverse languages, their cultural practices and recognise their continuing connection and contribution to the lands on which we work and live.</p>
+
+                            <p>All rights reserved | The Pharmacy Guild of Australia 2024 | <a href="#" target="_blank" rel="noopener noreferrer">About the Pharmacy Guild</a> | <a href="#" target="_blank" rel="noopener noreferrer">Privacy policy</a> | v.24april(0.3.4)</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -1711,7 +1747,7 @@
                                 </div>
                                 
                                 <div class="col-lg-6">
-                                    <form action="#" id="fap-search-form">
+                                    <form action="/" id="fap-search-form">
                                         <div class="search-modal__input-group modal-form__wrapper">
                                         
                                             <input type="search" class="search-modal__search-input search-input fap-input form-control" id="fap-service-input" placeholder="What are you looking for?">
@@ -1799,7 +1835,7 @@
                                             Go Back
                                     </button>
 
-                                    <form action="#" id="fap-notify-me-form">
+                                    <form action="/" id="fap-notify-me-form">
                                         <div class="notify-modal__input-group modal-form__wrapper">
                                             <h3 class="modal-form__modal-title">Subscribe for updates</h3>
                                         
@@ -1860,7 +1896,7 @@
                             
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="letter-send-modal__letter-actions">
-                                    <form action="#" id="fap-notify-me-form">
+                                    <form action="/" id="fap-notify-me-form">
                                         <div class="letter-send-modal__input-group modal-form__wrapper">
                                             <h3 class="modal-form__modal-title">Send a Letter</h3>
 
