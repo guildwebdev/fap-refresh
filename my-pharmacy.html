@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Curious Minds Media">
-    <title>Search Results | The Pharmacy Guild of Australia</title>
+    <title>My Pharmacy | The Pharmacy Guild of Australia</title>
     
     <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
@@ -295,17 +295,16 @@
     <!-- Breadscrumb Section -->
     <section class="breadscrumb breadscrumb-with-img bg-lightgray">
 
-        <div class="breadscrumb-hero" style="background-image: url('src/img/breadscrumb-services.jpg')">
+        <div class="breadscrumb-hero" style="background-image: url('src/img/find-a-pharmacy-my-pharmacy-image.jpg')">
 
             <div class="breadscrumb__container container">
                 <div class="row">
                     
                     <div class="breadscrumb__title-wrapper col-lg-12">
 
-                        <h1 class="breadscrumb__page-title">
-                            <span class="breadscrumb__sub-title">SEARCH RESULTS FOR</span>
-                            Title
-                        </h1>
+                        <h1 class="breadscrumb__page-title">My Pharmacy</h1>
+
+                        <p class="breadscrumb__description text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                     </div>
 
@@ -327,7 +326,7 @@
                         <span class="seperator">/</span>
                         
                         <a href="#" class="breadscrumb-nav__current-page">
-                            Search Results
+                            My Pharmacy
                         </a>
 
                     </div>
@@ -338,128 +337,154 @@
 
     </section>
 
-    <!-- Search Results Section -->
-    <section class="search-results">
-        <div class="search-results-container container">
+    <!-- My Pharmacy Section -->
+    <section class="my-pharmacy-page bg-lightgray">
+
+        <div class="our-services__container container">
+
             <div class="row">
-                <div class="search-results-column col-md-12 pt-5">
-                    <div class="search-results-wrapper">
+                <div class="our-services__column col-lg-12 py-5">
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/single-services-travel-vaccinations.jpg" alt="Search Results Thumbnail">
+                    <div class="our-services__column-wrapper">
 
-                                <div class="search-results__content fap-results-content">
+                        <div class="our-services__title-wrapper fap-card-title-wrapper">
+                            <div class="our-services__title fap-card-title">
+                                <h2 class="title-with-pretitle"><span class="services__sub-title section-subtitle">MY PHARMACY</span>
+                                    What Pharmacy Offers</h2>
+                            </div>
 
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
+                            <form action="/" id="fap-service-search">
+                                <div class="our-services__search search-wrapper">
                                     
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+                                    <input type="search" class="our-services__search-input search-input fap-input form-control" id="fap-service-input" placeholder="What are you looking for?">
 
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
+                                    <button class="our-services__search-btn button-blue btn-with-backdrop btn btn-secondary">
+                                        Search
                                     </button>
+
                                 </div>
+                            </form>
+
                         </div>
+                        
+                        <div class="our-services__tabular">
+                        
+                            <div class="our-services__tabular-wrapper tabular-wrapper d-flex align-items-stretch">
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/my-pharmacy-services.jpg" alt="Search Results Thumbnail">
+                                <div class="our-services__nav tabular-pills nav flex-column nav-pills" id="services-tab" role="tablist" aria-orientation="vertical">
 
-                                <div class="search-results__content fap-results-content">
+                                    <button class="our-services__nav-link tabular-pills-link nav-link active" id="fap-dispensing-service" data-bs-toggle="pill" data-bs-target="#fap-dispensing" type="button" role="tab" aria-controls="fap-dispensing" aria-selected="true">Dispensing</button>
 
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+                                    <button class="our-services__nav-link tabular-pills-link nav-link" id="fap-compounding-service" data-bs-toggle="pill" data-bs-target="#fap-compounding" type="button" role="tab" aria-controls="fap-compounding" aria-selected="false">Compounding</button>
 
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
+                                    <button class="our-services__nav-link tabular-pills-link nav-link" id="fap-pbs-pricing-service" data-bs-toggle="pill" data-bs-target="#fap-pbs-pricing" type="button" role="tab" aria-controls="fap-pbs-pricing" aria-selected="false">PBS pricing</button>
+
+                                    <button class="our-services__nav-link tabular-pills-link nav-link" id="fap-pharmacy-services-service" data-bs-toggle="pill" data-bs-target="#fap-pharmacy-services" type="button" role="tab" aria-controls="fap-pharmacy-services" aria-selected="false">Pharmacy services</button>
+
+                                    <button class="our-services__nav-link tabular-pills-link nav-link" id="fap-access-service" data-bs-toggle="pill" data-bs-target="#fap-access" type="button" role="tab" aria-controls="fap-access" aria-selected="false">Access</button>
+
                                 </div>
-                        </div>
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/services-older-australians.jpg" alt="Search Results Thumbnail">
+                                <div class="our-services__tab-content tab-content" id="services-content">
 
-                                <div class="search-results__content fap-results-content">
+                                    <div class="our-services__tab-pane tab-pane fade show active" id="fap-dispensing" role="tabpanel" aria-labelledby="fap-dispensing-service" tabindex="0">
+                                        
+                                        <h2 class="our-services__item fap-card-item-title">Dispensing</h2>
 
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+                                        <p><strong>Stay protected with our comprehensive vaccination services, including flu, COVID-19, and more, administered by our qualified pharmacists.</strong></p>
 
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
+                                        <img src="src/img/my-pharmacy-services.jpg" class="services__image" alt="Dispensing">
+                                        
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                        <button class="services__actions button-blue my-pharmacy-services-btn btn-with-backdrop btn btn-secondary">
+                                            More infor
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+
+                                    </div>
+
+                                    <div class="our-services__tab-pane tab-pane fade" id="fap-compounding" role="tabpanel" aria-labelledby="fap-compounding-service" tabindex="0">
+                                        
+                                        <h2 class="our-services__item fap-card-item-title">Compounding</h2>
+
+                                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</strong></p>
+
+                                        <img src="src/img/my-pharmacy-services.jpg" class="services__image" alt="Compounding">
+                                        
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                        <button class="services__actions button-blue my-pharmacy-services-btn btn-with-backdrop btn btn-secondary">
+                                            More infor
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+
+                                    </div>
+
+                                    <div class="our-services__tab-pane tab-pane fade" id="fap-pbs-pricing" role="tabpanel" aria-labelledby="fap-pbs-pricing-service" tabindex="0">
+                                        
+                                        <h2 class="our-services__item fap-card-item-title">PBS pricing</h2>
+
+                                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</strong></p>
+
+                                        <img src="src/img/my-pharmacy-services.jpg" class="services__image" alt="PBS pricing">
+                                        
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                        <button class="services__actions button-blue my-pharmacy-services-btn btn-with-backdrop btn btn-secondary">
+                                            More infor
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+
+                                    </div>
+
+                                    <div class="our-services__tab-pane tab-pane fade" id="fap-pharmacy-services" role="tabpanel" aria-labelledby="fap-pharmacy-services-service" tabindex="0">
+                                        
+                                        <h2 class="our-services__item fap-card-item-title">Pharmacy services</h2>
+
+                                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</strong></p>
+
+                                        <img src="src/img/my-pharmacy-services.jpg" class="services__image" alt="Pharmacy services">
+                                        
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                        <button class="services__actions button-blue my-pharmacy-services-btn btn-with-backdrop btn btn-secondary">
+                                            More infor
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+
+                                    </div>
+
+                                    <div class="our-services__tab-pane tab-pane fade" id="fap-access" role="tabpanel" aria-labelledby="fap-access-service" tabindex="0">
+                                        
+                                        <h2 class="our-services__tab-ab-">Access</h2>
+
+                                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</strong></p>
+
+                                        <img src="src/img/my-pharmacy-services.jpg" class="services__image" alt="Access">
+                                        
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                        <button class="services__actions button-blue my-pharmacy-services-btn btn-with-backdrop btn btn-secondary">
+                                            More infor
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+
+                                    </div>
+
                                 </div>
+
+                            </div>
+                        
                         </div>
-
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/services-addiction.jpg" alt="Search Results Thumbnail">
-
-                                <div class="search-results__content fap-results-content">
-
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
-
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                        </div>
-
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/services-vaccination.jpg" alt="Search Results Thumbnail">
-
-                                <div class="search-results__content fap-results-content">
-
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
-
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                        </div>
-
-                    </div>
-
-                    <div class="fap-pagination-wrapper">
-
-                        <nav aria-label="fap-pagination-nav">
-
-                            <ul class="fap-pagination pagination">
-                                <li class="fap-pagination__item page-item disabled">
-                                    <a class="fap-pagination__link fap-pagination__prev page-link">Previous</a>
-                                </li>
-
-                                <li class="fap-pagination__item page-item">
-                                    <a class="fap-pagination__link page-link" href="#">1</a>
-                                </li>
-
-                                <li class="fap-pagination__item page-item active" aria-current="page">
-                                    <a class="fap-pagination__link page-link" href="#">2</a>
-                                </li>
-
-                                <li class="fap-pagination__item page-item">
-                                    <a class="fap-pagination__link page-link" href="#">3</a>
-                                </li>
-
-                                <li class="fap-pagination__item page-item">
-                                    <a class="fap-pagination__link fap-pagination__next page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-
-                        </nav>
 
                     </div>
 
                 </div>
             </div>
+
         </div>
+        
     </section>
 
     <!-- Our Services Section -->

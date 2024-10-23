@@ -3,10 +3,10 @@
 }
 
 .search-dropdown {
-    width: calc(var(--width--full) * .5);
+    width: calc(var(--width--full) / 2);
     position: absolute;
     top: 100%;
-    left: calc(var(--width--full) * .5);
+    left: calc(var(--width--full) / 2);
     z-index: 99;
 }
 

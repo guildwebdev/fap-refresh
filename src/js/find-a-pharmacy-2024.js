@@ -362,6 +362,34 @@ parentElements.forEach(function(parent) {
   });
 });
 
+// ----- SVG Map Functionality ----- //
+document.querySelectorAll('.state-map').forEach(function(stateLink) {
+    stateLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const stateName = this.getAttribute('data-state');
+        
+        const tabLink = document.querySelector(`#${stateName}-service`);
+        const tabPane = document.querySelector(`#${stateName}`);
+        
+        if (tabLink && tabPane) {
+            const tab = new bootstrap.Tab(tabLink);
+            tab.show();
+            
+            tabPane.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+document.querySelectorAll('.state-tabular__nav .nav-link').forEach(function(tab) {
+    tab.addEventListener('click', function(e) {
+        const targetPane = document.querySelector(this.getAttribute('data-bs-target'));
+        if (targetPane) {
+            targetPane.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+
 // ----- Services Carousel ----- //
 $(".our-services-wrapper").owlCarousel({
     loop: true,
@@ -430,3 +458,43 @@ document.querySelectorAll('input[type="number"]').forEach(input => {
         }
     });
 });
+
+// ----- Blogs Filter Toggle - Mobile ----- //
+var blogFilterWrapperToggle = document.querySelector('.all-posts__filter-icon');
+
+if (blogFilterWrapperToggle) {
+    blogFilterWrapperToggle.addEventListener('click', function() {
+
+        if (window.innerWidth <= 991) {
+
+            const mapSearchPanel = this.parentElement.querySelector('.all-posts__filter-wrapper');
+
+            if (mapSearchPanel) {
+                mapSearchPanel.classList.toggle('filter-closed');
+                mapSearchPanel.classList.toggle('filter-opened');
+            }
+        }
+
+    });
+}
+
+// ----- My Pharmacy Link Wrapper in Pharmacy Services ----- //
+function moveTabularButton() {
+    const tabularButton = document.querySelector('.tabular-button-container');
+    const tabularTab = document.getElementById('state-tabular-tab');
+    const tabularContent = document.getElementById('state-tabular-content');
+  
+    if (window.innerWidth <= 991) {
+        if (tabularButton && tabularTab.contains(tabularButton)) {
+            tabularContent.appendChild(tabularButton);
+        }
+    } else {
+        if (tabularButton && tabularContent.contains(tabularButton)) {
+            tabularTab.appendChild(tabularButton);
+        }
+    }
+}
+
+moveTabularButton();
+
+window.addEventListener('resize', moveTabularButton);

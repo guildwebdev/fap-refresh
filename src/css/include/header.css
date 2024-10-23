@@ -1,10 +1,14 @@
 header.header {
     background-color: rgb(var(--clr--white));
-    border-radius: 0px 0px 30px 30px;
     box-shadow: 0px 1px 12px rgba(var(--clr--blue), 0.15);
     position: relative;
     width: var(--width--full);
     z-index: 999;
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
 }
 
 .header__container {

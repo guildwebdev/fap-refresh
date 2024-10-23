@@ -57,7 +57,7 @@ button.header__btn-close {
 
 .modal-form__wrapper {
     width: var(--width--full);
-    padding: 25px;
+    padding: 40px;
     background: rgba(var(--clr--white), .85);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
@@ -73,11 +73,6 @@ button.header__btn-close {
 
 .search-modal__input-group {
     gap: 0;
-}
-
-.search-modal__input-group button.btn {
-    font-size: 20px;
-    margin-left: -45px;
 }
 
 /* Search Modal */
@@ -113,12 +108,12 @@ button.search {
     height: 1px;
     background-color: rgb(var(--clr--white));
     position: absolute;
-    top: calc(var(--width--full) * .5);
-    transform: translate(0, calc(var(--width--full) * .5));
-    -webkit-transform: translate(0, calc(var(--width--full) * .5));
-    -moz-transform: translate(0, calc(var(--width--full) * .5));
-    -ms-transform: translate(0, calc(var(--width--full) * .5));
-    -o-transform: translate(0, calc(var(--width--full) * .5));
+    top: calc(var(--width--full) / 2);
+    transform: translate(0, calc(var(--width--full) / 2));
+    -webkit-transform: translate(0, calc(var(--width--full) / 2));
+    -moz-transform: translate(0, calc(var(--width--full) / 2));
+    -ms-transform: translate(0, calc(var(--width--full) / 2));
+    -o-transform: translate(0, calc(var(--width--full) / 2));
 }
 
 .hero-banner-search__action-seperator:before,
@@ -135,6 +130,11 @@ button.search {
 }
 
 /* Notify Me Modal */
+.notify-modal__subscribe-actions {
+    width: var(--width--full);
+    max-width: 450px;
+}
+
 .notify-modal__input-group {
     margin: 45px 0;
     flex-direction: column;
@@ -143,7 +143,9 @@ button.search {
 
 button.notify-modal__btn-primary {
     color: rgb(var(--clr--blue));
-    background: rgb(var(--clr--yellow));
+    background-color: rgb(var(--clr--yellow));
+    width: var(--width--full);
+    min-width: unset !important;
     box-shadow: 0px 3px 30px rgba(var(--clr--blue), 0.16);
     border: 0;
     border-radius: 42px;
@@ -158,7 +160,11 @@ button.notify-modal__btn-primary {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 35px;
+    gap: 25px;
+}
+
+.letter-send-modal__letter-actions img {
+    width: 70px;
 }
 
 .letter-send-modal__input-group {

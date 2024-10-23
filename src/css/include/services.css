@@ -5,9 +5,9 @@
     gap: 50px;
 }
 
-.our-services__title-wrapper .our-services__title,
+.our-services__title-wrapper .fap-card-title,
 form#fap-service-search {
-    width: calc(var(--width--full) * .5);
+    width: calc(var(--width--full) / 2);
 }
 
 form#service-search {
@@ -21,7 +21,7 @@ form#service-search {
 }
 
 .title-with-pretitle {
-    font-size: clamp(23px, 1.5vw, 38px);
+    font-size: clamp(23px, 1.7vw, 38px);
 }
 
 form#fap-service-search .search-wrapper ,
@@ -36,10 +36,10 @@ form#breadscrumb-search .search-wrapper button.btn {
     margin-left: -45px;
 }
 
-.our-services__item {
+.fap-card-item {
     height: 100%;
     padding: 20px;
-    background: rgb(var(--clr--white));
+    background-color: rgb(var(--clr--white));
     box-shadow: var(--box--shadow) rgba(var(--clr--blue), 0.1);
     border-radius: calc(var(--bdr--radius) * 3);
     -webkit-border-radius: calc(var(--bdr--radius) * 3);
@@ -50,32 +50,32 @@ form#breadscrumb-search .search-wrapper button.btn {
     flex-direction: column;
 }
 
-.our-services__item:hover {
+.fap-card-item:hover {
     background: rgba(var(--clr--lightblue),.3);
 }
 
-.our-services__item.services-coming-soon {
+.fap-card-item.services-coming-soon {
     background-color: rgb(var(--clr--lightyellow));
     display: flex;
     flex-direction: column;
 }
 
-.our-services__item.services-coming-soon:hover {
+.fap-card-item.services-coming-soon:hover {
     background-color: rgba(var(--clr--lightblue),.2);
 }
 
-.our-services__item.services-coming-soon .coming-soon-wrapper {
+.fap-card-item.services-coming-soon .coming-soon-wrapper {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.our-services__item .our-services__image-wrapper {
+.fap-card-item .fap-card-image-wrapper {
     position: relative;
 }
 
-.our-services__item .our-services__image-wrapper img.our-services__image {
+.fap-card-item .fap-card-image-wrapper img.fap-card-image {
     width: var(--width--full);
     height: 170px;
     margin-bottom: 20px;
@@ -88,7 +88,7 @@ form#breadscrumb-search .search-wrapper button.btn {
     -o-border-radius: calc(var(--bdr--radius) * 2);
 }
 
-.our-services__item .our-services__image-wrapper span.our-services__icon {
+.fap-card-item .fap-card-image-wrapper span.our-services__icon {
     width: 60px;
     height: 60px;
     background-color: rgb(var(--clr--blue));
@@ -105,26 +105,26 @@ form#breadscrumb-search .search-wrapper button.btn {
     box-shadow: var(--box--shadow) rgba(var(--clr--black), 0.1);
 }
 
-.our-services__item .our-services__title {
+.fap-card-item .fap-card-title {
     font-size: clamp(18px, 1.1vw, 27px);
     flex-grow: 1;
 }
 
-.our-services__item.services-coming-soon .our-services__image-wrapper span.our-services__icon {
+.fap-card-item.services-coming-soon .fap-card-image-wrapper span.our-services__icon {
     background-color: rgb(var(--clr--yellow));
 }
 
-.our-services__item .our-services__image-wrapper span.our-services__icon img {
+.fap-card-item .fap-card-image-wrapper span.our-services__icon img {
     width: 30px;
     height: 30px;
 }
 
-.our-services__item.services-coming-soon .our-services__title {
+.fap-card-item.services-coming-soon .fap-card-title {
     font-size: clamp(23px, 1.5vw, 38px);
     flex-grow: unset;
 }
 
-.our-services__item .our-services__description {
+.fap-card-item .fap-card-description {
     font-size: 16px;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -166,28 +166,8 @@ form#breadscrumb-search .search-wrapper button.btn {
     margin-bottom: -30px;
 }
 
-.single-service__wrapper {
-    column-count: 2;
-    column-gap: 60px;
-}
-
-.single-service__wrapper > * {
-    break-inside: avoid;
-}
-
-.single-service__wrapper img {
-    width: var(--width--full);
-    margin-bottom: 35px;
-    border-radius: calc(var(--bdr--radius) * 3);
-    -webkit-border-radius: calc(var(--bdr--radius) * 3);
-    -moz-border-radius: calc(var(--bdr--radius) * 3);
-    -ms-border-radius: calc(var(--bdr--radius) * 3);
-    -o-border-radius: calc(var(--bdr--radius) * 3);
-    box-shadow: var(--box--shadow) rgba(var(--clr--black), 0.149);
-}
-
 .services__list-wrapper {
-    background: rgb(255, 238, 192);
+    background-color: rgb(255, 238, 192);
     padding: 30px;
     margin-bottom: 30px;
     border: 1px solid rgb(var(--clr--yellow));
@@ -200,7 +180,7 @@ form#breadscrumb-search .search-wrapper button.btn {
 
 /* ----- Related Services ----- */
 .related-services {
-    background: rgb(252, 252, 252);
+    background-color: rgb(252, 252, 252);
     padding-top: 30px;
     border-radius: var(--bdr--radius--bottom);
     -webkit-border-radius: var(--bdr--radius--bottom);

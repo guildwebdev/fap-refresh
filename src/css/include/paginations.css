@@ -1,8 +1,8 @@
 .fap-pagination {
+    margin-block: 50px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 10px;
 }
 
 .fap-pagination__link {

@@ -1,11 +1,13 @@
-ul.list-icon-hospital {
-    font-size: 16px;
+ul.list-icon-hospital,
+ul.list-icon-link {
+    font-size: clamp(16px, .9vw, 25px);
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-ul.list-icon-hospital li {
+ul.list-icon-hospital li,
+ul.list-icon-link li {
     padding-left: 30px;
     margin-bottom: 10px;
     position: relative;
@@ -22,14 +24,35 @@ ul.list-icon-hospital li:before {
     left: 0;
 }
 
-ul.list-icon-hospital.blue-icons li:before {
+ul.list-icon-link li:before {
+    content: "\f0c1";
+    font-family: var(--font--fontawesome);
+    font-size: 14px;
+    font-weight: 900;
+    color: rgb(var(--clr--lightblue));
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+ul.blue-icons li:before {
     color: rgb(var(--clr--blue));
 }
 
-ul.list-icon-hospital.yellow-icons li:before {
+ul.yellow-icons li:before {
     color: rgb(var(--clr--yellow));
 }
 
-ul.list-icon-hospital.lightyellow-icons li:before {
+ul.lightyellow-icons li:before {
     color: rgb(var(--clr--lightyellow));
+}
+
+ul.list-icon-link li a {
+    color: rgb(var(--clr--blue));
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+ul.list-icon-link li a:hover {
+    text-decoration: none;
 }

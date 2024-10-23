@@ -10,9 +10,9 @@
 }
 
 .fap-form-wrapper {
-    width: calc(var(--width--full) * .5);
+    width: calc(var(--width--full) / 2);
     text-align: center;
-    background: rgb(255, 238, 192);
+    background-color: rgb(255, 238, 192);
     padding: 30px;
     box-shadow: var(--box--shadow) rgba(var(--clr--black), 0.15);
     border-radius: calc(var(--bdr--radius) * 3);

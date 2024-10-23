@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Curious Minds Media">
-    <title>Search Results | The Pharmacy Guild of Australia</title>
+    <title>Blogs All Articles | The Pharmacy Guild of Australia</title>
     
     <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
@@ -293,9 +293,9 @@
     </header>
 
     <!-- Breadscrumb Section -->
-    <section class="breadscrumb breadscrumb-with-img bg-lightgray">
+    <section class="breadscrumb centered-breadscrumb colored-breadcrumb">
 
-        <div class="breadscrumb-hero" style="background-image: url('src/img/breadscrumb-services.jpg')">
+        <div class="breadscrumb-hero">
 
             <div class="breadscrumb__container container">
                 <div class="row">
@@ -303,9 +303,11 @@
                     <div class="breadscrumb__title-wrapper col-lg-12">
 
                         <h1 class="breadscrumb__page-title">
-                            <span class="breadscrumb__sub-title">SEARCH RESULTS FOR</span>
-                            Title
+                            <span class="breadscrumb__sub-title">ARTICLES</span>
+                            Lorem Ipsum Dolor Sit Amet
                         </h1>
+
+                        <p class="breadscrumb__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
 
                     </div>
 
@@ -314,22 +316,46 @@
 
         </div>
 
-        <div class="breadscrumb-nav">
+        <div class="breadscrumb-nav breadscrumb-nav__with-search">
 
             <div class="breadscrumb-nav__container container">
                 <div class="row">
-                    <div class="breadscrumb-nav__wrapper col-lg-12">
+                    <div class="breadscrumb-nav__wrapper col-lg-6">
 
                         <a href="#" class="breadscrumb-nav__parents">
                             <i class="fa-solid fa-house-medical"></i>
                         </a>
                         
                         <span class="seperator">/</span>
+
+                        <a href="#" class="breadscrumb-nav__parents">News</a>
+                        
+                        <span class="seperator">/</span>
                         
                         <a href="#" class="breadscrumb-nav__current-page">
-                            Search Results
+                            Articles
                         </a>
 
+                    </div>
+
+                    <div class="col-lg-6">
+                        
+
+                        <div class="breadscrumb__search">
+
+                            <form action="/" id="fap-service-search">
+                                <div class="our-services__search search-wrapper">
+                                    
+                                    <input type="search" class="our-services__search-input search-input fap-input form-control" id="fap-service-input" placeholder="What are you looking for?">
+
+                                    <button class="our-services__search-btn button-blue btn-with-backdrop btn btn-secondary">
+                                        Search
+                                    </button>
+
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -338,122 +364,399 @@
 
     </section>
 
-    <!-- Search Results Section -->
-    <section class="search-results">
-        <div class="search-results-container container">
+    <!-- Blog Articles Section -->
+    <section class="all-posts">
+        <div class="all-posts__container container">
             <div class="row">
-                <div class="search-results-column col-md-12 pt-5">
-                    <div class="search-results-wrapper">
+                <div class="all-posts__column col-lg-12 pb-5">
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/single-services-travel-vaccinations.jpg" alt="Search Results Thumbnail">
+                    <div class="all-posts__wrapper">
 
-                                <div class="search-results__content fap-results-content">
+                        <div class="all-posts__filter">
 
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+                            <span class="all-posts__filter-icon">
+                                <i class="fa-solid fa-sliders"></i>
+                            </span>
 
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
+                            <div class="all-posts__filter-wrapper filter-closed">
+
+                                <select name="fap-filter-year" class="fap-filter__year-input fap-input form-control" id="fap-filter-year">
+                                    <option>Year</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                </select>
+
+                                <select name="fap-filter-topic" class="fap-filter__topic-input fap-input form-control" id="fap-filter-topic">
+                                    <option>Topic</option>
+                                    <option value="Topic 01">Topic 01</option>
+                                    <option value="Topic 02">Topic 02</option>
+                                    <option value="Topic 03">Topic 03</option>
+                                    <option value="Topic 04">Topic 04</option>
+                                    <option value="Topic 05">Topic 05</option>
+                                </select>
+
+                                <button class="all-posts__action button-yellow btn-with-backdrop btn btn-secondary">
+                                    Search
+                                </button>
+
+                            </div>
+
                         </div>
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/my-pharmacy-services.jpg" alt="Search Results Thumbnail">
+                        <div class="all-posts__grid grid-four-items">
 
-                                <div class="search-results__content fap-results-content">
-
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
-
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/breadscrumb-pharmacy-services.jpg" class="all-posts__image fap-card-image" alt="Title">
                                 </div>
-                        </div>
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/services-older-australians.jpg" alt="Search Results Thumbnail">
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
 
-                                <div class="search-results__content fap-results-content">
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
 
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
 
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/breadscrumb-services.jpg" class="all-posts__image fap-card-image" alt="Title">
                                 </div>
-                        </div>
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/services-addiction.jpg" alt="Search Results Thumbnail">
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
 
-                                <div class="search-results__content fap-results-content">
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
 
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
 
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/find-a-pharmacy-hero-image.jpg" class="all-posts__image fap-card-image" alt="Title">
                                 </div>
-                        </div>
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/services-vaccination.jpg" alt="Search Results Thumbnail">
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
 
-                                <div class="search-results__content fap-results-content">
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
 
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
 
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/find-a-pharmacy-my-pharmacy-image.jpg" class="all-posts__image fap-card-image" alt="Title">
                                 </div>
+
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
+
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/main-services-vaccination.jpg" class="all-posts__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
+
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/services-everyday-health.jpg" class="all-posts__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
+
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/services-vaccination.jpg" class="all-posts__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
+
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/single-services-travel-vaccinations.jpg" class="all-posts__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
+
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/services-medicines-management.jpg" class="all-posts__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
+
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/services-skin-sprains.jpg" class="all-posts__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
+
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/latest-news-one.jpg" class="all-posts__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
+
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="all-posts__item fap-card-item">
+                                <div class="all-posts__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/services-addiction.jpg" class="all-posts__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h2 class="all-posts__title fap-card-title">Title</h2>
+
+                                <p class="all-posts__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
                         </div>
 
                     </div>
 
-                    <div class="fap-pagination-wrapper">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <nav aria-label="fap-pagination-nav">
+    <!-- Vaccine Articles Section -->
+    <section class="vaccine-news">
+        <div class="vaccine-news__container container">
+            <div class="row">
+                <div class="vaccine-news__column col-lg-12 py-5">
 
-                            <ul class="fap-pagination pagination">
-                                <li class="fap-pagination__item page-item disabled">
-                                    <a class="fap-pagination__link fap-pagination__prev page-link">Previous</a>
-                                </li>
+                    <div class="vaccine-news__wrapper">
 
-                                <li class="fap-pagination__item page-item">
-                                    <a class="fap-pagination__link page-link" href="#">1</a>
-                                </li>
+                        <h2 class="vaccine-news__column-title">What's New In Vaccine</h2>
 
-                                <li class="fap-pagination__item page-item active" aria-current="page">
-                                    <a class="fap-pagination__link page-link" href="#">2</a>
-                                </li>
+                        <div class="vaccine-news__grid grid-four-items">
 
-                                <li class="fap-pagination__item page-item">
-                                    <a class="fap-pagination__link page-link" href="#">3</a>
-                                </li>
+                            <div class="accine-news__item fap-card-item">
+                                <div class="accine-news__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/breadscrumb-pharmacy-services.jpg" class="accine-news__image fap-card-image" alt="Title">
+                                </div>
 
-                                <li class="fap-pagination__item page-item">
-                                    <a class="fap-pagination__link fap-pagination__next page-link" href="#">Next</a>
-                                </li>
-                            </ul>
+                                <h3 class="accine-news__title fap-card-title">Title</h3>
 
-                        </nav>
+                                <p class="accine-news__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="accine-news__item fap-card-item">
+                                <div class="accine-news__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/breadscrumb-services.jpg" class="accine-news__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h3 class="accine-news__title fap-card-title">Title</h3>
+
+                                <p class="accine-news__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="accine-news__item fap-card-item">
+                                <div class="accine-news__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/find-a-pharmacy-hero-image.jpg" class="accine-news__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h3 class="accine-news__title fap-card-title">Title</h3>
+
+                                <p class="accine-news__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="accine-news__item fap-card-item">
+                                <div class="accine-news__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/find-a-pharmacy-my-pharmacy-image.jpg" class="accine-news__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h3 class="accine-news__title fap-card-title">Title</h3>
+
+                                <p class="accine-news__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="accine-news__item fap-card-item">
+                                <div class="accine-news__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/main-services-vaccination.jpg" class="accine-news__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h3 class="accine-news__title fap-card-title">Title</h3>
+
+                                <p class="accine-news__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="accine-news__item fap-card-item">
+                                <div class="accine-news__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/services-everyday-health.jpg" class="accine-news__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h3 class="accine-news__title fap-card-title">Title</h3>
+
+                                <p class="accine-news__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="accine-news__item fap-card-item">
+                                <div class="accine-news__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/services-vaccination.jpg" class="accine-news__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h3 class="accine-news__title fap-card-title">Title</h3>
+
+                                <p class="accine-news__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="accine-news__item fap-card-item">
+                                <div class="accine-news__image fap-card-image-wrapper fap-card-image-wrapper">
+                                    <img src="src/img/single-services-travel-vaccinations.jpg" class="accine-news__image fap-card-image" alt="Title">
+                                </div>
+
+                                <h3 class="accine-news__title fap-card-title">Title</h3>
+
+                                <p class="accine-news__description fap-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+
+                                <button class="our-services__more-info button-lightblue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
 
                     </div>
 

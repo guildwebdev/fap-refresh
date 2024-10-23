@@ -1,5 +1,5 @@
 .pharmacy-map__filter-dragger {
-    background: rgb(var(--clr--blue));
+    background-color: rgb(var(--clr--blue));
     padding: 15px;
     margin-bottom: 20px;
     border-radius: calc(var(--bdr--radius) * 3);
@@ -13,7 +13,7 @@
 
 .pharmacy-map__filter-details,
 .pharmacy-map__filter-dragging-bar {
-    width: calc(var(--width--full) * .5);
+    width: calc(var(--width--full) / 2);
 }
 
 .pharmacy-map__filter-details {
@@ -106,7 +106,7 @@ label.pharmacy-map__slider-container-label {
     appearance: none;
     width: 20px;
     height: 20px;
-    background: rgb(var(--clr--yellow));
+    background-color: rgb(var(--clr--yellow));
     cursor: pointer;
     border-radius: var(--bdr--radius--round);
 }
@@ -114,7 +114,7 @@ label.pharmacy-map__slider-container-label {
 .pharmacy-map__slider::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: rgb(var(--clr--yellow));
+    background-color: rgb(var(--clr--yellow));
     cursor: pointer;
     border-radius: var(--bdr--radius--round);
 }

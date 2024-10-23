@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Curious Minds Media">
-    <title>Search Results | The Pharmacy Guild of Australia</title>
+    <title>Pharmacy | The Pharmacy Guild of Australia</title>
     
     <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
@@ -292,27 +292,26 @@
         </div>
     </header>
 
-    <!-- Breadscrumb Section -->
-    <section class="breadscrumb breadscrumb-with-img bg-lightgray">
+    <!-- Pharmacy Map Section -->
+    <section class="pharmacy-location">
+        <div class="pharmacy-location__container container">
+            <div class="row">
+                <div class="pharmacy-location__column col-lg-12">
 
-        <div class="breadscrumb-hero" style="background-image: url('src/img/breadscrumb-services.jpg')">
-
-            <div class="breadscrumb__container container">
-                <div class="row">
-                    
-                    <div class="breadscrumb__title-wrapper col-lg-12">
-
-                        <h1 class="breadscrumb__page-title">
-                            <span class="breadscrumb__sub-title">SEARCH RESULTS FOR</span>
-                            Title
-                        </h1>
-
+                    <div class="pharmacy-location__name-wrapper">
+                        <img src="src/img/find-a-pharmacy-icon.png" class="pharmacy-location__icon" alt="Icon for TerryWhite Chemmart Brisbane City">
+                        <h1 class="pharmacy-location__name">TerryWhite Chemmart Brisbane City</h1>
                     </div>
+
+                    <div id="fap-map"></div>
 
                 </div>
             </div>
-
         </div>
+    </section>
+
+    <!-- Breadscrumb Section -->
+    <section class="breadscrumb breadscrumb-only-nav">
 
         <div class="breadscrumb-nav">
 
@@ -325,9 +324,13 @@
                         </a>
                         
                         <span class="seperator">/</span>
+
+                        <a href="#" class="breadscrumb-nav__parents">Pagination</a>
+                        
+                        <span class="seperator">/</span>
                         
                         <a href="#" class="breadscrumb-nav__current-page">
-                            Search Results
+                            Pharmacy
                         </a>
 
                     </div>
@@ -338,122 +341,498 @@
 
     </section>
 
-    <!-- Search Results Section -->
-    <section class="search-results">
-        <div class="search-results-container container">
+    <!-- Pharmacy Section -->
+    <section class="pharmacy-single">
+        <div class="pharmacy-single__container container">
             <div class="row">
-                <div class="search-results-column col-md-12 pt-5">
-                    <div class="search-results-wrapper">
+                <div class="col-lg-12 py-4">
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/single-services-travel-vaccinations.jpg" alt="Search Results Thumbnail">
+                    <h2 class="pharmacy-single__title">PHARMACY</h2>
 
-                                <div class="search-results__content fap-results-content">
+                    <div class="pharmacy-single__column">
 
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
+                        <div class="fap-pharmacy__left-column">
+
+                            <div class="fap-pharmacy__pharmacy-icon">
+                                <img src="src/img/find-a-pharmacy-icon.png" alt="PGA Icon">
+                            </div>
+
+                            <div class="fap-pharmacy__single-pharmacy">
+                                <div class="fap-pharmacy__pharmacy-details">
+                                    <h3 class="fap-pharmacy__pharmacy-name">TerryWhite Chemmart Brisbane City</h3>
+
+                                    <p class="pharmacy-single__details small">
+                                        <strong>Open:</strong> 07:30 - 21:00 |
+                                        <span class="open-status open-status__opened">Opens Now <i class="fa-solid fa-chevron-down"></i>
+                                            <span class="open-status__schedule">
+                                                <span class="open-status__schedule-time small">
+                                                    <span class="open-status__schedule-date">Moday</span> : 07:30 - 21:00
+                                                </span>
+                                                <span class="open-status__schedule-time small">
+                                                    <span class="open-status__schedule-date">Tuesday</span> : 07:30 - 21:00
+                                                </span>
+                                                <span class="open-status__schedule-time small">
+                                                    <span class="open-status__schedule-date">Wednesday</span> : 07:30 - 21:00
+                                                </span>
+                                                <span class="open-status__schedule-time small">
+                                                    <span class="open-status__schedule-date">Thursday</span> : 07:30 - 21:00
+                                                </span>
+                                                <span class="open-status__schedule-time small">
+                                                    <span class="open-status__schedule-date">Friday</span> : 07:30 - 21:00
+                                                </span>
+                                                <span class="open-status__schedule-time small">
+                                                    <span class="open-status__schedule-date">Saturday</span> : 07:30 - 21:00
+                                                </span>
+                                                <span class="open-status__schedule-time small">
+                                                    <span class="open-status__schedule-date">Sunday</span> : 07:30 - 21:00
+                                                </span>
+                                            </span>
+                                        </span>
+                                        
+                                    </p>
+                                    <p class="pharmacy-single__details small"><strong>Address:</strong> Shop 103/91 Queen Street, BRISBANE QLD 4000</p>
+                                    <p class="pharmacy-single__details small"><strong>Phone:</strong> +61 734 727 766 <a href="tel:+61734727766" rel="nofollow" class="nearest-pharmacy__phone-link result-listing-call-now">Call Now</a></p>
+                                    <p class="pharmacy-single__details small"><strong>Fax:</strong> +61 734 727 770</p>
+                                    <p class="pharmacy-single__details small"><strong>Email:</strong> <a href="mailto:brisbanecity@terrywhitechemmart.com.au" rel="nofollow">brisbanecity@terrywhitechemmart.com.au</a></p>
+                                    <p class="pharmacy-single__details small"><strong>Distance:</strong> 1.35 Km</p>
+
+                                    <hr class="pharmacy-single__seperator">
                                     
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
+                                    <p class="pharmacy-single__details small"><strong>Holiday Trading Hours:</strong>
+                                        <span class="pharmacy-single__detail-wrapper">
+                                            <span class="pharmacy-single__detail-item">
+                                                Mon 10th Jun 09:00 to 21:00 (King's Birthday)
+                                            </span>
+                                        </span>
+                                    </p>
 
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
+                                    <hr class="pharmacy-single__seperator">
+
+                                    <p class="pharmacy-single__details small"><strong>Standard Trading Hours:</strong>
+                                        <span class="pharmacy-single__detail-wrapper">
+                                            <span class="pharmacy-single__detail-item">
+                                                Monday 08:30 to 18:00
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Tuesday 08:30 to 18:00
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Wednesday 08:30 to 18:00
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Thursday 08:30 to 18:00
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Friday 08:30 to 18:00
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Saturday 09:00 to 17:00
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Sunday 10:00 to 16:00
+                                            </span>
+                                        </span>
+                                    </p>
+
+                                    <hr class="pharmacy-single__seperator">
+                                        
+                                    <div class="pharmacy-single__actions">
+                                    
+                                        <p class="pharmacy-single__details small"><strong>for More Inquiries, call the pharmacy:</strong></p>
+
+                                        <button class="pharmacy-single__call-now button-blue btn-with-backdrop btn btn-secondary">
+                                            Call Now
+                                            <i class="fa-solid fa-phone-flip"></i>
+                                        </button>
+
+                                        <hr class="pharmacy-single__seperator">
+                                        
+                                        <p class="pharmacy-single__details small"><strong>Get your appointment:</strong></p>
+
+                                        <button class="button-yellow btn-with-backdrop btn btn-secondary">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            Book Now
+                                        </button>
+
+                                    </div>
+
+                                    <hr class="pharmacy-single__seperator">
+
+                                    <div class="fap-pharmacy__specialities">
+                                        <i class="fa-solid fa-square-parking"></i>
+
+                                        <i class="fa-solid fa-truck"></i>
+
+                                        <i class="fa-solid fa-wheelchair"></i>
+                                    </div>
+
                                 </div>
+                            </div>
+
                         </div>
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/my-pharmacy-services.jpg" alt="Search Results Thumbnail">
+                        <div class="fap-pharmacy__right-column">
 
-                                <div class="search-results__content fap-results-content">
+                            <div class="fap-pharmacy__single-pharmacy">
+                                <div class="fap-pharmacy__pharmacy-details">
+                                    <p class="pharmacy-single__details small"><strong>Services Provided:</strong>
+                                        <span class="pharmacy-single__detail-wrapper">
+                                            <span class="pharmacy-single__detail-item">
+                                                Blood Pressure Monitoring
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Delivery Services
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Dementia Friendly Pharmacy
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Diabetes Management
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Diabetes MedsCheck
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Dose Administration Aids
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Electronic Prescriptions
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Full Scope of Practice Pilot
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Home Medicines Review
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Needle and Syringe Service
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Opioid Dependency Treatment
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Quit Smoking Support
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Residential Medication Management Review
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Return Unwanted Medicines
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Staged Supply
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Take Home Naloxone Program
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                TeleHealth Services: e-Scripts
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Travel Health Services
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Urinary Tract Infection Service (UTI)
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Cholera
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - COVID (Moderna)
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Diphtheria, Tetanus & Pertussis (dTpa)
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - dTpa in combination with Polio
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Haemophilus Influenza Type B (Hib)
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Hepatitis A
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Hepatitis B
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services – Human Papillomavirus (HPV)
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Influenza
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Japanese Encephalitis
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Measles, Mumps & Rubella (MMR)
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Meningococcal (MenACWY)
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Meningococcal B
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Mpox
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Pneumococcal
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Poliomyelitis
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Shingles
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Typhoid
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Vaccination Services - Varicella (Chickenpox)
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Weight Management
+                                            </span>
+                                            <span class="pharmacy-single__detail-item">
+                                                Wound Management
+                                            </span>
+                                        </span>
+                                    </p>
 
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
-
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
                                 </div>
-                        </div>
+                            </div>
 
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/services-older-australians.jpg" alt="Search Results Thumbnail">
-
-                                <div class="search-results__content fap-results-content">
-
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
-
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                        </div>
-
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/services-addiction.jpg" alt="Search Results Thumbnail">
-
-                                <div class="search-results__content fap-results-content">
-
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
-
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                        </div>
-
-                        <div class="search-results__item fap-results-item">
-                            <img src="src/img/services-vaccination.jpg" alt="Search Results Thumbnail">
-
-                                <div class="search-results__content fap-results-content">
-
-                                    <h2 class="search-results__item fap-results-item-title">Title</h2>
-                                    
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet deserunt labore esse. Unde eius, illo doloremque ad corporis, esse similique qui accusamus libero odit repudiandae. Qui nesciunt repudiandae magni.</p>
-
-                                    <button class="search-results-btn button-blue btn-with-backdrop btn btn-secondary">
-                                        More infor
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
                         </div>
 
                     </div>
 
-                    <div class="fap-pagination-wrapper">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <nav aria-label="fap-pagination-nav">
+    <!-- Nearest Pharmacies Section -->
+    <section class="nearest-pharmacy">
+        <div class="nearest-pharmacy__container container-fluid">
+            <div class="row">
+                <div class="nearest-pharmacy__column col-lg-12 py-4">
+                    
+                    <div class="nearest-pharmacy__column-wrapper">
 
-                            <ul class="fap-pagination pagination">
-                                <li class="fap-pagination__item page-item disabled">
-                                    <a class="fap-pagination__link fap-pagination__prev page-link">Previous</a>
-                                </li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
 
-                                <li class="fap-pagination__item page-item">
-                                    <a class="fap-pagination__link page-link" href="#">1</a>
-                                </li>
+                                    <h2 class="nearest-pharmacy__column-title">Your Other Nearest Pharmacies</h2>
 
-                                <li class="fap-pagination__item page-item active" aria-current="page">
-                                    <a class="fap-pagination__link page-link" href="#">2</a>
-                                </li>
+                                    <div class="nearest-pharmacy__list-wrapper">
 
-                                <li class="fap-pagination__item page-item">
-                                    <a class="fap-pagination__link page-link" href="#">3</a>
-                                </li>
+                                        <div class="nearest-pharmacy__single-item result-listing-single-item">
+                                            <div class="nearest-pharmacy__pharmacy-icon result-listing-icon">
+                                                <img src="src/img/find-a-pharmacy-icon.png" alt="PGA Icon">
+                                            </div>
+            
+                                            <div class="nearest-pharmacy__pharmacy-details result-listing-details">
+                                                <h3 class="nearest-pharmacy__pharmacy-name result-listing-pharmacy-name">TerryWhite Chemmart Brisbane City</h3>
+                                                <p class="nearest-pharmacy__details result-listing-content small">
+                                                    <strong>Open :</strong> 07:30 - 21:00 | <span class="open-status open-status__opened">Opens Now <i class="fa-solid fa-chevron-down"></i>
+                                                        <span class="open-status__schedule">
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Moday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Tuesday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Wednesday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Thursday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Friday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Saturday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Sunday</span> : 07:30 - 21:00
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                </p>
+                                                <p class="nearest-pharmacy__details result-listing-content small"><strong>Address:</strong> Shop 103/91 Queen Street, BRISBANE QLD 4000</p>
+                                                <p class="nearest-pharmacy__details result-listing-content small"><strong>Phone:</strong> +61 734 727 766 <a href="tel:+61734727766" rel="nofollow" class="nearest-pharmacy__phone-link result-listing-call-now">Call Now</a></p>
+                                                <p class="nearest-pharmacy__details result-listing-content small"><strong>Distance:</strong> 1.35 Km</p>
+                                            </div>
+            
+                                            <div class="nearest-pharmacy__search-actions result-listing-actions">
+            
+                                                <div class="nearest-pharmacy__search-actions result-listing-actions-two-buttons search-actions-two-buttons">
+            
+                                                    <button class="nearest-pharmacy__bookings button-yellow btn-with-backdrop btn btn-secondary">
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                            Book Now
+                                                    </button>
+            
+                                                    <button class="nearest-pharmacy__directions button-lightblue btn-with-backdrop btn btn-secondary">
+                                                        <i class="fa-solid fa-map-location-dot"></i>
+                                                            Get Directions
+                                                    </button>
+                                                </div>
+            
+                                                <div class="nearest-pharmacy__search-actions result-listing-actions-one-button">
+            
+                                                    <button class="nearest-pharmacy__more-info button-blue btn-with-backdrop btn btn-secondary">
+                                                        Get more Info
+                                                    </button>
+                                                </div>
+            
+                                            </div>
+                                        </div>
+            
+                                        <div class="nearest-pharmacy__single-item result-listing-single-item">
+                                            <div class="nearest-pharmacy__pharmacy-icon result-listing-icon">
+                                                <img src="src/img/find-a-pharmacy-icon.png" alt="PGA Icon">
+                                            </div>
+            
+                                            <div class="nearest-pharmacy__pharmacy-details result-listing-details">
+                                                <h3 class="nearest-pharmacy__pharmacy-name result-listing-pharmacy-name">TerryWhite Chemmart Brisbane City</h3>
+                                                <p class="nearest-pharmacy__details result-listing-content small">
+                                                    <strong>Open :</strong> 07:30 - 21:00 | <span class="open-status open-status__closed">Closed Now <i class="fa-solid fa-chevron-down"></i>
+                                                        <span class="open-status__schedule">
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Moday</span> : Closed
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Tuesday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Wednesday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Thursday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Friday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Saturday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Sunday</span> : 07:30 - 21:00
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                </p>
+                                                <p class="nearest-pharmacy__details result-listing-content small"><strong>Address:</strong> Shop 103/91 Queen Street, BRISBANE QLD 4000</p>
+                                                <p class="nearest-pharmacy__details result-listing-content small"><strong>Phone:</strong> +61 734 727 766 <a href="tel:+61734727766" rel="nofollow" class="nearest-pharmacy__phone-link result-listing-call-now">Call Now</a></p>
+                                                <p class="nearest-pharmacy__details result-listing-content small"><strong>Distance:</strong> 1.35 Km</p>
+                                            </div>
+            
+                                            <div class="nearest-pharmacy__search-actions result-listing-actions">
+            
+                                                <div class="nearest-pharmacy__search-actions result-listing-actions-two-buttons search-actions-two-buttons">
+            
+                                                    <button class="nearest-pharmacy__bookings button-yellow btn-with-backdrop btn btn-secondary">
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                            Book Now
+                                                    </button>
+            
+                                                    <button class="nearest-pharmacy__directions button-lightblue btn-with-backdrop btn btn-secondary">
+                                                        <i class="fa-solid fa-map-location-dot"></i>
+                                                            Get Directions
+                                                    </button>
+                                                </div>
+            
+                                                <div class="nearest-pharmacy__search-actions result-listing-actions-one-button">
+            
+                                                    <button class="nearest-pharmacy__more-info button-blue btn-with-backdrop btn btn-secondary">
+                                                        Get more Info
+                                                    </button>
+                                                </div>
+            
+                                            </div>
+                                        </div>
+            
+                                        <div class="nearest-pharmacy__single-item result-listing-single-item">
+                                            <div class="nearest-pharmacy__pharmacy-icon result-listing-icon">
+                                                <img src="src/img/find-a-pharmacy-icon.png" alt="PGA Icon">
+                                            </div>
+            
+                                            <div class="nearest-pharmacy__pharmacy-details result-listing-details">
+                                                <h3 class="nearest-pharmacy__pharmacy-name result-listing-pharmacy-name">TerryWhite Chemmart Brisbane City</h3>
+                                                <p class="nearest-pharmacy__details result-listing-content small">
+                                                    <strong>Open :</strong> 07:30 - 21:00 | <span class="open-status open-status__opened">Opens Now <i class="fa-solid fa-chevron-down"></i>
+                                                        <span class="open-status__schedule">
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Moday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Tuesday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Wednesday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Thursday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Friday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Saturday</span> : 07:30 - 21:00
+                                                            </span>
+                                                            <span class="open-status__schedule-time small">
+                                                                <span class="open-status__schedule-date">Sunday</span> : 07:30 - 21:00
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                </p>
+                                                <p class="nearest-pharmacy__details result-listing-content small"><strong>Address:</strong> Shop 103/91 Queen Street, BRISBANE QLD 4000</p>
+                                                <p class="nearest-pharmacy__details result-listing-content small"><strong>Phone:</strong> +61 734 727 766 <a href="tel:+61734727766" rel="nofollow" class="nearest-pharmacy__phone-link result-listing-call-now">Call Now</a></p>
+                                                <p class="nearest-pharmacy__details result-listing-content small"><strong>Distance:</strong> 1.35 Km</p>
+                                            </div>
+            
+                                            <div class="nearest-pharmacy__search-actions result-listing-actions">
+            
+                                                <div class="nearest-pharmacy__search-actions result-listing-actions-two-buttons search-actions-two-buttons">
+            
+                                                    <button class="nearest-pharmacy__bookings button-yellow btn-with-backdrop btn btn-secondary">
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                            Book Now
+                                                    </button>
+            
+                                                    <button class="nearest-pharmacy__directions button-lightblue btn-with-backdrop btn btn-secondary">
+                                                        <i class="fa-solid fa-map-location-dot"></i>
+                                                            Get Directions
+                                                    </button>
+                                                </div>
+            
+                                                <div class="nearest-pharmacy__search-actions result-listing-actions-one-button">
+            
+                                                    <button class="nearest-pharmacy__more-info button-blue btn-with-backdrop btn btn-secondary">
+                                                        Get more Info
+                                                    </button>
+                                                </div>
+            
+                                            </div>
+                                        </div>
 
-                                <li class="fap-pagination__item page-item">
-                                    <a class="fap-pagination__link fap-pagination__next page-link" href="#">Next</a>
-                                </li>
-                            </ul>
+                                    </div>
 
-                        </nav>
+                                    <button class="nearest-pharmacy__see-more button-yellow btn-with-backdrop btn btn-secondary">
+                                        See more nearby pharmacies
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 

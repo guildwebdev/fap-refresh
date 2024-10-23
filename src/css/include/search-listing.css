@@ -11,8 +11,8 @@
     overflow-y: auto;
 }
 
-.pharmacy-map__result-single-item {
-    background: rgb(var(--clr--white));
+.result-listing-single-item {
+    background-color: rgb(var(--clr--white));
     padding: 35px;
     margin-bottom: 25px;
     cursor: pointer;
@@ -26,27 +26,27 @@
     gap: 15px;
 }
 
-.pharmacy-map__result-single-item:hover {
+.result-listing-single-item:hover {
     background-color: rgb(var(--clr--lightyellow));
 }
 
-.single-service-map .pharmacy-map__result-single-item:hover {
-    background-color: rgba(var(--clr--lightblue), .2);
+.single-service-map .result-listing-single-item:hover {
+    background-color: rgba(var(--clr--yellow), .3);
 }
 
-.pharmacy-map__pharmacy-icon img {
+.result-listing-icon img {
     width: 50px;
 }
 
-.pharmacy-map__pharmacy-details {
+.result-listing-details {
     width: 40%;
 }
 
-.pharmacy-map__pharmacy-details .pharmacy-map__pharmacy-name {
+.result-listing-details .result-listing-pharmacy-name {
     font-size: clamp(18px, 1.1vw, 27px);
 }
 
-.pharmacy-map__details {
+.result-listing-content {
     margin-bottom: 7px;
 }
 
@@ -64,8 +64,9 @@ span.open-status__closed {
     color: rgb(191, 30, 70);
 }
 
-a.pharmacy-map__phone-link {
+a.result-listing-call-now {
     color: rgb(var(--clr--lightblue));
+    display: inline-block;
 }
 
 span.open-status__schedule-time {
@@ -99,14 +100,14 @@ span.open-status__schedule-time {
     width: 85px;
 }
 
-.pharmacy-map__search-actions {
+.result-listing-actions {
     width: calc(60% - 80px);
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.pharmacy-map__search-actions button.btn {
+.result-listing-actions button.btn {
     min-width: unset;
     width: var(--width--full);
 }

@@ -16,13 +16,19 @@
 @import url("include/paginations.css");
 @import url("include/services.css");
 @import url("include/tabular.css");
+@import url("include/pharmacy-services.css");
 @import url("include/lists.css");
 @import url("include/signup.css");
 @import url("include/subscribe.css");
 @import url("include/trending-topics.css");
 @import url("include/my-pharmacy.css");
+@import url("include/pharmacy.css");
 @import url("include/news.css");
-@import url("include/footer.css");
+@import url("include/blogs.css");
+@import url("include/about.css");
+@import url("include/grids.css");
+@import url("include/error.css");
 @import url("include/modals.css");
+@import url("include/footer.css");
 
 @import url("include/mediaqueries.css");

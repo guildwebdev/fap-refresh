@@ -17,17 +17,18 @@
 }
 
 .latest-updates__title-wrapper .latest-updates__title {
-    width: 300px;
+    width: 400px;
 }
 
 .section-subtitle {
     font-size: 15px;
     text-transform: uppercase;
     display: block;
+    margin-bottom: 7px;
 }
 
 .latest-updates__title-wrapper .latest-updates__description {
-    width: calc(var(--width--full) - 350px);
+    width: calc(var(--width--full) - 450px);
 }
 
 .latest-updates__title-wrapper .latest-updates__description .latest-updates__text-description {

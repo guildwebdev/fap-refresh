@@ -8,7 +8,11 @@
     <meta name="keywords" content="">
     <meta name="author" content="Curious Minds Media">
     <title>Services | The Pharmacy Guild of Australia</title>
-    <link rel="icon" href="src/img/find-a-pharmacy-icon.png" type="image/png">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon-16x16.png">
+    <link rel="manifest" href="src/img/site.webmanifest">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -31,7 +35,7 @@
         <div class="header__container container d-flex justify-content-between align-items-center gap-3">
           
             <div class="header__logo py-0 py-lg-4">
-                <a href="/" class="header__logo-link">
+                <a href="/" rel="noopener noreferrer" class="header__logo-link">
                     <img src="src/img/find-a-pharmacy-logo.png" class="header__logo-image w-100" alt="The Pharmacy Guild of Australia Logo">
                 </a>
             </div>
@@ -273,7 +277,7 @@
                 
                     <div class="header__actions d-flex align-items-center flex-row gap-3 mt-3 mt-lg-0">
 
-                        <button class="header__action-button button-yellow btn-with-backdrop btn btn-primary" data-bs-toggle="modal" data-bs-target="#fap-subscribe-modal">
+                        <button class="header__action-button button-yellow btn-with-backdrop btn btn-secondary" data-bs-toggle="modal" data-bs-target="#fap-subscribe-modal">
                             <i class="fa-solid fa-bell"></i>
                                 Subscribe
                         </button>
@@ -289,11 +293,9 @@
     </header>
 
     <!-- Breadscrumb Section -->
-    <section class="breadscrumb bg-lightgray">
+    <section class="breadscrumb breadscrumb-with-img bg-lightgray">
 
-        <div class="breadscrumb-hero">
-
-            <img src="src/img/breadscrumb-services.jpg" class="breadscrumb-hero__image" alt="Services of The Pharmacy Guild of Australia">
+        <div class="breadscrumb-hero" style="background-image: url('src/img/breadscrumb-services.jpg')">
 
             <div class="breadscrumb__container container">
                 <div class="row">
@@ -343,8 +345,8 @@
 
                     <div class="our-services__column-wrapper">
 
-                        <div class="our-services__title-wrapper">
-                            <div class="our-services__title">
+                        <div class="our-services__title-wrapper fap-card-title-wrapper">
+                            <div class="our-services__title fap-card-title">
                                 <h2 class="title-with-pretitle"><span class="services__sub-title section-subtitle">OUR SERVICES</span>
                                     What We Offer</h2>
                             </div>
@@ -354,7 +356,7 @@
                                     
                                     <input type="search" class="our-services__search-input search-input fap-input form-control" id="fap-service-input" placeholder="What are you looking for?">
 
-                                    <button class="our-services__search-btn button-blue btn-with-backdrop btn btn-primary">
+                                    <button class="our-services__search-btn button-blue btn-with-backdrop btn btn-secondary">
                                         Search
                                     </button>
 
@@ -391,13 +393,13 @@
 
                                     <div class="our-services__tab-pane tab-pane fade show active" id="fap-vaccination" role="tabpanel" aria-labelledby="fap-vaccination-service" tabindex="0">
                                         
-                                        <h2 class="our-services__item-title">Vaccination</h2>
+                                        <h2 class="our-services__item fap-card-item-title">Vaccination</h2>
 
                                         <p>Stay protected with our comprehensive vaccination services, including flu, COVID-19, and more, administered by our qualified pharmacists.</p>
 
                                         <img src="src/img/main-services-vaccination.jpg" class="services__image" alt="Vaccination">
 
-                                        <div class="services__sub-services">
+                                        <div class="services__sub-services grid-three-items">
 
                                             <div class="services__sub-item">
 
@@ -405,11 +407,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Influenza">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Influenza</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Influenza</h3>
 
-                                                <p class="our-services__item-description">Protect yourself this flu season with our convenient in-pharmacy vaccination services.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Protect yourself this flu season with our convenient in-pharmacy vaccination services.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -422,11 +424,11 @@
                                                     <img src="src/img/icon-covid-syringe.svg" alt="COVID-19">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">COVID-19</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">COVID-19</h3>
 
-                                                <p class="our-services__item-description">Stay protected with our accessible COVID-19 vaccination services available at your convenience.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Stay protected with our accessible COVID-19 vaccination services available at your convenience.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -439,11 +441,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Travel vaccination">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Travel vaccination</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Travel vaccination</h3>
 
-                                                <p class="our-services__item-description">Heading overseas? Prepare for your journey with expert travel health advice and vaccination services at your local pharmacy.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Heading overseas? Prepare for your journey with expert travel health advice and vaccination services at your local pharmacy.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -456,13 +458,13 @@
 
                                     <div class="our-services__tab-pane tab-pane fade" id="fap-womens-health" role="tabpanel" aria-labelledby="fap-womens-health-service" tabindex="0">
                                         
-                                        <h2 class="our-services__item-title">Women's health</h2>
+                                        <h2 class="our-services__item fap-card-item-title">Women's health</h2>
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</p>
 
                                         <img src="src/img/main-services-vaccination.jpg" class="services__image" alt="Vaccination">
 
-                                        <div class="services__sub-services">
+                                        <div class="services__sub-services grid-three-items">
 
                                             <div class="services__sub-item">
 
@@ -470,11 +472,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -487,11 +489,11 @@
                                                     <img src="src/img/icon-covid-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -504,11 +506,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -521,13 +523,13 @@
 
                                     <div class="our-services__tab-pane tab-pane fade" id="fap-everyday-health" role="tabpanel" aria-labelledby="fap-everyday-health-service" tabindex="0">
                                         
-                                        <h2 class="our-services__item-title">Everyday health</h2>
+                                        <h2 class="our-services__item fap-card-item-title">Everyday health</h2>
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</p>
 
                                         <img src="src/img/main-services-vaccination.jpg" class="services__image" alt="Vaccination">
 
-                                        <div class="services__sub-services">
+                                        <div class="services__sub-services grid-three-items">
 
                                             <div class="services__sub-item">
 
@@ -535,11 +537,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -552,11 +554,11 @@
                                                     <img src="src/img/icon-covid-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -569,11 +571,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -586,13 +588,13 @@
 
                                     <div class="our-services__tab-pane tab-pane fade" id="fap-skin-sprains" role="tabpanel" aria-labelledby="fap-skin-sprains-service" tabindex="0">
                                         
-                                        <h2 class="our-services__item-title">Skin & sprains</h2>
+                                        <h2 class="our-services__item fap-card-item-title">Skin & sprains</h2>
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</p>
 
                                         <img src="src/img/main-services-vaccination.jpg" class="services__image" alt="Vaccination">
 
-                                        <div class="services__sub-services">
+                                        <div class="services__sub-services grid-three-items">
 
                                             <div class="services__sub-item">
 
@@ -600,11 +602,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -617,11 +619,11 @@
                                                     <img src="src/img/icon-covid-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -634,11 +636,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -657,7 +659,7 @@
 
                                         <img src="src/img/main-services-vaccination.jpg" class="services__image" alt="Vaccination">
 
-                                        <div class="services__sub-services">
+                                        <div class="services__sub-services grid-three-items">
 
                                             <div class="services__sub-item">
 
@@ -665,11 +667,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -682,11 +684,11 @@
                                                     <img src="src/img/icon-covid-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -699,11 +701,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -716,13 +718,13 @@
 
                                     <div class="our-services__tab-pane tab-pane fade" id="fap-medicines-management" role="tabpanel" aria-labelledby="ffap-medicines-management-service" tabindex="0">
                                         
-                                        <h2 class="our-services__item-title">Medicines management</h2>
+                                        <h2 class="our-services__item fap-card-item-title">Medicines management</h2>
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</p>
 
                                         <img src="src/img/main-services-vaccination.jpg" class="services__image" alt="Vaccination">
 
-                                        <div class="services__sub-services">
+                                        <div class="services__sub-services grid-three-items">
 
                                             <div class="services__sub-item">
 
@@ -730,11 +732,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -747,11 +749,11 @@
                                                     <img src="src/img/icon-covid-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -764,11 +766,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -781,13 +783,13 @@
 
                                     <div class="our-services__tab-pane tab-pane fade" id="fap-diabetes" role="tabpanel" aria-labelledby="fap-diabetes-service" tabindex="0">
                                         
-                                        <h2 class="our-services__item-title">Diabetes</h2>
+                                        <h2 class="our-services__item fap-card-item-title">Diabetes</h2>
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</p>
 
                                         <img src="src/img/main-services-vaccination.jpg" class="services__image" alt="Vaccination">
 
-                                        <div class="services__sub-services">
+                                        <div class="services__sub-services grid-three-items">
 
                                             <div class="services__sub-item">
 
@@ -795,11 +797,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -812,11 +814,11 @@
                                                     <img src="src/img/icon-covid-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -829,11 +831,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -846,13 +848,13 @@
 
                                     <div class="our-services__tab-pane tab-pane fade" id="fap-older-australians" role="tabpanel" aria-labelledby="fap-older-australians-service" tabindex="0">
                                         
-                                        <h2 class="our-services__item-title">Older Australians</h2>
+                                        <h2 class="our-services__item fap-card-item-title">Older Australians</h2>
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</p>
 
                                         <img src="src/img/main-services-vaccination.jpg" class="services__image" alt="Vaccination">
 
-                                        <div class="services__sub-services">
+                                        <div class="services__sub-services grid-three-items">
 
                                             <div class="services__sub-item">
 
@@ -860,11 +862,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -877,11 +879,11 @@
                                                     <img src="src/img/icon-covid-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -894,11 +896,11 @@
                                                     <img src="src/img/icon-syringe.svg" alt="Title">
                                                 </div>
 
-                                                <h3 class="our-services__item-title">Title</h3>
+                                                <h3 class="our-services__item-title fap-card-item-title">Title</h3>
 
-                                                <p class="our-services__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
+                                                <p class="our-services__item-description fap-card-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia.</p>
                         
-                                                <button class="services__actions button-blue btn-with-backdrop btn btn-primary">
+                                                <button class="services__actions button-blue btn-with-backdrop btn btn-secondary">
                                                     More infor
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                 </button>
@@ -963,7 +965,7 @@
 
                                         <h3 class="others__description text-center">Australia has one of the highest rates of bowel cancer in the world, with this particular cancer being the third most common cancer in the country.</h3>
 
-                                        <div class="others__content">
+                                        <div class="others__content two-column-section">
 
                                             <img src="src/img/other-services-bowel-cancer.jpg" class="others__content-image" alt="Bowel Cancer">
 
@@ -1007,7 +1009,7 @@
 
                                         <h3 class="others__description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</h3>
 
-                                        <div class="others__content">
+                                        <div class="others__content two-column-section">
 
                                             <img src="src/img/other-services-bowel-cancer.jpg" class="others__content-image" alt="Bowel Cancer">
 
@@ -1051,7 +1053,7 @@
 
                                         <h3 class="others__description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices augue ut facilisis lacinia. Donec nibh massa, ornare quis libero eu, pellentesque suscipit felis.</h3>
 
-                                        <div class="others__content">
+                                        <div class="others__content two-column-section">
 
                                             <img src="src/img/other-services-bowel-cancer.jpg" class="others__content-image" alt="Bowel Cancer">
 
@@ -1100,7 +1102,7 @@
                                 
                                 <input type="search" class="services__search-input search-input fap-input form-control" id="service-input" placeholder="Your Postcode or Location *">
 
-                                <button class="services__search-btn button-blue btn-with-backdrop btn btn-primary">
+                                <button class="services__search-btn button-blue btn-with-backdrop btn btn-secondary">
                                     <i class="fa-solid fa-location-dot"></i>
                                     Find me the nearest Pharmacy
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -1179,7 +1181,7 @@
 
                                 <p class="fap-form-footer small">By registering, I agree to The Pharmacy Guild of Australia's <a href="#">Privacy Policy</a> & <a href="#">Data Collection Statement</a>.</p>
 
-                                <button class="signup-services-btn button-yellow btn-with-backdrop btn btn-primary">
+                                <button class="signup-services-btn button-yellow btn-with-backdrop btn btn-secondary">
                                     Sign Up
                                 </button>
                                 
@@ -1212,7 +1214,7 @@
 
                         <div class="trending-topics__seperator"></div>
 
-                        <div class="trending-topics__icons-wrapper">
+                        <div class="trending-topics__icons-wrapper grid-five-items">
                             <a href="#" class="trending-topics__trending-icon-items">
                                 <img src="src/img/icon-syringe.svg" class="trending-topics__trending-icons" alt="Influenza Vaccine">
                                 <p class="trending-topics__trending-icon-text small">Influenza Vaccine</p>
@@ -1256,9 +1258,7 @@
             <div class="row">
                 <div class="my-pharmacy__column col-lg-12">
 
-                    <div class="my-pharmacy__image-wrapper">
-                    
-                        <img src="src/img/find-a-pharmacy-my-pharmacy-image.jpg" class="my-pharmacy__background-image" alt="My Pharmacy">
+                    <div class="my-pharmacy__image-wrapper" style="background-image: url('src/img/find-a-pharmacy-my-pharmacy-image.jpg');">
 
                         <div class="my-pharmacy__container-wrapper">
 
@@ -1277,8 +1277,8 @@
                                                 </div>
 
                                                 <div class="my-pharmacy__action">
-                                                    <button class="my-pharmacy__pharmacy-btn button-yellow find-a-pharmacy-btn btn-with-backdrop btn btn-primary">
-                                                        <img src="src/img/find-a-pharmacy-icon.png" alt="">
+                                                    <button class="my-pharmacy__pharmacy-btn button-yellow find-a-pharmacy-btn btn-with-backdrop btn btn-secondary">
+                                                        <img src="src/img/find-a-pharmacy-icon.png" alt="PGA Icon">
                                                             To My Pharmacy
                                                             <i class="fa-solid fa-arrow-right"></i>
                                                     </button>
@@ -1359,7 +1359,7 @@
 
                                     </div>
                                     
-                                    <button class="latest-updates__actions button-blue btn-with-backdrop btn btn-primary">
+                                    <button class="latest-updates__actions button-blue btn-with-backdrop btn btn-secondary">
                                         View all articles
                                             <i class="fa-solid fa-arrow-right"></i>
                                     </button>
@@ -1380,24 +1380,24 @@
 
     <!-- Common Footer -->
     <footer class="footer">
-        <div class="footer__container container-fluid my-5 pt-4">
+        <div class="footer__container container-fluid my-4 pt-5">
 
             <div class="footer__logo-image text-center">
-                <a href="/" class="footer__logo-link">
+                <a href="/" rel="noopener noreferrer" class="footer__logo-link">
                     <img src="src/img/pga-logo.png" class="footer__logo-image" alt="The Pharmacy Guild of Australia Logo">
                 </a>
             </div>
 
-            <div class="footer_copyright text-center p-4 p-md-3">
+            <div class="footer__copyright text-center p-4 p-md-3">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
 
-                            <h2 class="mb-3">For emergencies, please call: <a href="tel:000">000</a></h2>
+                            <h2 class="mb-3">For emergencies, please call: <a href="tel:000" rel="nofollow">000</a></h2>
 
                             <p>The Pharmacy Guild of Australia acknowledges the Traditional Custodians of this nation's lands, waters, and skies. The Guild pays its respect to the Aboriginal and Torres Strait Islander people, their diverse languages, their cultural practices and recognise their continuing connection and contribution to the lands on which we work and live.</p>
 
-                            <p>All rights reserved | The Pharmacy Guild of Australia 2024 | <a href="#" target="_blank" rel="noopener noreferrer">About the Pharmacy Guild</a> | <a href="#" target="_blank" rel="noopener noreferrer">Privacy policy</a> | v.24april(0.3.4)</p>
+                            <p class="fw600">All rights reserved | The Pharmacy Guild of Australia 2024 | <a href="#" target="_blank" rel="noopener noreferrer">About the Pharmacy Guild</a> | <a href="#" target="_blank" rel="noopener noreferrer">Privacy policy</a> | v.24april(0.3.4)</p>
 
                         </div>
                     </div>
@@ -1425,7 +1425,7 @@
                                         
                                             <input type="search" class="search-modal__search-input search-input fap-input form-control" id="fap-service-input" placeholder="What are you looking for?">
         
-                                            <button class="search-modal__search-btn button-blue btn-with-backdrop btn btn-primary">
+                                            <button class="search-modal__search-btn button-blue btn-with-backdrop btn btn-secondary">
                                                 Search
                                             </button>
 
@@ -1461,7 +1461,7 @@
                                     <div class="subscribe-modal__subscribe-actions header__modal-text">
                                         <p>Subscribe for updates to be notified when this service becomes available in your state.</p>
 
-                                        <button class="notify-action header__modal-action button-yellow btn-with-backdrop btn btn-primary" data-bs-target="#fap-notify-modal" data-bs-toggle="modal">
+                                        <button class="notify-action header__modal-action button-yellow btn-with-backdrop btn btn-secondary" data-bs-target="#fap-notify-modal" data-bs-toggle="modal">
                                             <i class="fa-solid fa-bell"></i>
                                                 Notify me
                                         </button>
@@ -1470,7 +1470,7 @@
 
                                         <p>Send a Letter to your Member of Parliament to request that this service be made available in your area.</p>
                     
-                                        <button class="letter-action header__modal-action button-yellow btn-with-backdrop btn btn-primary" data-bs-target="#fap-letter-send-modal" data-bs-toggle="modal">
+                                        <button class="letter-action header__modal-action button-yellow btn-with-backdrop btn btn-secondary" data-bs-target="#fap-letter-send-modal" data-bs-toggle="modal">
                                             <i class="fa-solid fa-envelope-open-text"></i>
                                                 Send a Letter to your MP
                                         </button>
@@ -1503,7 +1503,7 @@
                             <div class="col-md-6">
                                 <div class="notify-modal__subscribe-actions header__modal-text">
 
-                                    <button class="notify-action__action-back header__modal-action button-yellow header__modal-back-action btn-with-backdrop btn btn-primary" data-bs-target="#fap-subscribe-modal" data-bs-toggle="modal">
+                                    <button class="notify-action__action-back header__modal-action button-yellow header__modal-back-action btn-with-backdrop btn btn-secondary" data-bs-target="#fap-subscribe-modal" data-bs-toggle="modal">
                                         <i class="fa-solid fa-arrow-left"></i>
                                             Go Back
                                     </button>
@@ -1519,7 +1519,7 @@
                                             
                                             <input type="text" class="notify-modal__notify-postcode fap-input form-control" id="fap-notify-postcode" placeholder="Postcode">
 
-                                            <button type="button" class="notify-modal__btn-primary header__modal-action button-yellow btn-with-backdrop btn btn-primary">
+                                            <button type="button" class="notify-modal__btn-primary header__modal-action button-yellow btn-with-backdrop btn btn-secondary">
                                                 <i class="fa-solid fa-bell"></i>
                                                     Notify me
                                             </button>
@@ -1555,7 +1555,7 @@
                             <div class="col-md-6">
                                 <div class="letter-send-modal__letter-actions header__modal-text">
 
-                                    <button class="letter-send-action__action-back header__modal-action button-yellow header__modal-back-action btn-with-backdrop btn btn-primary" data-bs-target="#fap-subscribe-modal" data-bs-toggle="modal">
+                                    <button class="letter-send-action__action-back header__modal-action button-yellow header__modal-back-action btn-with-backdrop btn btn-secondary" data-bs-target="#fap-subscribe-modal" data-bs-toggle="modal">
                                         <i class="fa-solid fa-arrow-left"></i>
                                             Go Back
                                     </button>
@@ -1633,7 +1633,7 @@ Yours sincerely,
                                                 </div>
                                             </div>
 
-                                            <button type="button" class="letter-send-modal__btn-primary header__modal-action button-yellow btn-with-backdrop btn btn-primary my-3">
+                                            <button type="button" class="letter-send-modal__btn-primary header__modal-action button-yellow btn-with-backdrop btn btn-secondary my-3">
                                                 <i class="fa-solid fa-envelope"></i>
                                                     Send this Letter to your MP
                                             </button>

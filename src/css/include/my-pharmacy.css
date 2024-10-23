@@ -2,24 +2,21 @@
     position: relative;
 }
 
-section.my-pharmacy img.my-pharmacy__background-image {
-    width: var(--width--full);
-    height: 700px;
-    object-fit: cover;
-    object-position: 0 0;
-    border-radius: calc(var(--bdr--radius) * 3);
-    -webkit-border-radius: calc(var(--bdr--radius) * 3);
-    -moz-border-radius: calc(var(--bdr--radius) * 3);
-    -ms-border-radius: calc(var(--bdr--radius) * 3);
-    -o-border-radius: calc(var(--bdr--radius) * 3);
-}
-
 section.my-pharmacy .my-pharmacy__wrapper {
     position: relative;
 }
 
 .my-pharmacy__image-wrapper {
+    height: 700px;
     position: relative;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 0 !important;
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
 }
 
 section.my-pharmacy .my-pharmacy__container-wrapper {

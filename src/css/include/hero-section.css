@@ -119,7 +119,7 @@ span.hero-banner-ad__ad-toggle:hover .custom-icons__chevron-circle {
     width: var(--width--full);
     height: 100%;
     object-fit: cover;
-    object-position: calc(var(--width--full) * .5);
+    object-position: calc(var(--width--full) / 2);
 }
 
 .hero-banner-ad__ad-content {

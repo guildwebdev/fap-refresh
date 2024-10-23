@@ -1,0 +1,143 @@
+.all-posts {
+    background-color: rgb(255, 249, 233);
+}
+
+.all-posts .all-posts__filter {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.all-posts .all-posts__filter .all-posts__filter-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.all-posts .all-posts__filter .fap-input {
+    width: 220px;
+}
+
+.all-posts .all-posts__filter .all-posts__filter-icon {
+    text-align: center;
+    line-height: 32px;
+    color: rgb(var(--clr--white));
+    background-color: rgb(var(--clr--blue));
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: calc(var(--bdr--radius) * 1.5);
+    -webkit-border-radius: calc(var(--bdr--radius) * 1.5);
+    -moz-border-radius: calc(var(--bdr--radius) * 1.5);
+    -ms-border-radius: calc(var(--bdr--radius) * 1.5);
+    -o-border-radius: calc(var(--bdr--radius) * 1.5);
+    position: relative;
+    z-index: 99;
+}
+
+.vaccine-news {
+    background-color: rgb(255, 249, 233);
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
+}
+
+.vaccine-news__column-title {
+    font-size: clamp(31px, 1.9vw, 42px);
+}
+
+.vaccine-news__grid {
+    margin-top: 45px;
+}
+
+.single-article {
+    background-color: rgb(255, 249, 233);
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
+    position: relative;
+}
+
+.related-topics {
+    background-color: rgb(246, 247, 247);
+    margin-top: -30px;
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
+}
+
+.related-topics .related-topics__container {
+    padding-top: 30px;
+}
+
+.related-topics .related-topics__container .related-topics__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.related-topics .related-topics__container .related-topics__wrapper .related-topics__services {
+    width: 700px;
+}
+
+.related-topics .related-topics__container .related-topics__wrapper .related-topics__action-wrap {
+    width: calc(var(--width--full) - 750px);
+    text-align: center;
+    background: rgb(223, 240, 247) url(../../img/pattern-news-background.svg) 0 0;
+    background-size: 400px;
+    padding: 50px;
+    border: 1px solid rgb(var(--clr--lightblue));
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.related-topics__action-wrap .related-topics__image {
+    width: 75px;
+    height: auto;
+}
+
+.related-topics__action-wrap .related-topics__action-title {
+    font-size: clamp(31px, 1.8vw, 42px);
+}
+
+.related-topics__list-title {
+    margin-bottom: 35px;
+}
+
+.related-topics__item-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.related-topics__item-description > * {
+    break-inside: avoid;
+}
+
+.related-topics__item-description img {
+    width: var(--width--full);
+    margin-bottom: 25px;
+    border-radius: calc(var(--bdr--radius) * 2);
+    -webkit-border-radius: calc(var(--bdr--radius) * 2);
+    -moz-border-radius: calc(var(--bdr--radius) * 2);
+    -ms-border-radius: calc(var(--bdr--radius) * 2);
+    -o-border-radius: calc(var(--bdr--radius) * 2);
+}

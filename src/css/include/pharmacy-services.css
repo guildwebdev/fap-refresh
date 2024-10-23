@@ -1,0 +1,87 @@
+.interactive-map {
+    background-color: rgb(246, 247, 247);
+    border-radius: var(--bdr--radius--bottom);
+    -webkit-border-radius: var(--bdr--radius--bottom);
+    -moz-border-radius: var(--bdr--radius--bottom);
+    -ms-border-radius: var(--bdr--radius--bottom);
+    -o-border-radius: var(--bdr--radius--bottom);
+}
+
+.interactive-map .interactive-map-column {
+    position: relative;
+}
+
+.interactive-map__title {
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.interactive-map .interactive-map-wrapper {
+    text-align: center;
+}
+
+.interactive-map .interactive-map-wrapper svg {
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    background: url("../../img/au-bg-map.svg") no-repeat 50% 50%;
+    background-size: 95% 95%;
+}
+
+.state-map {
+    position: relative;
+}
+
+.state-map:hover path {
+    fill: rgb(var(--clr--lightblue));
+}
+
+.interactive-map__top-text,
+.interactive-map__bottom-text {
+    font-weight: 600;
+    width: 400px;
+    padding: 30px;
+    background: rgba(var(--clr--white), 0.4);
+    border: 1px solid rgb(var(--clr--white));
+    opacity: 1;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
+    position: absolute;
+}
+
+.interactive-map__top-text {
+    top: 50px;
+    right: 0;
+}
+
+.interactive-map__bottom-text {
+    bottom: 50px;
+    left: 0;
+}
+
+.interactive-map__top-text p:last-child,
+.interactive-map__bottom-text p:last-child {
+    margin: 0;
+}
+
+.states__list-wrapper {
+    margin-block: 35px;
+}
+
+.state-tabular-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-block: 25px;
+    border-radius: calc(var(--bdr--radius) * 15);
+    -webkit-border-radius: calc(var(--bdr--radius) * 15);
+    -moz-border-radius: calc(var(--bdr--radius) * 15);
+    -ms-border-radius: calc(var(--bdr--radius) * 15);
+    -o-border-radius: calc(var(--bdr--radius) * 15);
+}

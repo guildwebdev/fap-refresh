@@ -1,0 +1,19 @@
+.grid-three-items,
+.grid-four-items,
+.grid-five-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.grid-three-items > * {
+    width: calc((var(--width--full) / 3) - 17px);    
+}
+
+.grid-four-items > * {
+    width: calc((var(--width--full) / 4) - 19px);    
+}
+
+.grid-five-items > * {
+    width: calc((var(--width--full) / 5) - 20px);    
+}

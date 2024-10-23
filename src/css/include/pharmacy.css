@@ -1,0 +1,105 @@
+.pharmacy-location__name-wrapper {
+    background-color: rgb(255, 238, 192);
+    padding: 8px 15px;
+    margin-block: 25px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
+}
+
+.pharmacy-location__name-wrapper .pharmacy-location__icon {
+    width: 20px;
+    height: auto;
+}
+
+.pharmacy-location__name-wrapper .pharmacy-location__name {
+    font-size: clamp(16px, 0.9vw, 23px);
+    margin: 0;
+}
+
+.pharmacy-single__title {
+    font-size: clamp(23px, 1.5vw, 38px);
+    letter-spacing: 3px;
+}
+
+.pharmacy-single__column {
+    margin-top: 35px;
+    display: flex;
+    gap: 25px;
+}
+
+.fap-pharmacy__left-column,
+.fap-pharmacy__right-column {
+    width: calc((var(--width--full) / 2) - 12px);
+}
+
+.fap-pharmacy__left-column {
+    display: flex;
+    gap: 20px;
+}
+
+.fap-pharmacy__left-column .fap-pharmacy__pharmacy-icon {
+    width: 50px;
+}
+
+.fap-pharmacy__left-column .fap-pharmacy__pharmacy-icon img {
+    width: var(--width--full);
+}
+
+.fap-pharmacy__pharmacy-name {
+    font-size: clamp(18px, 1.1vw, 27px);
+}
+
+.pharmacy-single__details {
+    margin-bottom: 12px;
+}
+
+.pharmacy-single__details span.pharmacy-single__detail-wrapper {
+    display: block;
+    margin-top: 7px;
+}
+
+.pharmacy-single__details span.pharmacy-single__detail-wrapper span.pharmacy-single__detail-item {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.pharmacy-single__seperator {
+    border: 0;
+}
+
+.fap-pharmacy__specialities {
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.nearest-pharmacy__column-wrapper {
+    background: rgb(var(--clr--lightyellow)) url("../../img/pattern-news-background.svg") 0 0;
+    background-size: 400px;
+    padding: 50px;
+    border-radius: calc(var(--bdr--radius) * 3);
+    -webkit-border-radius: calc(var(--bdr--radius) * 3);
+    -moz-border-radius: calc(var(--bdr--radius) * 3);
+    -ms-border-radius: calc(var(--bdr--radius) * 3);
+    -o-border-radius: calc(var(--bdr--radius) * 3);
+}
+
+.nearest-pharmacy__column-title {
+    font-size: clamp(31px, 1.9vw, 42px);
+    text-align: center;
+}
+
+.nearest-pharmacy__list-wrapper {
+    margin-block: 45px;
+}
+
+.nearest-pharmacy__single-item:hover {
+    background-color: rgba(var(--clr--lightblue), .2);
+}

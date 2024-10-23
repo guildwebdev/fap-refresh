@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Curious Minds Media">
-    <title>Home | The Pharmacy Guild of Australia</title>
+    <title>Services Individual | The Pharmacy Guild of Australia</title>
     
     <link rel="apple-touch-icon" sizes="180x180" href="src/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png">
@@ -292,244 +292,81 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-banner">
+    <!-- Breadscrumb Section -->
+    <section class="breadscrumb centered-breadscrumb colored-breadcrumb">
 
-        <img src="src/img/find-a-pharmacy-hero-image.jpg" class="hero-banner__banner-image" alt="The Pharmacy Guild of Australia">
+        <div class="breadscrumb-hero">
 
-        <div class="hero-banner__container container">
-            <div class="row">
-                
-                <div class="hero-banner__search-column col-lg-8 order-1 order-lg-2">
+            <div class="breadscrumb__container container">
+                <div class="row">
                     
-                    <div class="hero-banner-search__wrapper">
+                    <div class="breadscrumb__title-wrapper col-lg-12">
 
-                        <div class="hero-banner-search__title-wrapper">
-                            <h1 class="hero-banner-search__title">Find a Pharmacy</h1>
+                        <h1 class="breadscrumb__page-title">
+                            <span class="breadscrumb__sub-title">VACCINATION</span>
+                            Travel Health and Vaccines
+                        </h1>
 
-                            <p class="fw600">Enter your location to find your nearest pharmacy and discover the range of services on offer. If you know which service you’re looking for, you can enter it below.</p>
-                        </div>
+                        <p class="breadscrumb__description">Heading overseas? Prepare for your journey with expert travel health advice and vaccination services at your local pharmacy.</p>
 
-                        <form action="/" id="fap-main-search">
-                            <div class="hero-banner-search__search-panel fap-search-panel input-group">
+                    </div>
+
+                    <div class="breadscrumb__search">
+
+                        <form action="/" id="breadscrumb-search">
+                            <div class="services__search search-wrapper">
                                 
-                                <input type="text" class="hero-banner-search__search-postcode hero-banner-search__search-input fap-input form-control" id="fap-search-postcode" placeholder="Your Postcode or Location *" required>
+                                <input type="search" class="services__search-input search-input fap-input form-control" id="service-input" placeholder="Your Postcode or Location *">
 
-                                <div class="search-seperator"></div>
-
-                                <div class="hero-banner-search__search-dropdown search-dropdown">
-                                    <div id="fap-dropdown-list" class="hero-banner-search__search-dropdown-content search-dropdown-content scrollbar-yellow">
-                                        <input type="text" id="fap-filter-input" class="hero-banner-search__search-input search-filter-input form-control" placeholder="Type here..." onkeyup="filterFunction()">
-                                        
-                                        <div class="hero-banner-search__search-category service-category-title"><strong>Vaccination</strong></div>
-                                        <p onclick="selectOption(this)">Influenza</p>
-                                        <p onclick="selectOption(this)">COVID-19</p>
-                                        <p onclick="selectOption(this)">Travel vaccination</p>
-                                        
-                                        <div class="hero-banner-search__search-category service-category-title"><strong>Women's health</strong></div>
-                                        <p onclick="selectOption(this)">Urinary tract infection consult</p>
-                                        <p onclick="selectOption(this)">Oral contraception consult</p>
-                                        <p onclick="selectOption(this)">Emergency contraception</p>
-                                        <p onclick="selectOption(this)">Maternal health</p>
-                                        <p onclick="selectOption(this)">Bone density testing</p>
-                                        <p onclick="selectOption(this)">Low iron & anemia screening</p>
-                                        
-                                        <div class="hero-banner-search__search-category service-category-title"><strong>Everyday health</strong></div>
-                                        <p onclick="selectOption(this)">Cholesterol testing</p>
-                                        <p onclick="selectOption(this)">Blood pressure monitoring</p>
-                                        <p onclick="selectOption(this)">Blood sugar testing</p>
-                                        <p onclick="selectOption(this)">Sleep Apnoea Help</p>
-                                        <p onclick="selectOption(this)">Weight Management</p>
-                                        <p onclick="selectOption(this)">Asthma Assistance</p>
-                                        
-                                        <div class="hero-banner-search__search-category service-category-title"><strong>Skin & Sprains</strong></div>
-                                        <p onclick="selectOption(this)">Skin</p>
-                                        <p onclick="selectOption(this)">Wound Care</p>
-                                        <p onclick="selectOption(this)">Aches and Sprains</p>
-                                        
-                                        <div class="hero-banner-search__search-category service-category-title"><strong>Addiction</strong></div>
-                                        <p onclick="selectOption(this)">Needle and Syringe</p>
-                                        <p onclick="selectOption(this)">Opioid Dependency Treatment</p>
-                                        <p onclick="selectOption(this)">Quit Smoking</p>
-                                        <p onclick="selectOption(this)">Take Home Naloxone</p>
-                                        
-                                        <div class="hero-banner-search__search-category service-category-title"><strong>Medicines Management</strong></div>
-                                        <p onclick="selectOption(this)">Compounding</p>
-                                        <p onclick="selectOption(this)">Dose Administration Aids</p>
-                                        <p onclick="selectOption(this)">Home Meds Review</p>
-                                        <p onclick="selectOption(this)">Staged Supply</p>
-                                    
-                                        <div class="hero-banner-search__search-category service-category-title"><strong>Diabetes</strong></div>
-                                        <p onclick="selectOption(this)">Needle and Syringe</p>
-                                        <p onclick="selectOption(this)">Blood Sugar Testing </p>
-                                        <p onclick="selectOption(this)">MedsCheck Service</p>
-                                        <p onclick="selectOption(this)">Diabetes Management</p>
-                                
-                                        <div class="hero-banner-search__search-category service-category-title"><strong>Older Australians</strong></div>
-                                        <p onclick="selectOption(this)">Bone Density Testing</p>
-                                        <p onclick="selectOption(this)">Dementia Care</p>
-                                        <p onclick="selectOption(this)">Mobility</p>
-                                        <p onclick="selectOption(this)">Palliative</p>
-                                        
-                                    </div>
-                                </div>
-
-                                <input type="text" class="search-service hero-banner-search__search-input fap-input form-control" id="fap-search-service" placeholder="What are you looking for?" readonly onclick="toggleDropdown()">
-                            </div>
-
-                            <div class="button-group">
-
-                                <button class="hero-banner-search-btn button-yellow find-a-pharmacy-btn btn-with-backdrop btn btn-secondary">
-                                    <img src="src/img/find-a-pharmacy-icon.png" alt="PGA Icon">
-                                        Find a Pharmacy
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-
-                                <span class="hero-banner-search__action-seperator action-seperator">or</span>
-
-                                <button class="hero-banner-search__pharmacy-btn button-blue btn-with-backdrop btn btn-secondary">
+                                <button class="services__search-btn button-blue btn-with-backdrop btn btn-secondary">
                                     <i class="fa-solid fa-location-dot"></i>
-                                        Find me the nearest Pharmacy
-                                        <i class="fa-solid fa-arrow-right"></i>
+                                    Find me the nearest Pharmacy
+                                    <i class="fa-solid fa-arrow-right"></i>
                                 </button>
+
                             </div>
-                        </form>
+                            </form>
 
                     </div>
 
                 </div>
-
-                <div class="col-lg-4 order-2 order-lg-1">
-                    
-                    <div class="hero-banner-ad">
-
-                        <div class="hero-banner-ad__title ad-active">
-                            <p class="hero-banner-ad__title-text"><strong>what's new</strong></p>
-                            
-                            <span class="hero-banner-ad__ad-toggle fa-stack">
-                                <i class="fa fa-circle fa-stack-2x custom-icons__chevron-circle"></i>
-                                <i class="fa fa-chevron-right fa-stack-1x custom-icons__chevron-icon"></i>
-                            </span>
-                        </div>
-
-                        <div class="hero-banner-ad__ad-wrapper">
-                            <div class="hero-banner-ad__ad-thumb">
-                                <img src="src/img/thumb-whats-new.jpg" alt="NO GP? NO Worries.">
-                            </div>
-
-                            <div class="hero-banner-ad__ad-content">
-                                <h2 class="hero-banner-ad__ad-content-title">NO GP?<br>
-                                    NO Worries.</h2>
-
-                                <p class="hero-banner-ad__ad-content-text">Repeat contraceptive prescribing coming to Victorian community pharmacies soon!</p>
-
-                                <button class="hero-banner-ad__ad-actions button-blue btn-with-backdrop btn btn-secondary">
-                                    More infor
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                                
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
             </div>
+
         </div>
+
+        <div class="breadscrumb-nav">
+
+            <div class="breadscrumb-nav__container container">
+                <div class="row">
+                    <div class="breadscrumb-nav__wrapper col-lg-12">
+
+                        <a href="#" class="breadscrumb-nav__parents">
+                            <i class="fa-solid fa-house-medical"></i>
+                        </a>
+                        
+                        <span class="seperator">/</span>
+
+                        <a href="#" class="breadscrumb-nav__parents">Our Services</a>
+                        
+                        <span class="seperator">/</span>
+                        
+                        <a href="#" class="breadscrumb-nav__current-page">
+                            Vaccination - Travel vaccination
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <!-- Pharmacy Map Section -->
-    <section class="pharmacy-map">
+    <section class="pharmacy-map single-service-map">
         <div class="pharmacy-map__container container-fluid py-5">
             <div class="row">
                 <div class="col-lg-12">
-
-                    <div class="pharmacy-map__search-wrapper filter-closed">
-
-                        <div class="pharmacy-map__search-wrapper-title">
-                            <h2 class="pharmacy-map__search-title fw500">Change your mind?</h2>
-
-                            <span class="pharmacy-map__search-wrapper-toggle d-block d-lg-none">
-                                <i class="fa-solid fa-sliders"></i>
-                            </span>
-                        </div>
-                            
-                        <form action="/" id="fap-second-search">
-                            <div class="pharmacy-map__search-panel fap-search-panel input-group">
-                                    
-                                <input type="text" class="pharmacy-map__search-postcode pharmacy-map__search-input fap-input form-control" id="pharmacy-map-postcode" placeholder="Your Postcode or Location *" required="">
-
-                                <div class="search-seperator"></div>
-
-                                <div class="pharmacy-map__search-dropdown search-dropdown">
-                                    <div id="search-dropdown-list" class="pharmacy-map__search-dropdown-content search-dropdown-content scrollbar-yellow">
-                                        <input type="text" id="search-filter-input" class="pharmacy-map__search-service search-filter-input form-control" placeholder="Type here..." onkeyup="searchfilterFunction()">
-                                        
-                                        <div class="pharmacy-map__search-category service-category-title"><strong>Vaccination</strong></div>
-                                        <p onclick="searchselectOption(this)">Influenza</p>
-                                        <p onclick="searchselectOption(this)">COVID-19</p>
-                                        <p onclick="searchselectOption(this)">Travel vaccination</p>
-                                        
-                                        <div class="pharmacy-map__search-category service-category-title"><strong>Women's health</strong></div>
-                                        <p onclick="searchselectOption(this)">Urinary tract infection consult</p>
-                                        <p onclick="searchselectOption(this)">Oral contraception consult</p>
-                                        <p onclick="searchselectOption(this)">Emergency contraception</p>
-                                        <p onclick="searchselectOption(this)">Maternal health</p>
-                                        <p onclick="searchselectOption(this)">Bone density testing</p>
-                                        <p onclick="searchselectOption(this)">Low iron & anemia screening</p>
-                                        
-                                        <div class="pharmacy-map__search-category service-category-title"><strong>Everyday health</strong></div>
-                                        <p onclick="searchselectOption(this)">Cholesterol testing</p>
-                                        <p onclick="searchselectOption(this)">Blood pressure monitoring</p>
-                                        <p onclick="searchselectOption(this)">Blood sugar testing</p>
-                                        <p onclick="searchselectOption(this)">Sleep Apnoea Help</p>
-                                        <p onclick="searchselectOption(this)">Weight Management</p>
-                                        <p onclick="searchselectOption(this)">Asthma Assistance</p>
-                                        
-                                        <div class="pharmacy-map__search-category service-category-title"><strong>Skin & Sprains</strong></div>
-                                        <p onclick="searchselectOption(this)">Skin</p>
-                                        <p onclick="searchselectOption(this)">Wound Care</p>
-                                        <p onclick="searchselectOption(this)">Aches and Sprains</p>
-                                        
-                                        <div class="pharmacy-map__search-category service-category-title"><strong>Addiction</strong></div>
-                                        <p onclick="searchselectOption(this)">Needle and Syringe</p>
-                                        <p onclick="searchselectOption(this)">Opioid Dependency Treatment</p>
-                                        <p onclick="searchselectOption(this)">Quit Smoking</p>
-                                        <p onclick="searchselectOption(this)">Take Home Naloxone</p>
-                                        
-                                        <div class="pharmacy-map__search-category service-category-title"><strong>Medicines Management</strong></div>
-                                        <p onclick="searchselectOption(this)">Compounding</p>
-                                        <p onclick="searchselectOption(this)">Dose Administration Aids</p>
-                                        <p onclick="searchselectOption(this)">Home Meds Review</p>
-                                        <p onclick="searchselectOption(this)">Staged Supply</p>
-                                    
-                                        <div class="pharmacy-map__search-category service-category-title"><strong>Diabetes</strong></div>
-                                        <p onclick="searchselectOption(this)">Needle and Syringe</p>
-                                        <p onclick="searchselectOption(this)">Blood Sugar Testing </p>
-                                        <p onclick="searchselectOption(this)">MedsCheck Service</p>
-                                        <p onclick="searchselectOption(this)">Diabetes Management</p>
-                                
-                                        <div class="pharmacy-map__search-category service-category-title"><strong>Older Australians</strong></div>
-                                        <p onclick="searchselectOption(this)">Bone Density Testing</p>
-                                        <p onclick="searchselectOption(this)">Dementia Care</p>
-                                        <p onclick="searchselectOption(this)">Mobility</p>
-                                        <p onclick="searchselectOption(this)">Palliative</p>
-                                        
-                                    </div>
-                                </div>
-
-                                <input type="text" class="pharmacy-map__search-service search-service fap-input form-control" id="search-service-2" placeholder="What are you looking for?" readonly="" onclick="searchtoggleDropdown()">
-
-                                <button class="pharmacy-map-search-btn button-lightblue btn-with-backdrop btn btn-secondary">
-                                    <img src="src/img/find-a-pharmacy-icon.png" alt="PGA Icon">
-                                        Find a Pharmacy
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </form>
-
-                    </div>
 
                     <div class="pharmacy-map__filter-dragger">
                         <div class="pharmacy-map__filter-details">
@@ -558,7 +395,7 @@
                         
                     </div>
 
-                    <div class="pharmacy-map__search-results pharmacy-map-toggle-view d-block">
+                    <div class="pharmacy-map__search-results pharmacy-map-toggle-view d-none">
 
                         <span class="map-to-list-toggle">
                             <img src="src/img/icon-australian-map.svg" alt="Toggle to Map View">
@@ -831,7 +668,7 @@
 
                     </div>
 
-                    <div class="pharmacy-map__search-results-map pharmacy-map-toggle-view d-none">
+                    <div class="pharmacy-map__search-results-map pharmacy-map-toggle-view d-block">
 
                         <div class="fap-map-container">
 
@@ -1297,6 +1134,108 @@
         </div>
     </section>
 
+    <!-- Service Section -->
+    <section class="single-service">
+
+        <div class="single-service__container container">
+            <div class="row">
+                <div class="single-service__column col-lg-12 py-5">
+
+                    <div class="single-service__wrapper two-column-section">
+
+                        <h2>Why Travel Vaccinations Matter</h2>
+
+                        <p>Travelling abroad opens up exciting opportunities, but it also exposes travellers to various health risks.</p>
+                        
+                        <p>Government statistics indicate that up to 50% of overseas travellers experience a travel-related illness.</p>
+                        
+                        <p>The most common ailments include gastrointestinal infections contracted from contaminated food and water. However, more serious diseases such as rabies, hepatitis A and B, and typhoid can also pose significant risks.</p>
+
+                        <h3>Essential Vaccinations</h3>
+
+                        <p>Pharmacists in certain states can now administer a range of vaccines, including those recommended prior to travel, expanding access to essential protection against vaccine-preventable diseases.</p>
+                        
+                        <p>Before embarking on your journey, it's crucial to ensure you're up-to-date with essential vaccinations:</p>
+
+                        <img src="src/img/single-services-travel-vaccinations.jpg" alt="Why Travel Vaccinations Matter">
+
+                        <div class="services__list-wrapper">
+
+                            <ul class="list-icon-hospital blue-icons">
+                                <li>Routine Vaccines: Tetanus, diphtheria, pertussis (whooping cough), and polio.</li>
+                                <li>Additional Vaccines: Measles, mumps, rubella (MMR), and hepatitis A are often recommended.</li>
+                                <li>Destination-Specific Vaccines: Depending on your travel plans, additional vaccinations such as meningococcal, rabies, and malaria prophylaxis may be necessary.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Related Services Section -->
+    <section class="related-services">
+        <div class="related-services__container container">
+            <div class="row">
+                <div class="related-services__column col-lg-12 py-5">
+
+                    <div class="related-services__wrapper">
+
+                        <div class="related-services__title-wrapper">
+
+                            <h2 class="related-services__title">Other Vaccination</h2>
+
+                        </div>
+
+                        <div class="services__sub-services grid-three-items">
+
+                            <div class="services__sub-item">
+
+                                <div class="services__sub-icon">
+                                    <img src="src/img/icon-syringe.svg" alt="Influenza">
+                                </div>
+
+                                <h3 class="our-services__item-title fap-card-item-title">Influenza</h3>
+
+                                <p class="our-services__item-description fap-card-item-description">Protect yourself this flu season with our convenient in-pharmacy vaccination services.</p>
+        
+                                <button class="services__actions related-services-btn button-blue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="services__sub-item">
+
+                                <div class="services__sub-icon">
+                                    <img src="src/img/icon-covid-syringe.svg" alt="COVID-19">
+                                </div>
+
+                                <h3 class="our-services__item-title fap-card-item-title">COVID-19</h3>
+
+                                <p class="our-services__item-description fap-card-item-description">Stay protected with our accessible COVID-19 vaccination services available at your convenience.</p>
+        
+                                <button class="services__actions related-services-btn button-blue btn-with-backdrop btn btn-secondary">
+                                    More infor
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <!-- Our Services Section -->
     <section class="our-services">
 
@@ -1525,111 +1464,6 @@
         
     </section>
 
-    <!-- Trending Topics Section -->
-    <section class="trending-topics">
-
-        <div class="trending-topics__container container pt-5">
-
-            <div class="row">
-                <div class="trending-topics__column col-lg-12">
-
-                    <div class="trending-topics__wrapper">
-
-                        <div class="trending-topics__title-wrapper">
-                            <h2 class="trending-topics__title">Trending Topics</h2>
-
-                            <p class="trending-topics__description">Explore the most viewed health topics across Australia see the latest insights.</p>
-                        </div>
-
-                        <div class="trending-topics__seperator"></div>
-
-                        <div class="trending-topics__icons-wrapper grid-five-items">
-                            <a href="#" class="trending-topics__trending-icon-items">
-                                <img src="src/img/icon-syringe.svg" class="trending-topics__trending-icons" alt="Influenza Vaccine">
-                                <p class="trending-topics__trending-icon-text small">Influenza Vaccine</p>
-                            </a>
-                            
-                            <a href="#" class="trending-topics__trending-icon-items">
-                                <img src="src/img/icon-covid-syringe.svg" class="trending-topics__trending-icons" alt="COVID-19 Vaccine">
-                                <p class="trending-topics__trending-icon-text small">COVID-19 Vaccine</p>
-                            </a>
-                            
-                            <a href="#" class="trending-topics__trending-icon-items">
-                                <img src="src/img/icon-urinary-tract.svg" class="trending-topics__trending-icons" alt="Urinary tract infection consult">
-                                <p class="trending-topics__trending-icon-text small">Urinary tract infection consult</p>
-                            </a>
-                            
-                            <a href="#" class="trending-topics__trending-icon-items">
-                                <img src="src/img/icon-diabetes-test.svg" class="trending-topics__trending-icons" alt="Diabetes management">
-                                <p class="trending-topics__trending-icon-text small">Diabetes management</p>
-                            </a>
-                            
-                            <a href="#" class="trending-topics__trending-icon-items">
-                                <img src="src/img/icon-lungs.svg" class="trending-topics__trending-icons" alt="Asthma assistance">
-                                <p class="trending-topics__trending-icon-text small">Asthma assistance</p>
-                            </a>
-                        </div>
-
-                    </div>
-                    
-                </div>
-            </div>
-
-        </div>
-        
-    </section>
-
-    <!-- My Pharmacy Section -->
-    <section class="my-pharmacy">
-
-        <div class="my-pharmacy__container container-fluid pb-3">
-
-            <div class="row">
-                <div class="my-pharmacy__column col-lg-12">
-
-                    <div class="my-pharmacy__image-wrapper" style="background-image: url('src/img/find-a-pharmacy-my-pharmacy-image.jpg');">
-
-                        <div class="my-pharmacy__container-wrapper">
-
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-
-                                        <div class="my-pharmacy__wrapper">
-
-                                            <div class="my-pharmacy__content-wrapper">
-
-                                                <div class="my-pharmacy__content">
-                                                    <h2>My Pharmacy</h2>
-
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                </div>
-
-                                                <div class="my-pharmacy__action">
-                                                    <button class="my-pharmacy__pharmacy-btn button-yellow find-a-pharmacy-btn btn-with-backdrop btn btn-secondary">
-                                                        <img src="src/img/find-a-pharmacy-icon.png" alt="PGA Icon">
-                                                            To My Pharmacy
-                                                            <i class="fa-solid fa-arrow-right"></i>
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- News Section -->
     <section class="latest-updates">
 
@@ -1726,7 +1560,7 @@
 
                             <p>The Pharmacy Guild of Australia acknowledges the Traditional Custodians of this nation's lands, waters, and skies. The Guild pays its respect to the Aboriginal and Torres Strait Islander people, their diverse languages, their cultural practices and recognise their continuing connection and contribution to the lands on which we work and live.</p>
 
-                            <p class="fw600">All rights reserved | The Pharmacy Guild of Australia 2024 | <a href="#" target="_blank" rel="noopener noreferrer">About the Pharmacy Guild</a> | <a href="#" target="_blank" rel="noopener noreferrer">Privacy policy</a> | v.24april(0.3.4)</p>
+                            <p><strong></strong>All rights reserved | The Pharmacy Guild of Australia 2024 | <a href="#" target="_blank" rel="noopener noreferrer">About the Pharmacy Guild</a> | <a href="#" target="_blank" rel="noopener noreferrer">Privacy policy</a> | v.24april(0.3.4)</strong></p>
 
                         </div>
                     </div>

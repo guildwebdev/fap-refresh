@@ -38,17 +38,9 @@
     background-color: rgb(var(--clr--lightblue));
 }
 
-.trending-topics__column .trending-topics__icons-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
 .trending-topics__column .trending-topics__trending-icon-items {
     color: rgb(var(--clr--white));
     text-align: center;
-    width: calc((var(--width--full) / 5) - 15px);
 }
 
 .trending-topics__column .trending-topics__trending-icon-items .trending-topics__trending-icons {

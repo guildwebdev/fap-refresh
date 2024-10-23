@@ -8,19 +8,19 @@
     padding: 0 20px;
 }
 
-.pharmacy-map__scroller-in-map .pharmacy-map__pharmacy-details {
+.pharmacy-map__scroller-in-map .result-listing-details {
     width: calc(var(--width--full) - 65px);
 }
 
-.pharmacy-map__scroller-in-map .pharmacy-map__pharmacy-details .pharmacy-map__rating {
+.pharmacy-map__scroller-in-map .result-listing-details .pharmacy-map__rating {
     color: rgb(var(--clr--yellow));
 }
 
-.pharmacy-map__scroller-in-map .pharmacy-map__pharmacy-details .pharmacy-map__unrating {
+.pharmacy-map__scroller-in-map .result-listing-details .pharmacy-map__unrating {
     color: rgb(209, 212, 221);
 }
 
-.pharmacy-map__scroller-in-map .pharmacy-map__pharmacy-details .pharmacy-map__pharmacy-type {
+.pharmacy-map__scroller-in-map .result-listing-details .pharmacy-map__pharmacy-type {
     color: rgb(var(--clr--blue), 0.6);
 }
 
@@ -29,19 +29,15 @@
     right: 0;
 }
 
-span.pharmacy-map__details-direction-icon {
+span.result-listing-content-direction-icon {
     color: rgb(var(--clr--lightblue));
 }
 
-.pharmacy-map__scroller-in-map .pharmacy-map__search-actions {
+.pharmacy-map__scroller-in-map .result-listing-actions {
     width: var(--width--full);
 }
 
-.pharmacy-map__scroller-in-map .pharmacy-map__search-actions button {
-    font-size: 16px;
-}
-
-.pharmacy-map__scroller-in-map .pharmacy-map__result-single-item {
+.pharmacy-map__scroller-in-map .result-listing-single-item {
     flex-wrap: wrap;
 }
 
@@ -54,7 +50,7 @@ span.pharmacy-map__details-direction-icon {
     margin-bottom: 15px;
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 999;
 }
 
 .single-service-map .pharmacy-map__search-result-filter {
@@ -68,19 +64,24 @@ span.pharmacy-map__details-direction-icon {
     padding: 17px;
     width: 60px;
     text-align: center;
-    background: rgb(var(--clr--blue));
+    background-color: rgb(var(--clr--blue));
     color: rgb(var(--clr--white));
 }
 
 #fap-map {
-    width: calc(var(--width--full) - 300px);
-    height: 700px;
+    width: var(--width--full);
+    height: 600px;
     background-color: rgb(240, 240, 240);
     border-radius: calc(var(--bdr--radius) * 3);
     -webkit-border-radius: calc(var(--bdr--radius) * 3);
     -moz-border-radius: calc(var(--bdr--radius) * 3);
     -ms-border-radius: calc(var(--bdr--radius) * 3);
     -o-border-radius: calc(var(--bdr--radius) * 3);
+}
+
+.pharmacy-map__search-results-map #fap-map {
+    width: calc(var(--width--full) - 300px);
+    height: 700px;
 }
 
 /* Map Popup */

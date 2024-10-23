@@ -15,7 +15,7 @@
     font-size: 16px;
     font-weight: 600;
     padding: 11px 30px;
-    background: rgb(var(--clr--white));
+    background-color: rgb(var(--clr--white));
     border: 2px solid rgb(var(--clr--blue));
 }
 
@@ -63,8 +63,8 @@ textarea.fap-input {
     height: 40px;
     background-color: rgb(var(--clr--blue));
     position: absolute;
-    top: calc(var(--width--full) * .5);
-    left: calc(var(--width--full) * .5);
+    top: calc(var(--width--full) / 2);
+    left: calc(var(--width--full) / 2);
     z-index: 9;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -136,7 +136,7 @@ select.pharmacy-map__filter-results {
 }
 
 form#service-search .search-input {
-    background: rgb(var(--clr--white));
+    background-color: rgb(var(--clr--white));
     padding: 11px 45px 11px 15px;
 }
 

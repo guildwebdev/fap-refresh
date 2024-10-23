@@ -8,18 +8,18 @@
 
 .footer__container:before {
     content: "";
-    width: calc(var(--width--full) * .96);
+    width: calc(var(--width--full) - 30px);
     height: 4px;
     box-shadow: inset 0px 3px 5px rgb(var(--clr--lightblue)), 0px 10px 25px rgb(var(--clr--white));
     position: absolute;
     top: 0;
     left: 0;
     z-index: 9;
-    transform: translate(2%, calc(var(--width--full) * .5));
-    -webkit-transform: translate(2%, calc(var(--width--full) * .5));
-    -moz-transform: translate(2%, calc(var(--width--full) * .5));
-    -ms-transform: translate(2%, calc(var(--width--full) * .5));
-    -o-transform: translate(2%, calc(var(--width--full) * .5));
+    transform: translate(15px, calc(var(--width--full) / 2));
+    -webkit-transform: translate(15px, calc(var(--width--full) / 2));
+    -moz-transform: translate(15px, calc(var(--width--full) / 2));
+    -ms-transform: translate(15px, calc(var(--width--full) / 2));
+    -o-transform: translate(15px, calc(var(--width--full) / 2));
     border-radius: calc(var(--bdr--radius) * 3);
     -webkit-border-radius: calc(var(--bdr--radius) * 3);
     -moz-border-radius: calc(var(--bdr--radius) * 3);
@@ -33,7 +33,7 @@
     margin: 0 auto;
 }
 
-.footer_copyright {
+.footer__copyright {
     background: rgba(var(--clr--lightblue), 0.1);
     box-shadow: var(--box--shadow) rgba(var(--clr--black), 0.15);
     border-radius: calc(var(--bdr--radius) * 3);

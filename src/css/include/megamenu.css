@@ -1,7 +1,7 @@
 .header__mega-menu {
     width: var(--width--full);
     left: 0;
-    background: rgb(var(--clr--lightyellow));
+    background-color: rgb(var(--clr--lightyellow));
     box-shadow: 0px 3px 30px rgba(var(--clr--black), 0.10);
     position: absolute;
     top: 100%;
@@ -28,12 +28,12 @@
     vertical-align: bottom;
     position: absolute;
     top: calc(var(--width--full) + 10px);
-    left: calc(var(--width--full) * .5);
-    transform: translate(calc(var(--width--full) * .5), 0);
-    -webkit-transform: translate(calc(var(--width--full) * .5), 0);
-    -moz-transform: translate(calc(var(--width--full) * .5), 0);
-    -ms-transform: translate(calc(var(--width--full) * .5), 0);
-    -o-transform: translate(calc(var(--width--full) * .5), 0);
+    left: calc(var(--width--full) / 2);
+    transform: translate(calc(var(--width--full) / 2), 0);
+    -webkit-transform: translate(calc(var(--width--full) / 2), 0);
+    -moz-transform: translate(calc(var(--width--full) / 2), 0);
+    -ms-transform: translate(calc(var(--width--full) / 2), 0);
+    -o-transform: translate(calc(var(--width--full) / 2), 0);
     display: none;
 }
 

@@ -6,7 +6,7 @@ button.btn.button-yellow {
     color: rgb(var(--clr--white));
     background-color: rgb(var(--clr--lightblue));
     text-align: center;
-    min-width: 430px;
+    min-width: 390px;
 }
 
 button.btn.button-blue {
@@ -29,7 +29,7 @@ button.button-lightblue {
     border: 0;
     appearance: none;
     isolation: isolate;
-    line-height: 1.5;
+    line-height: 1.1;
     position: relative;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ button.button-lightblue > .backdrop {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 12px 20px;
+    padding: 14.5px 20px;
 }
 
 button.button-lightblue > .backdrop {
@@ -220,22 +220,22 @@ form#fap-second-search button.btn.pharmacy-map-search-btn i.fa-arrow-right {
 
 .fap-map-popup__actions button.btn {
     min-width: fit-content;
-    width: calc(var(--width--full) * .5);
+    width: calc(var(--width--full) / 2);
 }
 
-button.btn.our-services_for-more-info {
+button.btn.our-services__more-info   {
     min-width: 170px;
     margin-left: auto;
 }
 
 button.our-services__actions > .backdrop,
-button.btn.our-services_for-more-info > .backdrop {
+button.btn.our-services__more-info   > .backdrop {
     width: var(--width--full);
     justify-content: space-between;
 }
 
 button.our-services__actions > .overlay,
-button.btn.our-services_for-more-info > .overlay {
+button.btn.our-services__more-info   > .overlay {
     justify-content: space-between;
 }
 
@@ -259,7 +259,7 @@ button.btn.find-a-pharmacy-btn {
 }
 
 button.btn.find-a-pharmacy-btn > .backdrop {
-    padding: 12px 20px !important;
+    padding: 8.05px 20px !important;
     gap: 20px !important;
 }
 
@@ -298,10 +298,16 @@ button.btn.services__actions {
     width: 180px;
 }
 
+.pharmacy-single__actions button.btn {
+    min-width: 200px;
+}
+
 button.btn.search-results-btn > .backdrop,
 button.btn.services__actions > .backdrop,
 button.btn.my-pharmacy-services-btn > .backdrop,
-button.btn.latest-updates__actions > .backdrop {
+button.btn.latest-updates__actions > .backdrop,
+button.btn.nearest-pharmacy__see-more > .backdrop,
+.pharmacy-single__actions button.btn.pharmacy-single__call-now > .backdrop {
     width: var(--width--full);
     justify-content: space-between;
 }
@@ -309,6 +315,46 @@ button.btn.latest-updates__actions > .backdrop {
 button.btn.search-results-btn > .overlay,
 button.btn.services__actions > .overlay,
 button.btn.my-pharmacy-services-btn > .overlay,
-button.btn.latest-updates__actions > .overlay {
+button.btn.latest-updates__actions > .overlay,
+button.btn.nearest-pharmacy__see-more > .overlay,
+.pharmacy-single__actions button.btn.pharmacy-single__call-now > .overlay {
     justify-content: space-between;
+}
+
+button.btn.all-posts__action {
+    min-width: 160px;
+}
+
+button.btn.related-topics__action-btn {
+    margin-left: auto;
+}
+
+button.btn.error-body__action {
+    width: 350px;
+    max-width: var(--width--full);
+    margin: 25px auto 15px;
+}
+
+button.btn.latest-updates__actions > .backdrop,
+button.btn.latest-updates__actions > .overlay {
+    padding: 10.05px 20px;
+}
+
+.pharmacy-map__scroller-in-map .result-listing-actions button.btn {
+    font-size: 16px;
+}
+
+.pharmacy-map__scroller-in-map .result-listing-actions button.btn > .backdrop,
+.pharmacy-map__scroller-in-map .result-listing-actions button.btn > .overlay {
+    padding: 16.25px 20px;
+}
+
+.search-modal__input-group button.btn {
+    font-size: 20px;
+    margin-left: -45px;
+}
+
+.search-modal__input-group button.btn.search-modal__search-btn > .backdrop,
+.search-modal__input-group button.btn.search-modal__search-btn > .overlay {
+    padding: 15.5px 20px;
 }

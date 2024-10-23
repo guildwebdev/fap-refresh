@@ -46,3 +46,11 @@
     color: rgb(var(--clr--blue));
     background-color: rgb(var(--clr--lightblue));
 }
+
+.our-services-wrapper .owl-nav button.owl-prev:hover,
+.our-services-wrapper .owl-nav button.owl-prev:focus,
+.our-services-wrapper .owl-nav button.owl-next:hover,
+.our-services-wrapper .owl-nav button.owl-next:focus {
+    color: rgb(var(--clr--blue));
+    background-color: rgb(var(--clr--yellow));
+}
